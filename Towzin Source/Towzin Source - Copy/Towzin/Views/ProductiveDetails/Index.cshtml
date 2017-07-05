@@ -1,0 +1,138 @@
+﻿
+@model PagedList.IPagedList<Towzin.Models.VW_ProductiveDetails_Index>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2>جزییات تولید</h2>
+@using (Html.BeginForm("Index", "ProductiveDetails", FormMethod.Get))
+{
+    <p>
+        @Html.TextBox("SearchString")
+        <input type="submit" value="جستجو" style="font-size:large" class="glyphicon-search" />
+
+    </p>
+}
+<h3>
+    <i style="font-family:W_nazanin" class="glyphicon glyphicon-plus gi-5x">
+        @Html.ActionLink("جدید", "Create")
+
+    </i>
+</h3>
+
+<div class="container">
+
+
+    <table class="table table-bordered">
+
+        <tr class="alert-success" style="font-size:medium">
+            <th>
+                <b>ردیف</b>
+            </th>
+            <th>
+                @Html.ActionLink("شماره سفارش", "Index", new { sortOrder = ViewBag.T1SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("کالا", "Index", new { sortOrder = ViewBag.T2SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("کد کالا", "Index", new { sortOrder = ViewBag.T3SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("اپراتور", "Index", new { sortOrder = ViewBag.T4SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("کانال", "Index", new { sortOrder = ViewBag.T5SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("از شماره سفارش", "Index", new { sortOrder = ViewBag.T6SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("به شماره سفارش", "Index", new { sortOrder = ViewBag.T7SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("شماره بچ", "Index", new { sortOrder = ViewBag.T8SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("شماره فرمول", "Index", new { sortOrder = ViewBag.T9SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("ضایعاتی؟", "Index", new { sortOrder = ViewBag.T10SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("دلیل ضایعات", "Index", new { sortOrder = ViewBag.T11SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("مقدار", "Index", new { sortOrder = ViewBag.T12SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("فعال", "Index", new { sortOrder = ViewBag.T13SortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th></th>
+        </tr>
+        @{int rownumber = 0;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @{ rownumber++;}
+                    @rownumber
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderCodeID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PartCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OperatorName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IO)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.FromOrderCodeID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ToOrderCodeID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BatchNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormoulaNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Waste)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LesionsName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.ActionLink("ویرایش", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("جزئیات", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("حذف", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+                        }
+
+    </table>
+</div>
+<br />
+صفحه @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) از @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

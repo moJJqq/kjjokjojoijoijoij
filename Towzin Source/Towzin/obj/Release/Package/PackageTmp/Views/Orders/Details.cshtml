@@ -1,0 +1,78 @@
+﻿@model Towzin.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>جزییات</h2>
+
+<div>
+    <h4>سفارش</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span class="control-label ">شماره سفارش</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderCode)
+        </dd>
+        <dt>
+            <span class="control-label ">وضعیت سفارش</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderStatus.StatusTitle)
+        </dd>
+        <dt>
+            <span class="control-label ">خط تولید</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductionLine.ProductionLineName)
+        </dd>
+        <dt>
+            <span class="control-label ">قالب</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Frame.FrameName)
+        </dd>
+        <dt>
+            <span class="control-label ">تاریخ شروع</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt>
+            <span class="control-label ">تاریخ پایان</span>
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            <span class="control-label ">توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span class="control-label ">وضعیت</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.OrderCode }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

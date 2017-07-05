@@ -1,0 +1,42 @@
+﻿@model Towzin.Models.Nature
+
+@{
+    ViewBag.Title = "جزئیات";
+}
+
+<h2>جزئیات</h2>
+
+<div>
+    <h4>ماهیت کالا</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span> عنوان </span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NatureName)
+        </dd>
+
+        <dt>
+            <span> توضیحات </span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span> وضعیت </span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.state)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

@@ -1,0 +1,80 @@
+﻿@model Towzin.Models.ProductiveStoppages
+
+@{
+    ViewBag.Title = "جزئیات توقفات تولید";
+}
+
+<h2>جزئیات</h2>
+
+<div>
+    <h4>توقفات تولید</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span>شماره سفارش</span>
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.OrderCode)
+        </dd>
+
+        <dt>
+            <span>علت توقف </span>
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stoppages.StoppagesName)
+        </dd>
+        <dt>
+            <span>نام اپراتور</span>
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operator.OperatorName)
+        </dd>
+
+        <dt>
+            <span>تاریخ شروع</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTime)
+        </dd>
+
+        <dt>
+            <span>تاریخ پایان</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTime)
+        </dd>
+
+        <dt>
+            <span>توضیحات</span>
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span>وضعیت</span>
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

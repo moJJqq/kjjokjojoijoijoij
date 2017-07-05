@@ -1,0 +1,110 @@
+﻿
+@model PagedList.IPagedList<Towzin.Models.Package>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>بسته بندی</h2>
+
+@using (Html.BeginForm("Index", "Orders", FormMethod.Get))
+{
+    <p>
+        @Html.TextBox("SearchString")
+        <input type="submit" value="جستجو" style="font-size:large" class="glyphicon-search" />
+
+    </p>
+}
+<h3>
+    <i style="font-family:W_nazanin" class="glyphicon glyphicon-plus gi-5x">
+        @Html.ActionLink("جدید", "Create")
+
+    </i>
+</h3>
+
+<div class="container">
+
+
+    <table class="table table-bordered">
+
+        <tr class="alert-success" style="font-size:large">
+            <th>
+                <b>ردیف</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("عنوان", "Index", new { sortOrder = ViewBag.T1SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("عنوان لاتین", "Index", new { sortOrder = ViewBag.T2SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("طول", "Index", new { sortOrder = ViewBag.T3SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("عرض", "Index", new { sortOrder = ViewBag.T4SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("ارتفاع", "Index", new { sortOrder = ViewBag.T5SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("وزن", "Index", new { sortOrder = ViewBag.T6StatusSortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("توضیحات", "Index", new { sortOrder = ViewBag.T7StatusSortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("فعال", "Index", new { sortOrder = ViewBag.T8SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th></th>
+        </tr>
+        @{int rownumber = 0;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @{ rownumber++;}
+                    @rownumber
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PackageName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LatinPackageName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Length)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Width)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Height)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.ActionLink("ویرایش", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("جزئیات", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("حذف", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+                        }
+
+    </table>
+</div>
+<br />
+صفحه @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) از @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

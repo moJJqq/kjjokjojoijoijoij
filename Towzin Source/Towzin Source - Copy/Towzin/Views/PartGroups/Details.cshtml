@@ -1,0 +1,42 @@
+﻿@model Towzin.Models.PartGroup
+
+@{
+    ViewBag.Title = "ویرایش";
+}
+
+<h2>ویرایش</h2>
+
+<div>
+    <h4>گروه کالا</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span>عنوان گروه کالا</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartGroupName)
+        </dd>
+
+        <dt>
+            <span>توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span>وضعیت</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

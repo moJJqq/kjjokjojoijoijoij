@@ -1,0 +1,56 @@
+﻿@model Towzin.Models.ProductionLine
+
+@{
+    ViewBag.Title = "حذف";
+}
+
+<h2>حذف</h2>
+
+<h3>آیا از حذف این مورد مطمئن هستید؟</h3>
+<div>
+    <h4>خط تولید</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span> عنوان خط تولید</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductionLineName)
+        </dd>
+
+        <dt>
+            <span> عنوان لاتین خط تولید</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductionLineLatinName)
+        </dd>
+
+        <dt>
+            <span> توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span> وضعیت</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("بازگشت به لیست", "Index")
+        </div>
+    }
+</div>

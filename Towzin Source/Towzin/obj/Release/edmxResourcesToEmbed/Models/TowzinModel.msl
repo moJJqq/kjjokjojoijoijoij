@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TowzinModelStoreContainer" CdmEntityContainer="TowzinEntities1">
+    <EntitySetMapping Name="Frame">
+      <EntityTypeMapping TypeName="TowzinModel.Frame">
+        <MappingFragment StoreEntitySet="Frame">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FrameName" ColumnName="FrameName" />
+          <ScalarProperty Name="FrameLatinName" ColumnName="FrameLatinName" />
+          <ScalarProperty Name="FrameSerial" ColumnName="FrameSerial" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lesion">
+      <EntityTypeMapping TypeName="TowzinModel.Lesion">
+        <MappingFragment StoreEntitySet="Lesion">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LesionsName" ColumnName="LesionsName" />
+          <ScalarProperty Name="LesionsLatinName" ColumnName="LesionsLatinName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nature">
+      <EntityTypeMapping TypeName="TowzinModel.Nature">
+        <MappingFragment StoreEntitySet="Nature">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NatureName" ColumnName="NatureName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPart">
+      <EntityTypeMapping TypeName="TowzinModel.OrderPart">
+        <MappingFragment StoreEntitySet="OrderPart">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="AmountOfProductive" ColumnName="AmountOfProductive" />
+          <ScalarProperty Name="SubUnitID" ColumnName="SubUnitID" />
+          <ScalarProperty Name="AmountOfSubUnitID" ColumnName="AmountOfSubUnitID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Package">
+      <EntityTypeMapping TypeName="TowzinModel.Package">
+        <MappingFragment StoreEntitySet="Package">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="LatinPackageName" ColumnName="LatinPackageName" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Part">
+      <EntityTypeMapping TypeName="TowzinModel.Part">
+        <MappingFragment StoreEntitySet="Part">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LatinName" ColumnName="LatinName" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="PartWesteID" ColumnName="PartWesteID" />
+          <ScalarProperty Name="NatureID" ColumnName="NatureID" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="MajorUntiID" ColumnName="MajorUntiID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartFrame">
+      <EntityTypeMapping TypeName="TowzinModel.PartFrame">
+        <MappingFragment StoreEntitySet="PartFrame">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="FrameID" ColumnName="FrameID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartGroup">
+      <EntityTypeMapping TypeName="TowzinModel.PartGroup">
+        <MappingFragment StoreEntitySet="PartGroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartGroupName" ColumnName="PartGroupName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartGroupMember">
+      <EntityTypeMapping TypeName="TowzinModel.PartGroupMember">
+        <MappingFragment StoreEntitySet="PartGroupMember">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="PartGroupID" ColumnName="PartGroupID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartPackageDetail">
+      <EntityTypeMapping TypeName="TowzinModel.PartPackageDetail">
+        <MappingFragment StoreEntitySet="PartPackageDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartSpecification">
+      <EntityTypeMapping TypeName="TowzinModel.PartSpecification">
+        <MappingFragment StoreEntitySet="PartSpecification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="SpecificationID" ColumnName="SpecificationID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductionLine">
+      <EntityTypeMapping TypeName="TowzinModel.ProductionLine">
+        <MappingFragment StoreEntitySet="ProductionLine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+          <ScalarProperty Name="ProductionLineLatinName" ColumnName="ProductionLineLatinName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductionLineTechnicalProblem">
+      <EntityTypeMapping TypeName="TowzinModel.ProductionLineTechnicalProblem">
+        <MappingFragment StoreEntitySet="ProductionLineTechnicalProblem">
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="TechnicalProblemID" ColumnName="TechnicalProblemID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="DescriptionTechnicalProblem" ColumnName="DescriptionTechnicalProblem" />
+          <ScalarProperty Name="SolutionTechnicalProblem" ColumnName="SolutionTechnicalProblem" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductiveDetails">
+      <EntityTypeMapping TypeName="TowzinModel.ProductiveDetails">
+        <MappingFragment StoreEntitySet="ProductiveDetails">
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="IO" ColumnName="IO" />
+          <ScalarProperty Name="FromOrderCodeID" ColumnName="FromOrderCodeID" />
+          <ScalarProperty Name="ToOrderCodeID" ColumnName="ToOrderCodeID" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="FormoulaNumber" ColumnName="FormoulaNumber" />
+          <ScalarProperty Name="Waste" ColumnName="Waste" />
+          <ScalarProperty Name="LesionID" ColumnName="LesionID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ProductiveRowDetails" ColumnName="ProductiveRowDetails" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductiveStoppages">
+      <EntityTypeMapping TypeName="TowzinModel.ProductiveStoppages">
+        <MappingFragment StoreEntitySet="ProductiveStoppages">
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StoppagesID" ColumnName="StoppagesID" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specification">
+      <EntityTypeMapping TypeName="TowzinModel.Specification">
+        <MappingFragment StoreEntitySet="Specification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SpecificationName" ColumnName="SpecificationName" />
+          <ScalarProperty Name="SpecificationLatinName" ColumnName="SpecificationLatinName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stoppages">
+      <EntityTypeMapping TypeName="TowzinModel.Stoppages">
+        <MappingFragment StoreEntitySet="Stoppages">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StoppagesLatinName" ColumnName="StoppagesLatinName" />
+          <ScalarProperty Name="StoppagesName" ColumnName="StoppagesName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TowzinModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TechnicalProblem">
+      <EntityTypeMapping TypeName="TowzinModel.TechnicalProblem">
+        <MappingFragment StoreEntitySet="TechnicalProblem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TechnicalProblemsName" ColumnName="TechnicalProblemsName" />
+          <ScalarProperty Name="TechnicalProblemsLatinName" ColumnName="TechnicalProblemsLatinName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unit">
+      <EntityTypeMapping TypeName="TowzinModel.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="sign" ColumnName="sign" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operator">
+      <EntityTypeMapping TypeName="TowzinModel.Operator">
+        <MappingFragment StoreEntitySet="Operator">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OperatorLatinName" ColumnName="OperatorLatinName" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_OrderPart_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_OrderPart_Index">
+        <MappingFragment StoreEntitySet="VW_OrderPart_Index">
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="RowMaterialAmount" ColumnName="RowMaterialAmount" />
+          <ScalarProperty Name="WasteAmount" ColumnName="WasteAmount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="AmountOfSubUnit" ColumnName="AmountOfSubUnit" />
+          <ScalarProperty Name="AmountOfProductive" ColumnName="AmountOfProductive" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductiveState">
+      <EntityTypeMapping TypeName="TowzinModel.ProductiveState">
+        <MappingFragment StoreEntitySet="ProductiveState">
+          <ScalarProperty Name="LatinName" ColumnName="LatinName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Part_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_Part_Index">
+        <MappingFragment StoreEntitySet="VW_Part_Index">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="NatureName" ColumnName="NatureName" />
+          <ScalarProperty Name="WasteName" ColumnName="WasteName" />
+          <ScalarProperty Name="WastePartCode" ColumnName="WastePartCode" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="LatinName" ColumnName="LatinName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_PartFrame_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_PartFrame_Index">
+        <MappingFragment StoreEntitySet="VW_PartFrame_Index">
+          <ScalarProperty Name="FrameID" ColumnName="FrameID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FrameSerial" ColumnName="FrameSerial" />
+          <ScalarProperty Name="FrameName" ColumnName="FrameName" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_PartGroupMember_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_PartGroupMember_Index">
+        <MappingFragment StoreEntitySet="VW_PartGroupMember_Index">
+          <ScalarProperty Name="PartGroupID" ColumnName="PartGroupID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="NatureName" ColumnName="NatureName" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PartGroupName" ColumnName="PartGroupName" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_PartPackage_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_PartPackage_Index">
+        <MappingFragment StoreEntitySet="VW_PartPackage_Index">
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="CountOfDestribution" ColumnName="CountOfDestribution" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_PartPackageDetail">
+      <EntityTypeMapping TypeName="TowzinModel.VW_PartPackageDetail">
+        <MappingFragment StoreEntitySet="VW_PartPackageDetail">
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_PartSpecification_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_PartSpecification_Index">
+        <MappingFragment StoreEntitySet="VW_PartSpecification_Index">
+          <ScalarProperty Name="SpecificationID" ColumnName="SpecificationID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SpecificationName" ColumnName="SpecificationName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_ProductionLineTechnicalProblem_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_ProductionLineTechnicalProblem_Index">
+        <MappingFragment StoreEntitySet="VW_ProductionLineTechnicalProblem_Index">
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="TechnicalProblemID" ColumnName="TechnicalProblemID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SolutionTechnicalProblem" ColumnName="SolutionTechnicalProblem" />
+          <ScalarProperty Name="DescriptionTechnicalProblem" ColumnName="DescriptionTechnicalProblem" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="TechnicalProblemsName" ColumnName="TechnicalProblemsName" />
+          <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Productive_Stoppages_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_Productive_Stoppages_Index">
+        <MappingFragment StoreEntitySet="VW_Productive_Stoppages_Index">
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="StoppagesID" ColumnName="StoppagesID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="StoppagesName" ColumnName="StoppagesName" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_ProductiveDetails_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_ProductiveDetails_Index">
+        <MappingFragment StoreEntitySet="VW_ProductiveDetails_Index">
+          <ScalarProperty Name="LesionsName" ColumnName="LesionsName" />
+          <ScalarProperty Name="IOo" ColumnName="IOo" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="LesionID" ColumnName="LesionID" />
+          <ScalarProperty Name="Waste" ColumnName="Waste" />
+          <ScalarProperty Name="FormoulaNumber" ColumnName="FormoulaNumber" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ToOrderCodeID" ColumnName="ToOrderCodeID" />
+          <ScalarProperty Name="FromOrderCodeID" ColumnName="FromOrderCodeID" />
+          <ScalarProperty Name="IO" ColumnName="IO" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartPackage">
+      <EntityTypeMapping TypeName="TowzinModel.PartPackage">
+        <MappingFragment StoreEntitySet="PartPackage">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="CountOfDestribution" ColumnName="CountOfDestribution" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderStatus">
+      <EntityTypeMapping TypeName="TowzinModel.OrderStatus">
+        <MappingFragment StoreEntitySet="OrderStatus">
+          <ScalarProperty Name="StatusTitle" ColumnName="StatusTitle" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="TowzinModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="FrameID" ColumnName="FrameID" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="OrderCode" ColumnName="OrderCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Order_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_Order_Index">
+        <MappingFragment StoreEntitySet="VW_Order_Index">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RowMaterialAmont" ColumnName="RowMaterialAmont" />
+          <ScalarProperty Name="WasteAmont" ColumnName="WasteAmont" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AmountOfSubUnitID" ColumnName="AmountOfSubUnitID" />
+          <ScalarProperty Name="AmountOfProductive" ColumnName="AmountOfProductive" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FrameSerial" ColumnName="FrameSerial" />
+          <ScalarProperty Name="FrameName" ColumnName="FrameName" />
+          <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+          <ScalarProperty Name="StatusTitle" ColumnName="StatusTitle" />
+          <ScalarProperty Name="OrderCode" ColumnName="OrderCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

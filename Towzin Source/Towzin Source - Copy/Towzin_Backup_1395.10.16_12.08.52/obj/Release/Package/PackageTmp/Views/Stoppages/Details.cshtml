@@ -1,0 +1,50 @@
+﻿@model Towzin.Models.Stoppages
+
+@{
+    ViewBag.Title = "جزئیات";
+}
+
+<h2>جزئیات</h2>
+
+<div>
+    <h4>دلیل توقف</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span>عنوان</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoppagesName)
+        </dd>
+        <dt>
+            <span>عنوان لاتین</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoppagesLatinName)
+        </dd>
+
+
+        <dt>
+            <span>توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span>توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

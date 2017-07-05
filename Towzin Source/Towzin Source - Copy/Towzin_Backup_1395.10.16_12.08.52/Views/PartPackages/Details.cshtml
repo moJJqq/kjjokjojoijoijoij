@@ -1,0 +1,71 @@
+﻿@model Towzin.Models.PartPackage
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>جزییات</h2>
+
+<div>
+    <h4>بسته بندی کالا</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span>کالا</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Part.Name)
+        </dd>
+        <dt>
+            <span>بسته بندی</span>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Package.PackageName)
+        </dd>
+        <dt>
+            <span>تعداد توزین معادل یک بسته</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountOfDestribution)
+        </dd>
+
+        <dt>
+            <span>مقدار</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value)
+        </dd>
+
+        <dt>
+            <span>واحد سنجش</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit.UnitName)
+        </dd>
+
+        <dt>
+            <span>توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span>فعال</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { PartID = Model.PartID, PackageID = Model.PackageID ,UnitID=Model.UnitID}) |
+    @Html.ActionLink("برگشت به لیست", "Index")
+</p>

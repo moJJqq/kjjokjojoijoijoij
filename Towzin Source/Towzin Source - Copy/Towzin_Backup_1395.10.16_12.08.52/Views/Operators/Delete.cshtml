@@ -1,0 +1,57 @@
+﻿@model Towzin.Models.Operator
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+
+<h3>آیا از حذف این مورد مطمئن هستید؟</h3>
+<div>
+    <h4>اپراتور</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span class="control-label ">نام</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OperatorName)
+        </dd>
+
+        <dt>
+            <span class="control-label ">نام لاتین</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OperatorLatinName)
+        </dd>
+
+        <dt>
+            <span class="control-label ">توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span class="control-label ">فعال</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("بازگشت به لیست", "Index")
+        </div>
+    }
+</div>

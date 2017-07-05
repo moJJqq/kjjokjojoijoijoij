@@ -1,0 +1,125 @@
+﻿@model Towzin.Models.ProductiveDetails
+
+@{
+    ViewBag.Title = "Delete";
+}
+@{
+    ViewBag.Title = "حذف";
+}
+
+<h2>حذف</h2>
+
+<h3>آیا از حذف این مورد مطمئن هستید؟</h3>
+<div>
+    <h4>جزییات تولید</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            <span>شماره سفارش</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.OrderCode)
+        </dd>
+
+        <dt>
+            <span>کالا</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Part.Name)
+        </dd>
+
+        <dt>
+            <span>اپراتور</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operator.OperatorName)
+        </dd>
+
+        <dt>
+            <span>کانال</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductiveState.Name)
+        </dd>
+        <dt>
+            <span>از شماره سفارش</span>
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromOrderCodeID)
+        </dd>
+
+        <dt>
+            <span>به شماره سفارش</span>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ToOrderCodeID)
+        </dd>
+        <dt>
+            <span>شماره بچ</span>
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatchNumber)
+        </dd>
+
+        <dt>
+            <span>شماره فرمول</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FormoulaNumber)
+        </dd>
+
+        <dt>
+            <span>ضایعاتی؟</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Waste)
+        </dd>
+
+        <dt>
+            <span>دلیل ضایعات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lesion.LesionsName)
+        </dd>
+
+
+        <dt>
+            <span>مقدار</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            <span>فعال</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("بازگشت به لیست", "Index")
+        </div>
+    }
+</div>

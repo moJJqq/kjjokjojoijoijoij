@@ -1,0 +1,61 @@
+﻿@model Towzin.Models.PartSpecification
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>جزییات</h2>
+
+<div>
+    <h4>ویژگی کالا</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <span>کالا</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Part.Name)
+        </dd>
+
+        <dt>
+            <span>ویژگی</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Specification.SpecificationName)
+        </dd>
+
+
+        <dt>
+            <span>مقدار</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value)
+        </dd>
+
+        <dt>
+            <span>توضیحات</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            <span>فعال</span>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { PartID = Model.PartID, SpecificationID = Model.SpecificationID}) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

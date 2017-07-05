@@ -1,0 +1,110 @@
+﻿@model PagedList.IPagedList<Towzin.Models.VW_PartPackage_Index>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>بسته بندی کالا</h2>
+@using (Html.BeginForm("Index", "PartPackages", FormMethod.Get))
+{
+    <p>
+        @Html.TextBox("SearchString")
+        <input type="submit" value="جستجو" style="font-size:large" class="glyphicon-search" />
+
+    </p>
+}
+<h3>
+    <i style="font-family:W_nazanin" class="glyphicon glyphicon-plus gi-5x">
+        @Html.ActionLink("جدید", "Create")
+
+    </i>
+</h3>
+
+<div class="container">
+
+
+    <table class="table table-bordered">
+
+        <tr class="alert-success" style="font-size:large">
+            <th>
+                <b>ردیف</b>
+            </th>
+
+            <th>
+                <b> @Html.ActionLink("عنوان کالا", "Index", new { sortOrder = ViewBag.T1SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("کد کالا", "Index", new { sortOrder = ViewBag.T2SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("عنوان بسته بندی ", "Index", new { sortOrder = ViewBag.T3SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("تعداد توزین معادل یک بسته", "Index", new { sortOrder = ViewBag.T4SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("مقدار", "Index", new { sortOrder = ViewBag.T5SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("واحد سنجش ", "Index", new { sortOrder = ViewBag.T6SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("توضیحات", "Index", new { sortOrder = ViewBag.T7SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th>
+                <b> @Html.ActionLink("فعال", "Index", new { sortOrder = ViewBag.T8SortParm, currentFilter = ViewBag.CurrentFilter })</b>
+            </th>
+            <th></th>
+        </tr>
+
+        @{int rownumber = 0;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @{ rownumber++;}
+                    @rownumber
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PartCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PackageName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CountOfDestribution)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Value)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+
+                <td>
+                    @Html.ActionLink("ویرایش", "Edit", new { PartID = item.PartID, PackageID = item.PackageID,UnitID=item.UnitID }) |
+                    @Html.ActionLink("جزییات", "Details", new { PartID = item.PartID, PackageID = item.PackageID, UnitID = item.UnitID }) |
+                    @Html.ActionLink("حذف", "Delete", new { PartID = item.PartID, PackageID = item.PackageID, UnitID = item.UnitID })
+                </td>
+            </tr>
+                        }
+
+    </table>
+</div>
+<br />
+    صفحه @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) از @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

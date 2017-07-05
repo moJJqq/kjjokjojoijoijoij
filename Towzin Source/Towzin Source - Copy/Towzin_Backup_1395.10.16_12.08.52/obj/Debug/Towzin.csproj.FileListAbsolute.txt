@@ -1,0 +1,365 @@
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\ApplicationInsights.config
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\csc.exe
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\System.Collections.Immutable.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\vbc.exe
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\VBCSCompiler.exe
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\roslyn\VBCSCompiler.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Towzin.dll.config
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Towzin.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Towzin.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Antlr3.Runtime.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.Web.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.WindowsServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.ApplicationInsights.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Google.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Web.Infrastructure.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Newtonsoft.Json.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Owin.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Helpers.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Mvc.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Optimization.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Razor.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.WebPages.Deployment.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.WebPages.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.WebPages.Razor.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\WebGrease.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.Web.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AI.WindowsServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.ApplicationInsights.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Helpers.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Mvc.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Optimization.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.Razor.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.WebPages.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.WebPages.Deployment.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\System.Web.WebPages.Razor.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Antlr3.Runtime.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Newtonsoft.Json.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Google.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\obj\Debug\Towzin.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\obj\Debug\Towzin.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\obj\Debug\Towzin.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\PagedList.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\PagedList.Mvc.dll
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\PagedList.xml
+c:\users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\bin\PagedList.Mvc.xml
+D:\Towzin\Towzin\obj\Debug\Towzin.csprojResolveAssemblyReference.cache
+D:\Towzin\Towzin\obj\Debug\Towzin.dll
+D:\Towzin\Towzin\obj\Debug\Towzin.pdb
+D:\Towzin\Towzin\bin\ApplicationInsights.config
+D:\Towzin\Towzin\bin\roslyn\csc.exe
+D:\Towzin\Towzin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Towzin\Towzin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Towzin\Towzin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Towzin\Towzin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Towzin\Towzin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Towzin\Towzin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Towzin\Towzin\bin\roslyn\System.Collections.Immutable.dll
+D:\Towzin\Towzin\bin\roslyn\System.Reflection.Metadata.dll
+D:\Towzin\Towzin\bin\roslyn\vbc.exe
+D:\Towzin\Towzin\bin\roslyn\VBCSCompiler.exe
+D:\Towzin\Towzin\bin\roslyn\VBCSCompiler.exe.config
+D:\Towzin\Towzin\bin\Towzin.dll.config
+D:\Towzin\Towzin\bin\Towzin.dll
+D:\Towzin\Towzin\bin\Towzin.pdb
+D:\Towzin\Towzin\bin\Antlr3.Runtime.dll
+D:\Towzin\Towzin\bin\EntityFramework.dll
+D:\Towzin\Towzin\bin\EntityFramework.SqlServer.dll
+D:\Towzin\Towzin\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Towzin\Towzin\bin\Microsoft.AI.DependencyCollector.dll
+D:\Towzin\Towzin\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Towzin\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Towzin\Towzin\bin\Microsoft.AI.Web.dll
+D:\Towzin\Towzin\bin\Microsoft.AI.WindowsServer.dll
+D:\Towzin\Towzin\bin\Microsoft.ApplicationInsights.dll
+D:\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Towzin\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Towzin\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Google.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Towzin\Towzin\bin\Microsoft.Web.Infrastructure.dll
+D:\Towzin\Towzin\bin\Newtonsoft.Json.dll
+D:\Towzin\Towzin\bin\Owin.dll
+D:\Towzin\Towzin\bin\PagedList.dll
+D:\Towzin\Towzin\bin\PagedList.Mvc.dll
+D:\Towzin\Towzin\bin\System.Web.Helpers.dll
+D:\Towzin\Towzin\bin\System.Web.Mvc.dll
+D:\Towzin\Towzin\bin\System.Web.Optimization.dll
+D:\Towzin\Towzin\bin\System.Web.Razor.dll
+D:\Towzin\Towzin\bin\System.Web.WebPages.Deployment.dll
+D:\Towzin\Towzin\bin\System.Web.WebPages.dll
+D:\Towzin\Towzin\bin\System.Web.WebPages.Razor.dll
+D:\Towzin\Towzin\bin\WebGrease.dll
+D:\Towzin\Towzin\bin\Microsoft.AI.DependencyCollector.xml
+D:\Towzin\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Towzin\Towzin\bin\Microsoft.AI.Web.xml
+D:\Towzin\Towzin\bin\Microsoft.AI.WindowsServer.xml
+D:\Towzin\Towzin\bin\Microsoft.ApplicationInsights.xml
+D:\Towzin\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Towzin\Towzin\bin\PagedList.xml
+D:\Towzin\Towzin\bin\PagedList.Mvc.xml
+D:\Towzin\Towzin\bin\System.Web.Helpers.xml
+D:\Towzin\Towzin\bin\System.Web.Mvc.xml
+D:\Towzin\Towzin\bin\System.Web.Optimization.xml
+D:\Towzin\Towzin\bin\System.Web.Razor.xml
+D:\Towzin\Towzin\bin\System.Web.WebPages.xml
+D:\Towzin\Towzin\bin\System.Web.WebPages.Deployment.xml
+D:\Towzin\Towzin\bin\System.Web.WebPages.Razor.xml
+D:\Towzin\Towzin\bin\Antlr3.Runtime.pdb
+D:\Towzin\Towzin\bin\Newtonsoft.Json.xml
+D:\Towzin\Towzin\bin\EntityFramework.xml
+D:\Towzin\Towzin\bin\EntityFramework.SqlServer.xml
+D:\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Towzin\Towzin\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Towzin\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Google.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Towzin\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\ApplicationInsights.config
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\csc.exe
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\Microsoft.CSharp.Core.targets
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\System.Collections.Immutable.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\System.Reflection.Metadata.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\vbc.exe
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\VBCSCompiler.exe
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\roslyn\VBCSCompiler.exe.config
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Towzin.dll.config
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Towzin.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Towzin.pdb
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Antlr3.Runtime.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\EntityFramework.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.Agent.Intercept.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.DependencyCollector.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.PerfCounterCollector.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.Web.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.WindowsServer.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.ApplicationInsights.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AspNet.Identity.Core.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AspNet.Identity.Owin.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Cookies.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Facebook.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Google.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.OAuth.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Twitter.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Web.Infrastructure.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Newtonsoft.Json.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Owin.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\PagedList.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\PagedList.Mvc.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Helpers.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Mvc.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Optimization.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Razor.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.WebPages.Deployment.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.WebPages.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.WebPages.Razor.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\WebGrease.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.DependencyCollector.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.Web.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AI.WindowsServer.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.ApplicationInsights.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\PagedList.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\PagedList.Mvc.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Helpers.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Mvc.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Optimization.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.Razor.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.WebPages.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.WebPages.Deployment.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\System.Web.WebPages.Razor.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Antlr3.Runtime.pdb
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Newtonsoft.Json.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\EntityFramework.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AspNet.Identity.Core.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AspNet.Identity.Owin.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Facebook.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Cookies.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.OAuth.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Google.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.Twitter.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\Mac\Home\Desktop\Towzin Source\Towzin\obj\Debug\Towzin.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Towzin Source\Towzin\obj\Debug\Towzin.dll
+\\Mac\Home\Desktop\Towzin Source\Towzin\obj\Debug\Towzin.pdb
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\ApplicationInsights.config
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\csc.exe
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\Microsoft.CSharp.Core.targets
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\System.Collections.Immutable.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\System.Reflection.Metadata.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\vbc.exe
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\VBCSCompiler.exe
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\roslyn\VBCSCompiler.exe.config
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Towzin.dll.config
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Towzin.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Towzin.pdb
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Antlr3.Runtime.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\EntityFramework.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.Agent.Intercept.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.DependencyCollector.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.PerfCounterCollector.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.Web.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.WindowsServer.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.ApplicationInsights.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AspNet.Identity.Core.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AspNet.Identity.Owin.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Cookies.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Facebook.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Google.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.OAuth.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Twitter.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Web.Infrastructure.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Newtonsoft.Json.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Owin.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\PagedList.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\PagedList.Mvc.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Helpers.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Mvc.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Optimization.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Razor.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.WebPages.Deployment.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.WebPages.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.WebPages.Razor.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\WebGrease.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.DependencyCollector.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.Web.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AI.WindowsServer.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.ApplicationInsights.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\PagedList.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\PagedList.Mvc.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Helpers.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Mvc.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Optimization.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.Razor.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.WebPages.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.WebPages.Deployment.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\System.Web.WebPages.Razor.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Antlr3.Runtime.pdb
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Newtonsoft.Json.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\EntityFramework.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AspNet.Identity.Core.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AspNet.Identity.Owin.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Facebook.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Cookies.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.OAuth.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Google.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.Twitter.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\obj\Debug\Towzin.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\obj\Debug\Towzin.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\obj\Debug\Towzin.pdb
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Kendo.Mvc.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\Kendo.Mvc.xml
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\bg-BG\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\cs-CZ\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\da-DK\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\de-DE\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\es-ES\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\fr-CA\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\fr-FR\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\it-IT\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\nl-NL\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\pl-PL\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\pt-BR\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\pt-PT\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\ro-RO\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\ru-RU\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\sk-SK\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\sv-SE\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\tr-TR\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\uk-UA\Kendo.Mvc.resources.dll
+\\Mac\Home\Desktop\Towzin Source - Copy\Towzin\bin\zh-CN\Kendo.Mvc.resources.dll
