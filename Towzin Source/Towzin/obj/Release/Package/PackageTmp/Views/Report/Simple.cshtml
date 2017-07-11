@@ -1,0 +1,23 @@
+﻿@using System.Web.UI.WebControls;
+@using Stimulsoft.Report.Mvc;
+@{
+    ViewBag.Title = "Simple";
+}
+
+<div>
+
+    @Html.Stimulsoft().RenderMvcViewerScripts()
+    @Html.Stimulsoft().StiMvcViewer("MyViewr", new StiMvcViewerOptions()
+
+   {
+       ActionGetReportSnapshot = "FromLoadFileReport",
+       ActionViewerEvent = "ViewerEvent",
+       Width = Unit.Percentage(100),
+       Theme = StiTheme.Office2010,
+       ActionPrintReport = "PrintReport",
+       ActionExportReport = "ExportReport",
+       ToolbarBackgroundColor = System.Drawing.Color.Silver,
+
+   })
+</div>
+

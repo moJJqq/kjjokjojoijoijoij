@@ -1,0 +1,2857 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="2">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionStringEncrypted>5dDdLUYMu6RieO3sZBjrd8Nwz2NhbKmkbBPogGNMpBv2apVITQVLqGpM0fRhBfZeysjd6sUJQu1/Qe3sSRikQ5BY9ytEClGMRlu58ORsJT/TWtljS13TWX8Z0MnqTOESiVzhSOYY84z1X9HYaYRi</ConnectionStringEncrypted>
+        <Name>Connection</Name>
+      </Connection>
+      <Connection Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionStringEncrypted>5dDdLUYMu6RieO3sZBjrd8Nwz2NhbKmkbBPogGNMpBv2apVITQVLqGpM0fRhBfZeysjd6sUJQu1/Qe3sSRikQ5BY9ytEClGMRlu58ORsJT/TWtljS13TWX8Z0MnqTOESiVzhSOYY84z1X9HYaYRi</ConnectionStringEncrypted>
+        <Name>Connection</Name>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="5">
+      <VW_Order_Index Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>VW_Order_Index</Alias>
+        <Columns isList="true" count="19">
+          <value>State,System.Boolean</value>
+          <value>Creator,System.String</value>
+          <value>AddDate,System.DateTime</value>
+          <value>LastModifier,System.String</value>
+          <value>LastModificationDate,System.DateTime</value>
+          <value>ID,System.Int64</value>
+          <value>OrderCode,System.Int64</value>
+          <value>StatusTitle,System.String</value>
+          <value>ProductionLineName,System.String</value>
+          <value>FrameName,System.String</value>
+          <value>FrameSerial,System.String</value>
+          <value>StartDate,System.String</value>
+          <value>EndDate,System.String</value>
+          <value>AmountOfProductive,System.Double</value>
+          <value>AmountOfSubUnitID,System.Int64</value>
+          <value>Amount,System.Double</value>
+          <value>WasteAmont,System.Double</value>
+          <value>RowMaterialAmont,System.Double</value>
+          <value>Description,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>VW_Order_Index</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from VW_Order_Index</SqlCommand>
+      </VW_Order_Index>
+      <VW_ProductiveDetails_Index Ref="5" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>VW_ProductiveDetails_Index</Alias>
+        <Columns isList="true" count="26">
+          <value>Amount,System.Double</value>
+          <value>State,System.Boolean</value>
+          <value>Creator,System.String</value>
+          <value>Waste,System.Boolean</value>
+          <value>ProductionLineName,System.String</value>
+          <value>Expr2,System.Int64</value>
+          <value>WasteType,System.String</value>
+          <value>OrderCodeID,System.Int64</value>
+          <value>AddDate,System.DateTime</value>
+          <value>LastModifier,System.String</value>
+          <value>LastModificationDate,System.DateTime</value>
+          <value>ID,System.Int64</value>
+          <value>PartID,System.Int64</value>
+          <value>OperatorID,System.Int64</value>
+          <value>IOo,System.Boolean</value>
+          <value>LesionsName,System.String</value>
+          <value>PartCode,System.String</value>
+          <value>Name,System.String</value>
+          <value>OperatorName,System.String</value>
+          <value>IO,System.String</value>
+          <value>FromOrderCodeID,System.Int64</value>
+          <value>ToOrderCodeID,System.Int64</value>
+          <value>BatchNumber,System.String</value>
+          <value>FormoulaNumber,System.String</value>
+          <value>LesionID,System.Int64</value>
+          <value>AddDateShamsi,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>VW_ProductiveDetails_Index</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from VW_ProductiveDetails_Index</SqlCommand>
+      </VW_ProductiveDetails_Index>
+      <VW_ProductiveDetails_Index2 Ref="6" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>VW_ProductiveDetails_Index2</Alias>
+        <Columns isList="true" count="26">
+          <value>Amount,System.Double</value>
+          <value>State,System.Boolean</value>
+          <value>Creator,System.String</value>
+          <value>Waste,System.Boolean</value>
+          <value>ProductionLineName,System.String</value>
+          <value>Expr2,System.Int64</value>
+          <value>WasteType,System.String</value>
+          <value>OrderCodeID,System.Int64</value>
+          <value>AddDate,System.DateTime</value>
+          <value>LastModifier,System.String</value>
+          <value>LastModificationDate,System.DateTime</value>
+          <value>ID,System.Int64</value>
+          <value>PartID,System.Int64</value>
+          <value>OperatorID,System.Int64</value>
+          <value>IOo,System.Boolean</value>
+          <value>LesionsName,System.String</value>
+          <value>PartCode,System.String</value>
+          <value>Name,System.String</value>
+          <value>OperatorName,System.String</value>
+          <value>IO,System.String</value>
+          <value>FromOrderCodeID,System.Int64</value>
+          <value>ToOrderCodeID,System.Int64</value>
+          <value>BatchNumber,System.String</value>
+          <value>FormoulaNumber,System.String</value>
+          <value>LesionID,System.Int64</value>
+          <value>AddDateShamsi,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>VW_ProductiveDetails_Index2</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from VW_ProductiveDetails_Index</SqlCommand>
+      </VW_ProductiveDetails_Index2>
+      <VW_ProductiveDetails_Index3 Ref="7" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>VW_ProductiveDetails_Index3</Alias>
+        <Columns isList="true" count="27">
+          <value>Amount,System.Double</value>
+          <value>State,System.Boolean</value>
+          <value>Creator,System.String</value>
+          <value>Waste,System.Boolean</value>
+          <value>ProductionLineName,System.String</value>
+          <value>Expr2,System.Int64</value>
+          <value>WasteType,System.String</value>
+          <value>OrderCodeID,System.Int64</value>
+          <value>AddDate,System.DateTime</value>
+          <value>LastModifier,System.String</value>
+          <value>LastModificationDate,System.DateTime</value>
+          <value>ID,System.Int64</value>
+          <value>PartID,System.Int64</value>
+          <value>OperatorID,System.Int64</value>
+          <value>IOo,System.Boolean</value>
+          <value>LesionsName,System.String</value>
+          <value>PartCode,System.String</value>
+          <value>Name,System.String</value>
+          <value>OperatorName,System.String</value>
+          <value>IO,System.String</value>
+          <value>FromOrderCodeID,System.Int64</value>
+          <value>ToOrderCodeID,System.Int64</value>
+          <value>BatchNumber,System.String</value>
+          <value>FormoulaNumber,System.String</value>
+          <value>Amount1,System.Double</value>
+          <value>LesionID,System.Int64</value>
+          <value>AddDateShamsi,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>VW_ProductiveDetails_Index3</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from VW_ProductiveDetails_Index</SqlCommand>
+      </VW_ProductiveDetails_Index3>
+      <VW_ProductiveDetails_Index4 Ref="8" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>VW_ProductiveDetails_Index4</Alias>
+        <Columns isList="true" count="27">
+          <value>Amount,System.Double</value>
+          <value>State,System.Boolean</value>
+          <value>Creator,System.String</value>
+          <value>Waste,System.Boolean</value>
+          <value>ProductionLineName,System.String</value>
+          <value>Expr2,System.Int64</value>
+          <value>WasteType,System.String</value>
+          <value>OrderCodeID,System.Int64</value>
+          <value>AddDate,System.DateTime</value>
+          <value>LastModifier,System.String</value>
+          <value>LastModificationDate,System.DateTime</value>
+          <value>ID,System.Int64</value>
+          <value>PartID,System.Int64</value>
+          <value>OperatorID,System.Int64</value>
+          <value>IOo,System.Boolean</value>
+          <value>LesionsName,System.String</value>
+          <value>PartCode,System.String</value>
+          <value>Name,System.String</value>
+          <value>OperatorName,System.String</value>
+          <value>IO,System.String</value>
+          <value>FromOrderCodeID,System.Int64</value>
+          <value>ToOrderCodeID,System.Int64</value>
+          <value>BatchNumber,System.String</value>
+          <value>FormoulaNumber,System.String</value>
+          <value>Amount1,System.Double</value>
+          <value>LesionID,System.Int64</value>
+          <value>AddDateShamsi,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>VW_ProductiveDetails_Index4</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from VW_ProductiveDetails_Index</SqlCommand>
+      </VW_ProductiveDetails_Index4>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="1">
+      <value>,OrderCode,OrderCode,System.Int64,_x0036_1323,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="9" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <Panel1 Ref="10" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.3,1.2,7,3.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <CrossTab1 Ref="11" type="Stimulsoft.Report.CrossTab.StiCrossTab" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.5,0.5,6.4,2.6</ClientRectangle>
+              <Components isList="true" count="23">
+                <CrossTab1_SumHeader1 Ref="12" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>3.2,0.44,0.1,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>64fbc44698834fea8f8f066905d52a97</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_SumHeader1</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>1</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                </CrossTab1_SumHeader1>
+                <CrossTab1_SumHeader2 Ref="13" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>3.2,0.64,0.1,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>8d07f9bdea6d44daa8135b20139f0857</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_SumHeader2</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>2</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                </CrossTab1_SumHeader2>
+                <CrossTab1_RowTotal1 Ref="14" type="CrossRowTotal" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>0,2.44,3.3,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>7e79379349fb4712b205814de4800cf6</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_RowTotal1</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>جمع کل سفارش ها</Text>
+                  <TextBrush>Black</TextBrush>
+                </CrossTab1_RowTotal1>
+                <CrossTab1_Row1_Title Ref="15" type="CrossTitle" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,0.22,0.7,0.2</ClientRectangle>
+                  <Font>Arial,8</Font>
+                  <Guid>f386485dd94e4d0fbfad007fe5231ae0</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row1_Title</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>کد سفارش</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TypeOfComponent>Row:CrossTab1_Row1</TypeOfComponent>
+                </CrossTab1_Row1_Title>
+                <CrossTab1_RowTotal2 Ref="16" type="CrossRowTotal" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>0.7,2.04,2.6,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>552037cea19e44ffac7e0f8d6d53b896</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_RowTotal2</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>جمع خطوط تولید</Text>
+                  <TextBrush>Black</TextBrush>
+                </CrossTab1_RowTotal2>
+                <CrossTab1_Row2_Title Ref="17" type="CrossTitle" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>0.7,0.22,1.1,0.2</ClientRectangle>
+                  <Font>Arial,8</Font>
+                  <Guid>cf4ba192bea749a38d9e42670689d069</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row2_Title</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>خط تولید</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TypeOfComponent>Row:CrossTab1_Row2</TypeOfComponent>
+                </CrossTab1_Row2_Title>
+                <CrossTab1_RowTotal3 Ref="18" type="CrossRowTotal" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>1.8,1.64,1.5,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>f5fc505355f8457dbd80767a6fa48964</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_RowTotal3</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>جمع وروردی/خروجی</Text>
+                  <TextBrush>Black</TextBrush>
+                </CrossTab1_RowTotal3>
+                <CrossTab1_Row3_Title Ref="19" type="CrossTitle" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>1.8,0.22,0.2,0.2</ClientRectangle>
+                  <Font>Arial,8</Font>
+                  <Guid>93a4676832a449a1b06a1daddf35a58e</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row3_Title</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>IO</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TypeOfComponent>Row:CrossTab1_Row3</TypeOfComponent>
+                </CrossTab1_Row3_Title>
+                <CrossTab1_RowTotal4 Ref="20" type="CrossRowTotal" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>2,1.24,1.3,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>2c446e43fceb4eadaf412b776f50b2ab</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_RowTotal4</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>جمع محصول/ضایعات</Text>
+                  <TextBrush>Black</TextBrush>
+                </CrossTab1_RowTotal4>
+                <CrossTab1_Row4_Title Ref="21" type="CrossTitle" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>2,0.22,0.7,0.2</ClientRectangle>
+                  <Font>Arial,8</Font>
+                  <Guid>e55417ad34a1458587fb8313f3985e4c</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row4_Title</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>محصول/ضایعات</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TypeOfComponent>Row:CrossTab1_Row4</TypeOfComponent>
+                </CrossTab1_Row4_Title>
+                <CrossTab1_RowTotal5 Ref="22" type="CrossRowTotal" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>2.7,0.84,0.6,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>1f251b7d0555406fb0c79b4dbb9da754</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_RowTotal5</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>جمع ردیف ها</Text>
+                  <TextBrush>Black</TextBrush>
+                </CrossTab1_RowTotal5>
+                <CrossTab1_Row5_Title Ref="23" type="CrossTitle" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>2.7,0.22,0.6,0.2</ClientRectangle>
+                  <Font>Arial,8</Font>
+                  <Guid>7b7938b7723a47559c02f36b83a9f404</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row5_Title</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>کد کالا</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TypeOfComponent>Row:CrossTab1_Row5</TypeOfComponent>
+                </CrossTab1_Row5_Title>
+                <CrossTab1_ColTotal1 Ref="24" type="CrossColumnTotal" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>4.02,0.22,0.3,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>e3a225075eae48b0a8d79bd0327313ea</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_ColTotal1</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>Total</Text>
+                  <TextBrush>Black</TextBrush>
+                </CrossTab1_ColTotal1>
+                <CrossTab1_LeftTitle Ref="25" type="CrossTitle" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,0,3.3,0.2</ClientRectangle>
+                  <Font>Arial,8</Font>
+                  <Guid>a5c238ca2f3f49eeb7c64d69326f8b99</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_LeftTitle</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>جزئیات سفارش</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TypeOfComponent>LeftTitle</TypeOfComponent>
+                </CrossTab1_LeftTitle>
+                <CrossTab1_RightTitle Ref="26" type="CrossTitle" isKey="true">
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>3.32,0,1,0.2</ClientRectangle>
+                  <Font>Arial,8</Font>
+                  <Guid>9cacc21cfa104edf8d006165aebbbe53</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_RightTitle</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TypeOfComponent>RightTitle</TypeOfComponent>
+                </CrossTab1_RightTitle>
+                <CrossTab1_Row1 Ref="27" type="CrossRow" isKey="true">
+                  <Alias>OrderCodeID</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,0.44,0.7,2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DisplayValue>{VW_ProductiveDetails_Index4.OrderCodeID}</DisplayValue>
+                  <Font>Arial,8</Font>
+                  <Guid>5c736ead0b1d4d19a29ac8acaf710264</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row1</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>OrderCodeID</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TotalGuid>7e79379349fb4712b205814de4800cf6</TotalGuid>
+                  <Value>{VW_ProductiveDetails_Index4.OrderCodeID}</Value>
+                </CrossTab1_Row1>
+                <CrossTab1_Row2 Ref="28" type="CrossRow" isKey="true">
+                  <Alias>ProductionLineName</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>0.7,0.44,1.1,1.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DisplayValue>{VW_ProductiveDetails_Index4.ProductionLineName}</DisplayValue>
+                  <Font>Arial,8</Font>
+                  <Guid>47f39038aaaa4c508c45fb17eba982b3</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row2</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>ProductionLineName</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TotalGuid>552037cea19e44ffac7e0f8d6d53b896</TotalGuid>
+                  <Value>{VW_ProductiveDetails_Index4.ProductionLineName}</Value>
+                </CrossTab1_Row2>
+                <CrossTab1_Row3 Ref="29" type="CrossRow" isKey="true">
+                  <Alias>IO</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>1.8,0.44,0.2,1.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DisplayValue>{VW_ProductiveDetails_Index4.IO}</DisplayValue>
+                  <Font>Arial,8</Font>
+                  <Guid>e8af8c728c06440487303f609ab5abf7</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row3</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>IO</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TotalGuid>f5fc505355f8457dbd80767a6fa48964</TotalGuid>
+                  <Value>{VW_ProductiveDetails_Index4.IO}</Value>
+                </CrossTab1_Row3>
+                <CrossTab1_Row4 Ref="30" type="CrossRow" isKey="true">
+                  <Alias>WasteType</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>2,0.44,0.7,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DisplayValue>{VW_ProductiveDetails_Index4.WasteType}</DisplayValue>
+                  <Font>Arial,8</Font>
+                  <Guid>349846124d634d4abd2ee4ee3b38b535</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row4</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>WasteType</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TotalGuid>2c446e43fceb4eadaf412b776f50b2ab</TotalGuid>
+                  <Value>{VW_ProductiveDetails_Index4.WasteType}</Value>
+                </CrossTab1_Row4>
+                <CrossTab1_Row5 Ref="31" type="CrossRow" isKey="true">
+                  <Alias>PartCode</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>2.7,0.44,0.5,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DisplayValue>{VW_ProductiveDetails_Index4.PartCode}</DisplayValue>
+                  <Font>Arial,8</Font>
+                  <Guid>46d0d06fb35b4355b96233a3d1e7c97c</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Row5</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>PartCode</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TotalGuid>1f251b7d0555406fb0c79b4dbb9da754</TotalGuid>
+                  <Value>{VW_ProductiveDetails_Index4.PartCode}</Value>
+                </CrossTab1_Row5>
+                <CrossTab1_Column1 Ref="32" type="CrossColumn" isKey="true">
+                  <Alias>WasteType</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>White</Brush>
+                  <ClientRectangle>3.32,0.22,0.7,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DisplayValue>{VW_ProductiveDetails_Index4.WasteType}</DisplayValue>
+                  <Font>Arial,8</Font>
+                  <Guid>fde96dcc218d499686abc5611e48ab77</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Column1</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>WasteType</Text>
+                  <TextBrush>[105:105:105]</TextBrush>
+                  <TotalGuid>e3a225075eae48b0a8d79bd0327313ea</TotalGuid>
+                  <Value>{VW_ProductiveDetails_Index4.WasteType}</Value>
+                </CrossTab1_Column1>
+                <CrossTab1_Sum1 Ref="33" type="CrossSummary" isKey="true">
+                  <Alias>Amount</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>3.32,0.44,0.7,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>c59c480aeb394f528147975a02ad3dad</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Sum1</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>0</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Value>{VW_ProductiveDetails_Index4.Amount}</Value>
+                </CrossTab1_Sum1>
+                <CrossTab1_Sum2 Ref="34" type="CrossSummary" isKey="true">
+                  <Alias>Amount1</Alias>
+                  <Border>All;[155:155:155];1;Solid;False;4;Black</Border>
+                  <Brush>[255:255:255]</Brush>
+                  <ClientRectangle>3.32,0.64,0.7,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,8</Font>
+                  <Guid>44921f91ccee4140a6e860d2862a55cf</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>CrossTab1_Sum2</Name>
+                  <Page isRef="9" />
+                  <Parent isRef="11" />
+                  <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+                  <Text>0</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Value>{VW_ProductiveDetails_Index4.Amount1}</Value>
+                </CrossTab1_Sum2>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DataSourceName>VW_ProductiveDetails_Index4</DataSourceName>
+              <EmptyValue />
+              <Filters isList="true" count="1">
+                <value>_x007B_VW_ProductiveDetails_Index4.OrderCodeID_x003D__x003D_OrderCode_x007D_</value>
+              </Filters>
+              <Name>CrossTab1</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Sort isList="true" count="0" />
+            </CrossTab1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Panel1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </Panel1>
+        <ReportTitleBand Ref="35" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,0.7</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,7.72,0.7</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,36,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text</Name>
+              <Page isRef="9" />
+              <Parent isRef="35" />
+              <Text>جزئیات سفارشها</Text>
+              <TextBrush>SaddleBrown</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </ReportTitleBand>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>bbde433c3dae43aea4631b8c84b57340</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="37" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="38" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>7/9/2017 11:32:25 AM</ReportChanged>
+  <ReportCreated>7/8/2017 6:23:08 PM</ReportCreated>
+  <ReportFile>C:\Users\Administrator\Desktop\OrderSummery.mrt</ReportFile>
+  <ReportGuid>a2f072635c734c76953aa7f4ab3b1e59</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2013.1.1505</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        public long OrderCode;
+        public Stimulsoft.Report.Components.StiPage Page1;
+        public Stimulsoft.Report.Components.StiPanel Panel1;
+        public Stimulsoft.Report.CrossTab.StiCrossTab CrossTab1;
+        public Stimulsoft.Report.CrossTab.StiCrossSummaryHeader CrossTab1_SumHeader1;
+        public Stimulsoft.Report.CrossTab.StiCrossSummaryHeader CrossTab1_SumHeader2;
+        public Stimulsoft.Report.CrossTab.StiCrossRowTotal CrossTab1_RowTotal1;
+        public Stimulsoft.Report.CrossTab.StiCrossTitle CrossTab1_Row1_Title;
+        public Stimulsoft.Report.CrossTab.StiCrossRowTotal CrossTab1_RowTotal2;
+        public Stimulsoft.Report.CrossTab.StiCrossTitle CrossTab1_Row2_Title;
+        public Stimulsoft.Report.CrossTab.StiCrossRowTotal CrossTab1_RowTotal3;
+        public Stimulsoft.Report.CrossTab.StiCrossTitle CrossTab1_Row3_Title;
+        public Stimulsoft.Report.CrossTab.StiCrossRowTotal CrossTab1_RowTotal4;
+        public Stimulsoft.Report.CrossTab.StiCrossTitle CrossTab1_Row4_Title;
+        public Stimulsoft.Report.CrossTab.StiCrossRowTotal CrossTab1_RowTotal5;
+        public Stimulsoft.Report.CrossTab.StiCrossTitle CrossTab1_Row5_Title;
+        public Stimulsoft.Report.CrossTab.StiCrossColumnTotal CrossTab1_ColTotal1;
+        public Stimulsoft.Report.CrossTab.StiCrossTitle CrossTab1_LeftTitle;
+        public Stimulsoft.Report.CrossTab.StiCrossTitle CrossTab1_RightTitle;
+        public Stimulsoft.Report.CrossTab.StiCrossRow CrossTab1_Row1;
+        public Stimulsoft.Report.CrossTab.StiCrossRow CrossTab1_Row2;
+        public Stimulsoft.Report.CrossTab.StiCrossRow CrossTab1_Row3;
+        public Stimulsoft.Report.CrossTab.StiCrossRow CrossTab1_Row4;
+        public Stimulsoft.Report.CrossTab.StiCrossRow CrossTab1_Row5;
+        public Stimulsoft.Report.CrossTab.StiCrossColumn CrossTab1_Column1;
+        public Stimulsoft.Report.CrossTab.StiCrossSummary CrossTab1_Sum1;
+        public Stimulsoft.Report.CrossTab.StiCrossSummary CrossTab1_Sum2;
+        public Stimulsoft.Report.Components.StiReportTitleBand ReportTitleBand;
+        public Stimulsoft.Report.Components.StiText Text;
+        public Stimulsoft.Report.Components.StiWatermark Page1_Watermark;
+        public Stimulsoft.Report.Print.StiPrinterSettings Report_PrinterSettings;
+        public VW_Order_IndexDataSource VW_Order_Index;
+        public VW_ProductiveDetails_IndexDataSource VW_ProductiveDetails_Index;
+        public VW_ProductiveDetails_Index2DataSource VW_ProductiveDetails_Index2;
+        public VW_ProductiveDetails_Index3DataSource VW_ProductiveDetails_Index3;
+        public VW_ProductiveDetails_Index4DataSource VW_ProductiveDetails_Index4;
+        
+        public void CrossTab1__GetFilter(object sender, Stimulsoft.Report.Events.StiFilterEventArgs e)
+        {
+            e.Value = IIF(VW_ProductiveDetails_Index4.OrderCodeID=OrderCode,VW_ProductiveDetails_Index4.OrderCodeID,VW_ProductiveDetails_Index4.OrderCodeID);
+        }
+        
+        public void CrossTab1_SumHeader1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "1";
+        }
+        
+        public void CrossTab1_SumHeader2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "2";
+        }
+        
+        public void CrossTab1_RowTotal1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "جمع کل سفارش ها";
+        }
+        
+        public void CrossTab1_Row1_Title__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "کد سفارش";
+        }
+        
+        public void CrossTab1_RowTotal2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "جمع خطوط تولید";
+        }
+        
+        public void CrossTab1_Row2_Title__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "خط تولید";
+        }
+        
+        public void CrossTab1_RowTotal3__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "جمع وروردی/خروجی";
+        }
+        
+        public void CrossTab1_Row3_Title__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "IO";
+        }
+        
+        public void CrossTab1_RowTotal4__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "جمع محصول/ضایعات";
+        }
+        
+        public void CrossTab1_Row4_Title__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "محصول/ضایعات";
+        }
+        
+        public void CrossTab1_RowTotal5__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "جمع ردیف ها";
+        }
+        
+        public void CrossTab1_Row5_Title__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "کد کالا";
+        }
+        
+        public void CrossTab1_ColTotal1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Total";
+        }
+        
+        public void CrossTab1_LeftTitle__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "جزئیات سفارش";
+        }
+        
+        public void CrossTab1_Row1__GetDisplayCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.OrderCodeID;
+        }
+        
+        public void CrossTab1_Row1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "OrderCodeID";
+        }
+        
+        public void CrossTab1_Row1__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.OrderCodeID;
+        }
+        
+        public void CrossTab1_Row2__GetDisplayCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.ProductionLineName;
+        }
+        
+        public void CrossTab1_Row2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "ProductionLineName";
+        }
+        
+        public void CrossTab1_Row2__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.ProductionLineName;
+        }
+        
+        public void CrossTab1_Row3__GetDisplayCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.IO;
+        }
+        
+        public void CrossTab1_Row3__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "IO";
+        }
+        
+        public void CrossTab1_Row3__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.IO;
+        }
+        
+        public void CrossTab1_Row4__GetDisplayCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.WasteType;
+        }
+        
+        public void CrossTab1_Row4__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "WasteType";
+        }
+        
+        public void CrossTab1_Row4__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.WasteType;
+        }
+        
+        public void CrossTab1_Row5__GetDisplayCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.PartCode;
+        }
+        
+        public void CrossTab1_Row5__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "PartCode";
+        }
+        
+        public void CrossTab1_Row5__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.PartCode;
+        }
+        
+        public void CrossTab1_Column1__GetDisplayCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.WasteType;
+        }
+        
+        public void CrossTab1_Column1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "WasteType";
+        }
+        
+        public void CrossTab1_Column1__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.WasteType;
+        }
+        
+        public void CrossTab1_Sum1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "0";
+        }
+        
+        public void CrossTab1_Sum1__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.Amount;
+        }
+        
+        public void CrossTab1_Sum2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "0";
+        }
+        
+        public void CrossTab1_Sum2__GetCrossValue(object sender, Stimulsoft.Report.CrossTab.StiGetCrossValueEventArgs e)
+        {
+            e.Value = VW_ProductiveDetails_Index4.Amount1;
+        }
+        
+        public void Text__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "جزئیات سفارشها";
+        }
+        
+        private void InitializeComponent()
+        {
+            this.VW_ProductiveDetails_Index4 = new VW_ProductiveDetails_Index4DataSource();
+            this.VW_ProductiveDetails_Index3 = new VW_ProductiveDetails_Index3DataSource();
+            this.VW_ProductiveDetails_Index2 = new VW_ProductiveDetails_Index2DataSource();
+            this.VW_ProductiveDetails_Index = new VW_ProductiveDetails_IndexDataSource();
+            this.VW_Order_Index = new VW_Order_IndexDataSource();
+            this.Dictionary.Variables.Add(new Stimulsoft.Report.Dictionary.StiVariable("", "OrderCode", "OrderCode", "", typeof(long), "", false, Stimulsoft.Report.Dictionary.StiVariableInitBy.Value, false));
+            this.NeedsCompiling = false;
+            // 
+            // Variables init
+            // 
+            this.OrderCode = 0;
+            this.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            this.ReferencedAssemblies = new System.String[] {
+                    "System.Dll",
+                    "System.Drawing.Dll",
+                    "System.Windows.Forms.Dll",
+                    "System.Data.Dll",
+                    "System.Xml.Dll",
+                    "Stimulsoft.Controls.Dll",
+                    "Stimulsoft.Base.Dll",
+                    "Stimulsoft.Report.Dll"};
+            this.ReportAlias = "Report";
+            // 
+            // ReportChanged
+            // 
+            this.ReportChanged = new DateTime(2017, 7, 9, 10, 15, 7, 159);
+            // 
+            // ReportCreated
+            // 
+            this.ReportCreated = new DateTime(2017, 7, 8, 18, 23, 8, 0);
+            this.ReportFile = "C:\\Users\\Administrator\\Desktop\\OrderSummery.mrt";
+            this.ReportGuid = "a2dd3a1ca65a418e835c1b45d166461d";
+            this.ReportName = "Report";
+            this.ReportUnit = Stimulsoft.Report.StiReportUnitType.Inches;
+            this.ReportVersion = "2013.1.1505";
+            this.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            // 
+            // Page1
+            // 
+            this.Page1 = new Stimulsoft.Report.Components.StiPage();
+            this.Page1.Guid = "bbde433c3dae43aea4631b8c84b57340";
+            this.Page1.Name = "Page1";
+            this.Page1.PageHeight = 11;
+            this.Page1.PageWidth = 8.5;
+            this.Page1.PaperSize = System.Drawing.Printing.PaperKind.Letter;
+            this.Page1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 2, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Page1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // Panel1
+            // 
+            this.Panel1 = new Stimulsoft.Report.Components.StiPanel();
+            this.Panel1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0.3, 1.2, 7, 3.8);
+            this.Panel1.Name = "Panel1";
+            this.Panel1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Panel1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // CrossTab1
+            // 
+            this.CrossTab1 = new Stimulsoft.Report.CrossTab.StiCrossTab();
+            this.CrossTab1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0.5, 0.5, 6.4, 2.6);
+            this.CrossTab1.DataSourceName = "VW_ProductiveDetails_Index4";
+            this.CrossTab1.EmptyValue = "";
+            this.CrossTab1.Name = "CrossTab1";
+            this.CrossTab1.Sort = new System.String[0];
+            this.CrossTab1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // CrossTab1_SumHeader1
+            // 
+            this.CrossTab1_SumHeader1 = new Stimulsoft.Report.CrossTab.StiCrossSummaryHeader();
+            this.CrossTab1_SumHeader1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.2, 0.44, 0.1, 0.2);
+            this.CrossTab1_SumHeader1.Guid = "64fbc44698834fea8f8f066905d52a97";
+            this.CrossTab1_SumHeader1.Name = "CrossTab1_SumHeader1";
+            this.CrossTab1_SumHeader1.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_SumHeader1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_SumHeader1__GetValue);
+            this.CrossTab1_SumHeader1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_SumHeader1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_SumHeader1.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_SumHeader1.Indicator = null;
+            this.CrossTab1_SumHeader1.Interaction = null;
+            this.CrossTab1_SumHeader1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_SumHeader1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_SumHeader1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_SumHeader2
+            // 
+            this.CrossTab1_SumHeader2 = new Stimulsoft.Report.CrossTab.StiCrossSummaryHeader();
+            this.CrossTab1_SumHeader2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.2, 0.64, 0.1, 0.2);
+            this.CrossTab1_SumHeader2.Guid = "8d07f9bdea6d44daa8135b20139f0857";
+            this.CrossTab1_SumHeader2.Name = "CrossTab1_SumHeader2";
+            this.CrossTab1_SumHeader2.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_SumHeader2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_SumHeader2__GetValue);
+            this.CrossTab1_SumHeader2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_SumHeader2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_SumHeader2.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_SumHeader2.Indicator = null;
+            this.CrossTab1_SumHeader2.Interaction = null;
+            this.CrossTab1_SumHeader2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_SumHeader2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_SumHeader2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_RowTotal1
+            // 
+            this.CrossTab1_RowTotal1 = new Stimulsoft.Report.CrossTab.StiCrossRowTotal();
+            this.CrossTab1_RowTotal1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 2.44, 3.3, 0.4);
+            this.CrossTab1_RowTotal1.Guid = "7e79379349fb4712b205814de4800cf6";
+            this.CrossTab1_RowTotal1.Name = "CrossTab1_RowTotal1";
+            this.CrossTab1_RowTotal1.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_RowTotal1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_RowTotal1__GetValue);
+            this.CrossTab1_RowTotal1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_RowTotal1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_RowTotal1.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_RowTotal1.Indicator = null;
+            this.CrossTab1_RowTotal1.Interaction = null;
+            this.CrossTab1_RowTotal1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_RowTotal1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_RowTotal1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row1_Title
+            // 
+            this.CrossTab1_Row1_Title = new Stimulsoft.Report.CrossTab.StiCrossTitle();
+            this.CrossTab1_Row1_Title.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.22, 0.7, 0.2);
+            this.CrossTab1_Row1_Title.Guid = "f386485dd94e4d0fbfad007fe5231ae0";
+            this.CrossTab1_Row1_Title.Name = "CrossTab1_Row1_Title";
+            this.CrossTab1_Row1_Title.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row1_Title.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row1_Title__GetValue);
+            this.CrossTab1_Row1_Title.TypeOfComponent = "Row:CrossTab1_Row1";
+            this.CrossTab1_Row1_Title.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row1_Title.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row1_Title.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row1_Title.Indicator = null;
+            this.CrossTab1_Row1_Title.Interaction = null;
+            this.CrossTab1_Row1_Title.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row1_Title.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row1_Title.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_RowTotal2
+            // 
+            this.CrossTab1_RowTotal2 = new Stimulsoft.Report.CrossTab.StiCrossRowTotal();
+            this.CrossTab1_RowTotal2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0.7, 2.04, 2.6, 0.4);
+            this.CrossTab1_RowTotal2.Guid = "552037cea19e44ffac7e0f8d6d53b896";
+            this.CrossTab1_RowTotal2.Name = "CrossTab1_RowTotal2";
+            this.CrossTab1_RowTotal2.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_RowTotal2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_RowTotal2__GetValue);
+            this.CrossTab1_RowTotal2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_RowTotal2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_RowTotal2.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_RowTotal2.Indicator = null;
+            this.CrossTab1_RowTotal2.Interaction = null;
+            this.CrossTab1_RowTotal2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_RowTotal2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_RowTotal2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row2_Title
+            // 
+            this.CrossTab1_Row2_Title = new Stimulsoft.Report.CrossTab.StiCrossTitle();
+            this.CrossTab1_Row2_Title.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0.7, 0.22, 1.1, 0.2);
+            this.CrossTab1_Row2_Title.Guid = "cf4ba192bea749a38d9e42670689d069";
+            this.CrossTab1_Row2_Title.Name = "CrossTab1_Row2_Title";
+            this.CrossTab1_Row2_Title.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row2_Title.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row2_Title__GetValue);
+            this.CrossTab1_Row2_Title.TypeOfComponent = "Row:CrossTab1_Row2";
+            this.CrossTab1_Row2_Title.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row2_Title.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row2_Title.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row2_Title.Indicator = null;
+            this.CrossTab1_Row2_Title.Interaction = null;
+            this.CrossTab1_Row2_Title.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row2_Title.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row2_Title.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_RowTotal3
+            // 
+            this.CrossTab1_RowTotal3 = new Stimulsoft.Report.CrossTab.StiCrossRowTotal();
+            this.CrossTab1_RowTotal3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.8, 1.64, 1.5, 0.4);
+            this.CrossTab1_RowTotal3.Guid = "f5fc505355f8457dbd80767a6fa48964";
+            this.CrossTab1_RowTotal3.Name = "CrossTab1_RowTotal3";
+            this.CrossTab1_RowTotal3.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_RowTotal3.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_RowTotal3__GetValue);
+            this.CrossTab1_RowTotal3.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_RowTotal3.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_RowTotal3.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_RowTotal3.Indicator = null;
+            this.CrossTab1_RowTotal3.Interaction = null;
+            this.CrossTab1_RowTotal3.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_RowTotal3.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_RowTotal3.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row3_Title
+            // 
+            this.CrossTab1_Row3_Title = new Stimulsoft.Report.CrossTab.StiCrossTitle();
+            this.CrossTab1_Row3_Title.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.8, 0.22, 0.2, 0.2);
+            this.CrossTab1_Row3_Title.Guid = "93a4676832a449a1b06a1daddf35a58e";
+            this.CrossTab1_Row3_Title.Name = "CrossTab1_Row3_Title";
+            this.CrossTab1_Row3_Title.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row3_Title.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row3_Title__GetValue);
+            this.CrossTab1_Row3_Title.TypeOfComponent = "Row:CrossTab1_Row3";
+            this.CrossTab1_Row3_Title.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row3_Title.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row3_Title.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row3_Title.Indicator = null;
+            this.CrossTab1_Row3_Title.Interaction = null;
+            this.CrossTab1_Row3_Title.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row3_Title.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row3_Title.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_RowTotal4
+            // 
+            this.CrossTab1_RowTotal4 = new Stimulsoft.Report.CrossTab.StiCrossRowTotal();
+            this.CrossTab1_RowTotal4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2, 1.24, 1.3, 0.4);
+            this.CrossTab1_RowTotal4.Guid = "2c446e43fceb4eadaf412b776f50b2ab";
+            this.CrossTab1_RowTotal4.Name = "CrossTab1_RowTotal4";
+            this.CrossTab1_RowTotal4.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_RowTotal4.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_RowTotal4__GetValue);
+            this.CrossTab1_RowTotal4.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_RowTotal4.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_RowTotal4.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_RowTotal4.Indicator = null;
+            this.CrossTab1_RowTotal4.Interaction = null;
+            this.CrossTab1_RowTotal4.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_RowTotal4.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_RowTotal4.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row4_Title
+            // 
+            this.CrossTab1_Row4_Title = new Stimulsoft.Report.CrossTab.StiCrossTitle();
+            this.CrossTab1_Row4_Title.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2, 0.22, 0.7, 0.2);
+            this.CrossTab1_Row4_Title.Guid = "e55417ad34a1458587fb8313f3985e4c";
+            this.CrossTab1_Row4_Title.Name = "CrossTab1_Row4_Title";
+            this.CrossTab1_Row4_Title.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row4_Title.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row4_Title__GetValue);
+            this.CrossTab1_Row4_Title.TypeOfComponent = "Row:CrossTab1_Row4";
+            this.CrossTab1_Row4_Title.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row4_Title.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row4_Title.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row4_Title.Indicator = null;
+            this.CrossTab1_Row4_Title.Interaction = null;
+            this.CrossTab1_Row4_Title.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row4_Title.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row4_Title.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_RowTotal5
+            // 
+            this.CrossTab1_RowTotal5 = new Stimulsoft.Report.CrossTab.StiCrossRowTotal();
+            this.CrossTab1_RowTotal5.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.7, 0.84, 0.6, 0.4);
+            this.CrossTab1_RowTotal5.Guid = "1f251b7d0555406fb0c79b4dbb9da754";
+            this.CrossTab1_RowTotal5.Name = "CrossTab1_RowTotal5";
+            this.CrossTab1_RowTotal5.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_RowTotal5.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_RowTotal5__GetValue);
+            this.CrossTab1_RowTotal5.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_RowTotal5.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_RowTotal5.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_RowTotal5.Indicator = null;
+            this.CrossTab1_RowTotal5.Interaction = null;
+            this.CrossTab1_RowTotal5.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_RowTotal5.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_RowTotal5.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row5_Title
+            // 
+            this.CrossTab1_Row5_Title = new Stimulsoft.Report.CrossTab.StiCrossTitle();
+            this.CrossTab1_Row5_Title.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.7, 0.22, 0.6, 0.2);
+            this.CrossTab1_Row5_Title.Guid = "7b7938b7723a47559c02f36b83a9f404";
+            this.CrossTab1_Row5_Title.Name = "CrossTab1_Row5_Title";
+            this.CrossTab1_Row5_Title.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row5_Title.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row5_Title__GetValue);
+            this.CrossTab1_Row5_Title.TypeOfComponent = "Row:CrossTab1_Row5";
+            this.CrossTab1_Row5_Title.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row5_Title.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row5_Title.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row5_Title.Indicator = null;
+            this.CrossTab1_Row5_Title.Interaction = null;
+            this.CrossTab1_Row5_Title.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row5_Title.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row5_Title.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_ColTotal1
+            // 
+            this.CrossTab1_ColTotal1 = new Stimulsoft.Report.CrossTab.StiCrossColumnTotal();
+            this.CrossTab1_ColTotal1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.02, 0.22, 0.3, 0.2);
+            this.CrossTab1_ColTotal1.Guid = "e3a225075eae48b0a8d79bd0327313ea";
+            this.CrossTab1_ColTotal1.Name = "CrossTab1_ColTotal1";
+            this.CrossTab1_ColTotal1.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_ColTotal1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_ColTotal1__GetValue);
+            this.CrossTab1_ColTotal1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_ColTotal1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_ColTotal1.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_ColTotal1.Indicator = null;
+            this.CrossTab1_ColTotal1.Interaction = null;
+            this.CrossTab1_ColTotal1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_ColTotal1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_ColTotal1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_LeftTitle
+            // 
+            this.CrossTab1_LeftTitle = new Stimulsoft.Report.CrossTab.StiCrossTitle();
+            this.CrossTab1_LeftTitle.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0, 3.3, 0.2);
+            this.CrossTab1_LeftTitle.Guid = "a5c238ca2f3f49eeb7c64d69326f8b99";
+            this.CrossTab1_LeftTitle.Name = "CrossTab1_LeftTitle";
+            this.CrossTab1_LeftTitle.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_LeftTitle.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_LeftTitle__GetValue);
+            this.CrossTab1_LeftTitle.TypeOfComponent = "LeftTitle";
+            this.CrossTab1_LeftTitle.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_LeftTitle.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_LeftTitle.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_LeftTitle.Indicator = null;
+            this.CrossTab1_LeftTitle.Interaction = null;
+            this.CrossTab1_LeftTitle.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_LeftTitle.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_LeftTitle.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_RightTitle
+            // 
+            this.CrossTab1_RightTitle = new Stimulsoft.Report.CrossTab.StiCrossTitle();
+            this.CrossTab1_RightTitle.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.32, 0, 1, 0.2);
+            this.CrossTab1_RightTitle.Guid = "9cacc21cfa104edf8d006165aebbbe53";
+            this.CrossTab1_RightTitle.Name = "CrossTab1_RightTitle";
+            this.CrossTab1_RightTitle.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_RightTitle.TypeOfComponent = "RightTitle";
+            this.CrossTab1_RightTitle.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_RightTitle.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_RightTitle.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_RightTitle.Indicator = null;
+            this.CrossTab1_RightTitle.Interaction = null;
+            this.CrossTab1_RightTitle.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_RightTitle.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_RightTitle.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row1
+            // 
+            this.CrossTab1_Row1 = new Stimulsoft.Report.CrossTab.StiCrossRow();
+            this.CrossTab1_Row1.Alias = "OrderCodeID";
+            this.CrossTab1_Row1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.44, 0.7, 2);
+            this.CrossTab1_Row1.GetDisplayCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row1__GetDisplayCrossValue);
+            this.CrossTab1_Row1.Guid = "5c736ead0b1d4d19a29ac8acaf710264";
+            this.CrossTab1_Row1.Name = "CrossTab1_Row1";
+            this.CrossTab1_Row1.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row1__GetValue);
+            this.CrossTab1_Row1.TotalGuid = "7e79379349fb4712b205814de4800cf6";
+            this.CrossTab1_Row1.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row1__GetCrossValue);
+            this.CrossTab1_Row1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row1.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row1.Indicator = null;
+            this.CrossTab1_Row1.Interaction = null;
+            this.CrossTab1_Row1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row2
+            // 
+            this.CrossTab1_Row2 = new Stimulsoft.Report.CrossTab.StiCrossRow();
+            this.CrossTab1_Row2.Alias = "ProductionLineName";
+            this.CrossTab1_Row2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0.7, 0.44, 1.1, 1.6);
+            this.CrossTab1_Row2.GetDisplayCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row2__GetDisplayCrossValue);
+            this.CrossTab1_Row2.Guid = "47f39038aaaa4c508c45fb17eba982b3";
+            this.CrossTab1_Row2.Name = "CrossTab1_Row2";
+            this.CrossTab1_Row2.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row2__GetValue);
+            this.CrossTab1_Row2.TotalGuid = "552037cea19e44ffac7e0f8d6d53b896";
+            this.CrossTab1_Row2.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row2__GetCrossValue);
+            this.CrossTab1_Row2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row2.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row2.Indicator = null;
+            this.CrossTab1_Row2.Interaction = null;
+            this.CrossTab1_Row2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row3
+            // 
+            this.CrossTab1_Row3 = new Stimulsoft.Report.CrossTab.StiCrossRow();
+            this.CrossTab1_Row3.Alias = "IO";
+            this.CrossTab1_Row3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.8, 0.44, 0.2, 1.2);
+            this.CrossTab1_Row3.GetDisplayCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row3__GetDisplayCrossValue);
+            this.CrossTab1_Row3.Guid = "e8af8c728c06440487303f609ab5abf7";
+            this.CrossTab1_Row3.Name = "CrossTab1_Row3";
+            this.CrossTab1_Row3.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row3.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row3__GetValue);
+            this.CrossTab1_Row3.TotalGuid = "f5fc505355f8457dbd80767a6fa48964";
+            this.CrossTab1_Row3.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row3__GetCrossValue);
+            this.CrossTab1_Row3.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row3.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row3.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row3.Indicator = null;
+            this.CrossTab1_Row3.Interaction = null;
+            this.CrossTab1_Row3.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row3.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row3.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row4
+            // 
+            this.CrossTab1_Row4 = new Stimulsoft.Report.CrossTab.StiCrossRow();
+            this.CrossTab1_Row4.Alias = "WasteType";
+            this.CrossTab1_Row4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2, 0.44, 0.7, 0.8);
+            this.CrossTab1_Row4.GetDisplayCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row4__GetDisplayCrossValue);
+            this.CrossTab1_Row4.Guid = "349846124d634d4abd2ee4ee3b38b535";
+            this.CrossTab1_Row4.Name = "CrossTab1_Row4";
+            this.CrossTab1_Row4.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row4.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row4__GetValue);
+            this.CrossTab1_Row4.TotalGuid = "2c446e43fceb4eadaf412b776f50b2ab";
+            this.CrossTab1_Row4.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row4__GetCrossValue);
+            this.CrossTab1_Row4.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row4.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row4.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row4.Indicator = null;
+            this.CrossTab1_Row4.Interaction = null;
+            this.CrossTab1_Row4.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row4.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row4.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Row5
+            // 
+            this.CrossTab1_Row5 = new Stimulsoft.Report.CrossTab.StiCrossRow();
+            this.CrossTab1_Row5.Alias = "PartCode";
+            this.CrossTab1_Row5.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.7, 0.44, 0.5, 0.4);
+            this.CrossTab1_Row5.GetDisplayCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row5__GetDisplayCrossValue);
+            this.CrossTab1_Row5.Guid = "46d0d06fb35b4355b96233a3d1e7c97c";
+            this.CrossTab1_Row5.Name = "CrossTab1_Row5";
+            this.CrossTab1_Row5.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Row5.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Row5__GetValue);
+            this.CrossTab1_Row5.TotalGuid = "1f251b7d0555406fb0c79b4dbb9da754";
+            this.CrossTab1_Row5.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Row5__GetCrossValue);
+            this.CrossTab1_Row5.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Row5.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Row5.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Row5.Indicator = null;
+            this.CrossTab1_Row5.Interaction = null;
+            this.CrossTab1_Row5.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Row5.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Row5.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Column1
+            // 
+            this.CrossTab1_Column1 = new Stimulsoft.Report.CrossTab.StiCrossColumn();
+            this.CrossTab1_Column1.Alias = "WasteType";
+            this.CrossTab1_Column1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.32, 0.22, 0.7, 0.2);
+            this.CrossTab1_Column1.GetDisplayCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Column1__GetDisplayCrossValue);
+            this.CrossTab1_Column1.Guid = "fde96dcc218d499686abc5611e48ab77";
+            this.CrossTab1_Column1.Name = "CrossTab1_Column1";
+            this.CrossTab1_Column1.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Column1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Column1__GetValue);
+            this.CrossTab1_Column1.TotalGuid = "e3a225075eae48b0a8d79bd0327313ea";
+            this.CrossTab1_Column1.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Column1__GetCrossValue);
+            this.CrossTab1_Column1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Column1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.White);
+            this.CrossTab1_Column1.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Column1.Indicator = null;
+            this.CrossTab1_Column1.Interaction = null;
+            this.CrossTab1_Column1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Column1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105));
+            this.CrossTab1_Column1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Sum1
+            // 
+            this.CrossTab1_Sum1 = new Stimulsoft.Report.CrossTab.StiCrossSummary();
+            this.CrossTab1_Sum1.Alias = "Amount";
+            this.CrossTab1_Sum1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.32, 0.44, 0.7, 0.2);
+            this.CrossTab1_Sum1.Guid = "c59c480aeb394f528147975a02ad3dad";
+            this.CrossTab1_Sum1.Name = "CrossTab1_Sum1";
+            this.CrossTab1_Sum1.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Sum1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Sum1__GetValue);
+            this.CrossTab1_Sum1.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Sum1__GetCrossValue);
+            this.CrossTab1_Sum1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Sum1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_Sum1.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Sum1.Indicator = null;
+            this.CrossTab1_Sum1.Interaction = null;
+            this.CrossTab1_Sum1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Sum1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_Sum1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // CrossTab1_Sum2
+            // 
+            this.CrossTab1_Sum2 = new Stimulsoft.Report.CrossTab.StiCrossSummary();
+            this.CrossTab1_Sum2.Alias = "Amount1";
+            this.CrossTab1_Sum2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.32, 0.64, 0.7, 0.2);
+            this.CrossTab1_Sum2.Guid = "44921f91ccee4140a6e860d2862a55cf";
+            this.CrossTab1_Sum2.Name = "CrossTab1_Sum2";
+            this.CrossTab1_Sum2.Restrictions = ((((Stimulsoft.Report.Components.StiRestrictions.None | Stimulsoft.Report.Components.StiRestrictions.AllowMove) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowResize) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.CrossTab1_Sum2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.CrossTab1_Sum2__GetValue);
+            this.CrossTab1_Sum2.GetCrossValue += new Stimulsoft.Report.CrossTab.StiGetCrossValueEventHandler(this.CrossTab1_Sum2__GetCrossValue);
+            this.CrossTab1_Sum2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.FromArgb(255, 155, 155, 155), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.CrossTab1_Sum2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 255, 255, 255));
+            this.CrossTab1_Sum2.Font = new System.Drawing.Font("Arial", 8F);
+            this.CrossTab1_Sum2.Indicator = null;
+            this.CrossTab1_Sum2.Interaction = null;
+            this.CrossTab1_Sum2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.CrossTab1_Sum2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.CrossTab1_Sum2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            this.CrossTab1.DataRelationName = null;
+            this.CrossTab1.Guid = null;
+            this.CrossTab1.Interaction = null;
+            this.Panel1.Guid = null;
+            this.Panel1.Interaction = null;
+            // 
+            // ReportTitleBand
+            // 
+            this.ReportTitleBand = new Stimulsoft.Report.Components.StiReportTitleBand();
+            this.ReportTitleBand.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.2, 7.72, 0.7);
+            this.ReportTitleBand.Name = "ReportTitleBand";
+            this.ReportTitleBand.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.ReportTitleBand.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // Text
+            // 
+            this.Text = new Stimulsoft.Report.Components.StiText();
+            this.Text.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0, 7.72, 0.7);
+            this.Text.HorAlignment = Stimulsoft.Base.Drawing.StiTextHorAlignment.Center;
+            this.Text.Name = "Text";
+            this.Text.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text__GetValue);
+            this.Text.VertAlignment = Stimulsoft.Base.Drawing.StiVertAlignment.Center;
+            this.Text.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold);
+            this.Text.Guid = null;
+            this.Text.Indicator = null;
+            this.Text.Interaction = null;
+            this.Text.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.SaddleBrown);
+            this.Text.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            this.ReportTitleBand.Guid = null;
+            this.ReportTitleBand.Interaction = null;
+            this.Page1.ExcelSheetValue = null;
+            this.Page1.Interaction = null;
+            this.Page1.Margins = new Stimulsoft.Report.Components.StiMargins(0.39, 0.39, 0.39, 0.39);
+            this.Page1_Watermark = new Stimulsoft.Report.Components.StiWatermark();
+            this.Page1_Watermark.Font = new System.Drawing.Font("Arial", 100F);
+            this.Page1_Watermark.Image = null;
+            this.Page1_Watermark.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(50, 0, 0, 0));
+            this.Report_PrinterSettings = new Stimulsoft.Report.Print.StiPrinterSettings();
+            this.PrinterSettings = this.Report_PrinterSettings;
+            this.Page1.Report = this;
+            this.Page1.Watermark = this.Page1_Watermark;
+            this.Panel1.Page = this.Page1;
+            this.Panel1.Parent = this.Page1;
+            this.CrossTab1.Page = this.Page1;
+            this.CrossTab1.Parent = this.Panel1;
+            this.CrossTab1_SumHeader1.Page = this.Page1;
+            this.CrossTab1_SumHeader1.Parent = this.CrossTab1;
+            this.CrossTab1_SumHeader2.Page = this.Page1;
+            this.CrossTab1_SumHeader2.Parent = this.CrossTab1;
+            this.CrossTab1_RowTotal1.Page = this.Page1;
+            this.CrossTab1_RowTotal1.Parent = this.CrossTab1;
+            this.CrossTab1_Row1_Title.Page = this.Page1;
+            this.CrossTab1_Row1_Title.Parent = this.CrossTab1;
+            this.CrossTab1_RowTotal2.Page = this.Page1;
+            this.CrossTab1_RowTotal2.Parent = this.CrossTab1;
+            this.CrossTab1_Row2_Title.Page = this.Page1;
+            this.CrossTab1_Row2_Title.Parent = this.CrossTab1;
+            this.CrossTab1_RowTotal3.Page = this.Page1;
+            this.CrossTab1_RowTotal3.Parent = this.CrossTab1;
+            this.CrossTab1_Row3_Title.Page = this.Page1;
+            this.CrossTab1_Row3_Title.Parent = this.CrossTab1;
+            this.CrossTab1_RowTotal4.Page = this.Page1;
+            this.CrossTab1_RowTotal4.Parent = this.CrossTab1;
+            this.CrossTab1_Row4_Title.Page = this.Page1;
+            this.CrossTab1_Row4_Title.Parent = this.CrossTab1;
+            this.CrossTab1_RowTotal5.Page = this.Page1;
+            this.CrossTab1_RowTotal5.Parent = this.CrossTab1;
+            this.CrossTab1_Row5_Title.Page = this.Page1;
+            this.CrossTab1_Row5_Title.Parent = this.CrossTab1;
+            this.CrossTab1_ColTotal1.Page = this.Page1;
+            this.CrossTab1_ColTotal1.Parent = this.CrossTab1;
+            this.CrossTab1_LeftTitle.Page = this.Page1;
+            this.CrossTab1_LeftTitle.Parent = this.CrossTab1;
+            this.CrossTab1_RightTitle.Page = this.Page1;
+            this.CrossTab1_RightTitle.Parent = this.CrossTab1;
+            this.CrossTab1_Row1.Page = this.Page1;
+            this.CrossTab1_Row1.Parent = this.CrossTab1;
+            this.CrossTab1_Row2.Page = this.Page1;
+            this.CrossTab1_Row2.Parent = this.CrossTab1;
+            this.CrossTab1_Row3.Page = this.Page1;
+            this.CrossTab1_Row3.Parent = this.CrossTab1;
+            this.CrossTab1_Row4.Page = this.Page1;
+            this.CrossTab1_Row4.Parent = this.CrossTab1;
+            this.CrossTab1_Row5.Page = this.Page1;
+            this.CrossTab1_Row5.Parent = this.CrossTab1;
+            this.CrossTab1_Column1.Page = this.Page1;
+            this.CrossTab1_Column1.Parent = this.CrossTab1;
+            this.CrossTab1_Sum1.Page = this.Page1;
+            this.CrossTab1_Sum1.Parent = this.CrossTab1;
+            this.CrossTab1_Sum2.Page = this.Page1;
+            this.CrossTab1_Sum2.Parent = this.CrossTab1;
+            this.ReportTitleBand.Page = this.Page1;
+            this.ReportTitleBand.Parent = this.Page1;
+            this.Text.Page = this.Page1;
+            this.Text.Parent = this.ReportTitleBand;
+            // 
+            // Add to CrossTab1.Components
+            // 
+            this.CrossTab1.Components.Clear();
+            this.CrossTab1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.CrossTab1_SumHeader1,
+                        this.CrossTab1_SumHeader2,
+                        this.CrossTab1_RowTotal1,
+                        this.CrossTab1_Row1_Title,
+                        this.CrossTab1_RowTotal2,
+                        this.CrossTab1_Row2_Title,
+                        this.CrossTab1_RowTotal3,
+                        this.CrossTab1_Row3_Title,
+                        this.CrossTab1_RowTotal4,
+                        this.CrossTab1_Row4_Title,
+                        this.CrossTab1_RowTotal5,
+                        this.CrossTab1_Row5_Title,
+                        this.CrossTab1_ColTotal1,
+                        this.CrossTab1_LeftTitle,
+                        this.CrossTab1_RightTitle,
+                        this.CrossTab1_Row1,
+                        this.CrossTab1_Row2,
+                        this.CrossTab1_Row3,
+                        this.CrossTab1_Row4,
+                        this.CrossTab1_Row5,
+                        this.CrossTab1_Column1,
+                        this.CrossTab1_Sum1,
+                        this.CrossTab1_Sum2});
+            // 
+            // Add to Panel1.Components
+            // 
+            this.Panel1.Components.Clear();
+            this.Panel1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.CrossTab1});
+            // 
+            // Add to ReportTitleBand.Components
+            // 
+            this.ReportTitleBand.Components.Clear();
+            this.ReportTitleBand.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.Text});
+            // 
+            // Add to Page1.Components
+            // 
+            this.Page1.Components.Clear();
+            this.Page1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.Panel1,
+                        this.ReportTitleBand});
+            // 
+            // Add to Pages
+            // 
+            this.Pages.Clear();
+            this.Pages.AddRange(new Stimulsoft.Report.Components.StiPage[] {
+                        this.Page1});
+            this.VW_Order_Index.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("State", "State", "State", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Creator", "Creator", "Creator", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDate", "AddDate", "AddDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModifier", "LastModifier", "LastModifier", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModificationDate", "LastModificationDate", "LastModificationDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ID", "ID", "ID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrderCode", "OrderCode", "OrderCode", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("StatusTitle", "StatusTitle", "StatusTitle", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ProductionLineName", "ProductionLineName", "ProductionLineName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FrameName", "FrameName", "FrameName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FrameSerial", "FrameSerial", "FrameSerial", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("StartDate", "StartDate", "StartDate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("EndDate", "EndDate", "EndDate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AmountOfProductive", "AmountOfProductive", "AmountOfProductive", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AmountOfSubUnitID", "AmountOfSubUnitID", "AmountOfSubUnitID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Amount", "Amount", "Amount", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WasteAmont", "WasteAmont", "WasteAmont", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("RowMaterialAmont", "RowMaterialAmont", "RowMaterialAmont", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Description", "Description", "Description", typeof(string))});
+            this.DataSources.Add(this.VW_Order_Index);
+            this.VW_ProductiveDetails_Index.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Amount", "Amount", "Amount", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("State", "State", "State", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Creator", "Creator", "Creator", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Waste", "Waste", "Waste", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ProductionLineName", "ProductionLineName", "ProductionLineName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Expr2", "Expr2", "Expr2", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WasteType", "WasteType", "WasteType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrderCodeID", "OrderCodeID", "OrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDate", "AddDate", "AddDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModifier", "LastModifier", "LastModifier", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModificationDate", "LastModificationDate", "LastModificationDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ID", "ID", "ID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartID", "PartID", "PartID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorID", "OperatorID", "OperatorID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IOo", "IOo", "IOo", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionsName", "LesionsName", "LesionsName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartCode", "PartCode", "PartCode", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Name", "Name", "Name", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorName", "OperatorName", "OperatorName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IO", "IO", "IO", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FromOrderCodeID", "FromOrderCodeID", "FromOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ToOrderCodeID", "ToOrderCodeID", "ToOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("BatchNumber", "BatchNumber", "BatchNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FormoulaNumber", "FormoulaNumber", "FormoulaNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionID", "LesionID", "LesionID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDateShamsi", "AddDateShamsi", "AddDateShamsi", typeof(string))});
+            this.DataSources.Add(this.VW_ProductiveDetails_Index);
+            this.VW_ProductiveDetails_Index2.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Amount", "Amount", "Amount", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("State", "State", "State", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Creator", "Creator", "Creator", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Waste", "Waste", "Waste", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ProductionLineName", "ProductionLineName", "ProductionLineName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Expr2", "Expr2", "Expr2", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WasteType", "WasteType", "WasteType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrderCodeID", "OrderCodeID", "OrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDate", "AddDate", "AddDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModifier", "LastModifier", "LastModifier", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModificationDate", "LastModificationDate", "LastModificationDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ID", "ID", "ID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartID", "PartID", "PartID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorID", "OperatorID", "OperatorID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IOo", "IOo", "IOo", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionsName", "LesionsName", "LesionsName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartCode", "PartCode", "PartCode", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Name", "Name", "Name", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorName", "OperatorName", "OperatorName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IO", "IO", "IO", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FromOrderCodeID", "FromOrderCodeID", "FromOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ToOrderCodeID", "ToOrderCodeID", "ToOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("BatchNumber", "BatchNumber", "BatchNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FormoulaNumber", "FormoulaNumber", "FormoulaNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionID", "LesionID", "LesionID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDateShamsi", "AddDateShamsi", "AddDateShamsi", typeof(string))});
+            this.DataSources.Add(this.VW_ProductiveDetails_Index2);
+            this.VW_ProductiveDetails_Index3.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Amount", "Amount", "Amount", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("State", "State", "State", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Creator", "Creator", "Creator", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Waste", "Waste", "Waste", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ProductionLineName", "ProductionLineName", "ProductionLineName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Expr2", "Expr2", "Expr2", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WasteType", "WasteType", "WasteType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrderCodeID", "OrderCodeID", "OrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDate", "AddDate", "AddDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModifier", "LastModifier", "LastModifier", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModificationDate", "LastModificationDate", "LastModificationDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ID", "ID", "ID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartID", "PartID", "PartID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorID", "OperatorID", "OperatorID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IOo", "IOo", "IOo", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionsName", "LesionsName", "LesionsName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartCode", "PartCode", "PartCode", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Name", "Name", "Name", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorName", "OperatorName", "OperatorName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IO", "IO", "IO", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FromOrderCodeID", "FromOrderCodeID", "FromOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ToOrderCodeID", "ToOrderCodeID", "ToOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("BatchNumber", "BatchNumber", "BatchNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FormoulaNumber", "FormoulaNumber", "FormoulaNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Amount1", "Amount1", "Amount1", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionID", "LesionID", "LesionID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDateShamsi", "AddDateShamsi", "AddDateShamsi", typeof(string))});
+            this.DataSources.Add(this.VW_ProductiveDetails_Index3);
+            this.VW_ProductiveDetails_Index4.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Amount", "Amount", "Amount", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("State", "State", "State", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Creator", "Creator", "Creator", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Waste", "Waste", "Waste", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ProductionLineName", "ProductionLineName", "ProductionLineName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Expr2", "Expr2", "Expr2", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WasteType", "WasteType", "WasteType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrderCodeID", "OrderCodeID", "OrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDate", "AddDate", "AddDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModifier", "LastModifier", "LastModifier", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LastModificationDate", "LastModificationDate", "LastModificationDate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ID", "ID", "ID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartID", "PartID", "PartID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorID", "OperatorID", "OperatorID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IOo", "IOo", "IOo", typeof(bool)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionsName", "LesionsName", "LesionsName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PartCode", "PartCode", "PartCode", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Name", "Name", "Name", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OperatorName", "OperatorName", "OperatorName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("IO", "IO", "IO", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FromOrderCodeID", "FromOrderCodeID", "FromOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ToOrderCodeID", "ToOrderCodeID", "ToOrderCodeID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("BatchNumber", "BatchNumber", "BatchNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("FormoulaNumber", "FormoulaNumber", "FormoulaNumber", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Amount1", "Amount1", "Amount1", typeof(double)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LesionID", "LesionID", "LesionID", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("AddDateShamsi", "AddDateShamsi", "AddDateShamsi", typeof(string))});
+            this.DataSources.Add(this.VW_ProductiveDetails_Index4);
+            this.Dictionary.Databases.Add(new Stimulsoft.Report.Dictionary.StiSqlDatabase("Connection", "Connection", "User ID=towzin;Data Source=192.168.1.11\\towzin;Initial Catalog=Towzin;Integrated Security=False;Password=123456", false));
+            this.Dictionary.Databases.Add(new Stimulsoft.Report.Dictionary.StiSqlDatabase("Connection", "Connection", "User ID=towzin;Data Source=192.168.1.11\\towzin;Initial Catalog=Towzin;Integrated Security=False;Password=123456", false));
+            this.VW_Order_Index.Connecting += new System.EventHandler(this.GetVW_Order_Index_SqlCommand);
+            this.VW_ProductiveDetails_Index.Connecting += new System.EventHandler(this.GetVW_ProductiveDetails_Index_SqlCommand);
+            this.VW_ProductiveDetails_Index2.Connecting += new System.EventHandler(this.GetVW_ProductiveDetails_Index2_SqlCommand);
+            this.VW_ProductiveDetails_Index3.Connecting += new System.EventHandler(this.GetVW_ProductiveDetails_Index3_SqlCommand);
+            this.VW_ProductiveDetails_Index4.Connecting += new System.EventHandler(this.GetVW_ProductiveDetails_Index4_SqlCommand);
+        }
+        
+        public void GetVW_Order_Index_SqlCommand(object sender, System.EventArgs e)
+        {
+            this.VW_Order_Index.SqlCommand = "select * from VW_Order_Index";
+        }
+        
+        public void GetVW_ProductiveDetails_Index_SqlCommand(object sender, System.EventArgs e)
+        {
+            this.VW_ProductiveDetails_Index.SqlCommand = "select * from VW_ProductiveDetails_Index";
+        }
+        
+        public void GetVW_ProductiveDetails_Index2_SqlCommand(object sender, System.EventArgs e)
+        {
+            this.VW_ProductiveDetails_Index2.SqlCommand = "select * from VW_ProductiveDetails_Index";
+        }
+        
+        public void GetVW_ProductiveDetails_Index3_SqlCommand(object sender, System.EventArgs e)
+        {
+            this.VW_ProductiveDetails_Index3.SqlCommand = "select * from VW_ProductiveDetails_Index";
+        }
+        
+        public void GetVW_ProductiveDetails_Index4_SqlCommand(object sender, System.EventArgs e)
+        {
+            this.VW_ProductiveDetails_Index4.SqlCommand = "select * from VW_ProductiveDetails_Index";
+        }
+        
+        #region DataSource VW_Order_Index
+        public class VW_Order_IndexDataSource : Stimulsoft.Report.Dictionary.StiSqlSource
+        {
+            
+            public VW_Order_IndexDataSource() : 
+                    base("Connection", "VW_Order_Index", "VW_Order_Index", "", true, false, 30)
+            {
+            }
+            
+            public virtual bool State
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["State"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string Creator
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Creator"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime AddDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["AddDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual string LastModifier
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LastModifier"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime LastModificationDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["LastModificationDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual long ID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long OrderCode
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OrderCode"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string StatusTitle
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["StatusTitle"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string ProductionLineName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ProductionLineName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string FrameName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["FrameName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string FrameSerial
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["FrameSerial"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string StartDate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["StartDate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string EndDate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["EndDate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual double AmountOfProductive
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["AmountOfProductive"], typeof(double), true)));
+                }
+            }
+            
+            public virtual long AmountOfSubUnitID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["AmountOfSubUnitID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual double Amount
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["Amount"], typeof(double), true)));
+                }
+            }
+            
+            public virtual double WasteAmont
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["WasteAmont"], typeof(double), true)));
+                }
+            }
+            
+            public virtual double RowMaterialAmont
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["RowMaterialAmont"], typeof(double), true)));
+                }
+            }
+            
+            public virtual string Description
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Description"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource VW_Order_Index
+        
+        #region DataSource VW_ProductiveDetails_Index
+        public class VW_ProductiveDetails_IndexDataSource : Stimulsoft.Report.Dictionary.StiSqlSource
+        {
+            
+            public VW_ProductiveDetails_IndexDataSource() : 
+                    base("Connection", "VW_ProductiveDetails_Index", "VW_ProductiveDetails_Index", "", true, false, 30)
+            {
+            }
+            
+            public virtual double Amount
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["Amount"], typeof(double), true)));
+                }
+            }
+            
+            public virtual bool State
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["State"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string Creator
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Creator"], typeof(string), true)));
+                }
+            }
+            
+            public virtual bool Waste
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["Waste"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string ProductionLineName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ProductionLineName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long Expr2
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["Expr2"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string WasteType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["WasteType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long OrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual DateTime AddDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["AddDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual string LastModifier
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LastModifier"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime LastModificationDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["LastModificationDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual long ID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long PartID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["PartID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long OperatorID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OperatorID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual bool IOo
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["IOo"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string LesionsName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LesionsName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string PartCode
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["PartCode"], typeof(string), true)));
+                }
+            }
+            
+            public new virtual string Name
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Name"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OperatorName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OperatorName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string IO
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["IO"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long FromOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["FromOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long ToOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ToOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string BatchNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["BatchNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string FormoulaNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["FormoulaNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long LesionID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["LesionID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string AddDateShamsi
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["AddDateShamsi"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource VW_ProductiveDetails_Index
+        
+        #region DataSource VW_ProductiveDetails_Index2
+        public class VW_ProductiveDetails_Index2DataSource : Stimulsoft.Report.Dictionary.StiSqlSource
+        {
+            
+            public VW_ProductiveDetails_Index2DataSource() : 
+                    base("Connection", "VW_ProductiveDetails_Index2", "VW_ProductiveDetails_Index2", "", true, false, 30)
+            {
+            }
+            
+            public virtual double Amount
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["Amount"], typeof(double), true)));
+                }
+            }
+            
+            public virtual bool State
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["State"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string Creator
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Creator"], typeof(string), true)));
+                }
+            }
+            
+            public virtual bool Waste
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["Waste"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string ProductionLineName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ProductionLineName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long Expr2
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["Expr2"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string WasteType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["WasteType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long OrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual DateTime AddDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["AddDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual string LastModifier
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LastModifier"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime LastModificationDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["LastModificationDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual long ID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long PartID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["PartID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long OperatorID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OperatorID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual bool IOo
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["IOo"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string LesionsName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LesionsName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string PartCode
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["PartCode"], typeof(string), true)));
+                }
+            }
+            
+            public new virtual string Name
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Name"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OperatorName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OperatorName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string IO
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["IO"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long FromOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["FromOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long ToOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ToOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string BatchNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["BatchNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string FormoulaNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["FormoulaNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long LesionID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["LesionID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string AddDateShamsi
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["AddDateShamsi"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource VW_ProductiveDetails_Index2
+        
+        #region DataSource VW_ProductiveDetails_Index3
+        public class VW_ProductiveDetails_Index3DataSource : Stimulsoft.Report.Dictionary.StiSqlSource
+        {
+            
+            public VW_ProductiveDetails_Index3DataSource() : 
+                    base("Connection", "VW_ProductiveDetails_Index3", "VW_ProductiveDetails_Index3", "", true, false, 30)
+            {
+            }
+            
+            public virtual double Amount
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["Amount"], typeof(double), true)));
+                }
+            }
+            
+            public virtual bool State
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["State"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string Creator
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Creator"], typeof(string), true)));
+                }
+            }
+            
+            public virtual bool Waste
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["Waste"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string ProductionLineName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ProductionLineName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long Expr2
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["Expr2"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string WasteType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["WasteType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long OrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual DateTime AddDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["AddDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual string LastModifier
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LastModifier"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime LastModificationDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["LastModificationDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual long ID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long PartID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["PartID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long OperatorID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OperatorID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual bool IOo
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["IOo"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string LesionsName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LesionsName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string PartCode
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["PartCode"], typeof(string), true)));
+                }
+            }
+            
+            public new virtual string Name
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Name"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OperatorName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OperatorName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string IO
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["IO"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long FromOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["FromOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long ToOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ToOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string BatchNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["BatchNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string FormoulaNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["FormoulaNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual double Amount1
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["Amount1"], typeof(double), true)));
+                }
+            }
+            
+            public virtual long LesionID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["LesionID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string AddDateShamsi
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["AddDateShamsi"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource VW_ProductiveDetails_Index3
+        
+        #region DataSource VW_ProductiveDetails_Index4
+        public class VW_ProductiveDetails_Index4DataSource : Stimulsoft.Report.Dictionary.StiSqlSource
+        {
+            
+            public VW_ProductiveDetails_Index4DataSource() : 
+                    base("Connection", "VW_ProductiveDetails_Index4", "VW_ProductiveDetails_Index4", "", true, false, 30)
+            {
+            }
+            
+            public virtual double Amount
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["Amount"], typeof(double), true)));
+                }
+            }
+            
+            public virtual bool State
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["State"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string Creator
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Creator"], typeof(string), true)));
+                }
+            }
+            
+            public virtual bool Waste
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["Waste"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string ProductionLineName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ProductionLineName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long Expr2
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["Expr2"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string WasteType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["WasteType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long OrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual DateTime AddDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["AddDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual string LastModifier
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LastModifier"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime LastModificationDate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["LastModificationDate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual long ID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long PartID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["PartID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long OperatorID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["OperatorID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual bool IOo
+            {
+                get
+                {
+                    return ((bool)(StiReport.ChangeType(this["IOo"], typeof(bool), true)));
+                }
+            }
+            
+            public virtual string LesionsName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LesionsName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string PartCode
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["PartCode"], typeof(string), true)));
+                }
+            }
+            
+            public new virtual string Name
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Name"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OperatorName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OperatorName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string IO
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["IO"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long FromOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["FromOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual long ToOrderCodeID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["ToOrderCodeID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string BatchNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["BatchNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string FormoulaNumber
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["FormoulaNumber"], typeof(string), true)));
+                }
+            }
+            
+            public virtual double Amount1
+            {
+                get
+                {
+                    return ((double)(StiReport.ChangeType(this["Amount1"], typeof(double), true)));
+                }
+            }
+            
+            public virtual long LesionID
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["LesionID"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string AddDateShamsi
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["AddDateShamsi"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource VW_ProductiveDetails_Index4
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

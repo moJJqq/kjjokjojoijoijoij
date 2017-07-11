@@ -73,12 +73,14 @@
                             
                         </ul>
 
-                        <li>
+                        <li data-toggle="collapse" data-target="#Report" class="collapsed">
                             <a href="#">
                                 <a href="#"><i class="glyphicon glyphicon-print"></i>گزارشها <i class="glyphicon glyphicon-print  btn pull-right" style="margin-top"></i></a>
                             </a>
                         </li>
-
+                        <ul class="sub-menu collapse" id="Report">
+                            <li>@Html.ActionLink("گزارش جزییات سفارش", "Simple", "Report")</li>
+                        </ul>
                     </ul>
                 </div>
             </div>

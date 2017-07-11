@@ -180,6 +180,9 @@ namespace Towzin.Controllers
             {
                 return HttpNotFound();
             }
+
+            
+
             ViewBag.FrameID = new SelectList(db.Frame, "ID", "FrameName", order.FrameID);
             ViewBag.OrderStatusID = new SelectList(db.OrderStatus, "ID", "StatusTitle", order.OrderStatusID);
             ViewBag.ProductionLineID = new SelectList(db.ProductionLine, "ID", "ProductionLineName", order.ProductionLineID);
@@ -199,6 +202,7 @@ namespace Towzin.Controllers
             order.LastModifier = User.Identity.GetUserId();
             if (ModelState.IsValid)
             {
+                
                 db.Entry(order).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

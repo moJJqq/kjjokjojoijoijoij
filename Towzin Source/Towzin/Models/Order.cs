@@ -11,7 +11,8 @@ namespace Towzin.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Order
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -29,6 +30,7 @@ namespace Towzin.Models
         public long OrderStatusID { get; set; }
         public long FrameID { get; set; }
         public long ProductionLineID { get; set; }
+        [UIHint("PersianDatePicker")]
         public Nullable<System.DateTime> StartDate { get; set; }
         public Nullable<System.DateTime> EndDate { get; set; }
         public string Description { get; set; }

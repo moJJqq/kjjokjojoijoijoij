@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Towzin", "Towzin\Towzin.csproj", "{9F5F1CC7-418B-446C-BFFC-1D310E9FEAD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportLibraryTowzin", "ReportLibraryTowzin\ReportLibraryTowzin\ReportLibraryTowzin.csproj", "{842A88DC-4E81-43B5-8AD5-AA5B566B5B8E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{9F5F1CC7-418B-446C-BFFC-1D310E9FEAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F5F1CC7-418B-446C-BFFC-1D310E9FEAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F5F1CC7-418B-446C-BFFC-1D310E9FEAD2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{842A88DC-4E81-43B5-8AD5-AA5B566B5B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{842A88DC-4E81-43B5-8AD5-AA5B566B5B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{842A88DC-4E81-43B5-8AD5-AA5B566B5B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{842A88DC-4E81-43B5-8AD5-AA5B566B5B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

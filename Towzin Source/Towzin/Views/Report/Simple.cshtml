@@ -1,0 +1,36 @@
+﻿@using System.Web.UI.WebControls;
+@using Stimulsoft.Report.Mvc;
+@{
+    ViewBag.Title = "Simple";
+}
+<head>
+    <script type="text/javascript" src="Scripts/PersianDatePicker.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="Content/PersianDatePicker.min.css" />
+</head>
+<div>
+    <form name="myform" method="POST">
+        <div align="center">
+            <br><br>
+            <input type="text" name="OrderCode" size="25" placeholder="شماره سفارش">
+           
+            <input type="submit" value="جستجو"><br>
+        </div>
+    </form>
+</div>
+<div>
+
+    @Html.Stimulsoft().RenderMvcViewerScripts()
+    @Html.Stimulsoft().StiMvcViewer("MyViewr", new StiMvcViewerOptions()
+
+   {
+       ActionGetReportSnapshot = "FromLoadFileReport",
+       ActionViewerEvent = "ViewerEvent",
+       Width = Unit.Percentage(100),
+       Theme = StiTheme.Office2010,
+       ActionPrintReport = "PrintReport",
+       ActionExportReport = "ExportReport",
+       ToolbarBackgroundColor = System.Drawing.Color.Silver,
+
+   })
+</div>
+

@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MD.PersianDateTime, Version=3.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MD.PersianDateTime.3.6.2\lib\MD.PersianDateTime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -88,6 +92,34 @@
     <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Users\Administrator\Desktop\Stimulsoft Reports Ultimate 2012.3 build 21 Jan 2013_SourceBaran.Com\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Users\Administrator\Desktop\Stimulsoft Reports Ultimate 2012.3 build 21 Jan 2013_SourceBaran.Com\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Users\Administrator\Desktop\Stimulsoft Reports Ultimate 2012.3 build 21 Jan 2013_SourceBaran.Com\Stimulsoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Users\Administrator\Desktop\Stimulsoft Reports Ultimate 2012.3 build 21 Jan 2013_SourceBaran.Com\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Users\Administrator\Desktop\Stimulsoft Reports Ultimate 2012.3 build 21 Jan 2013_SourceBaran.Com\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Compare, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Users\Administrator\Desktop\Stimulsoft Reports Ultimate 2012.3 build 21 Jan 2013_SourceBaran.Com\Stimulsoft.Report.Compare.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Users\Administrator\Desktop\Stimulsoft Reports Ultimate 2012.3 build 21 Jan 2013_SourceBaran.Com\Stimulsoft.Report.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
@@ -244,12 +276,13 @@
     <Compile Include="Controllers\ProductionLineTechnicalProblemsController.cs" />
     <Compile Include="Controllers\ProductiveDetailsController.cs" />
     <Compile Include="Controllers\ProductiveStoppagesController.cs" />
-    <Compile Include="Controllers\ReportsController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Controllers\SpecificationsController.cs" />
     <Compile Include="Controllers\sssController.cs" />
     <Compile Include="Controllers\StoppagesController.cs" />
     <Compile Include="Controllers\TechnicalProblemsController.cs" />
     <Compile Include="Controllers\UnitsController.cs" />
+    <Compile Include="CustomModelBinders\PersianDateModelBinder.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -381,13 +414,12 @@
       <DependentUpon>TowzinModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report\ReportStatus.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report\ReportStatus.Designer.cs">
-      <DependentUpon>ReportStatus.cs</DependentUpon>
-    </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="TowzinDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TowzinDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\1.jpg" />
@@ -400,7 +432,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\calendar.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\PersianDatePicker.css" />
+    <Content Include="Content\PersianDatePicker.min.css" />
     <Content Include="Content\Standard.css" />
     <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
@@ -460,7 +495,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\JsFarsiCalendar.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\PersianDatePicker.js" />
+    <Content Include="Scripts\PersianDatePicker.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\Standard.js" />
@@ -614,11 +652,22 @@
     <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\Reportt\Index.cshtml" />
     <Content Include="Views\sss\Index.cshtml" />
+    <Content Include="Views\Report\Simple.cshtml" />
+    <Content Include="TowzinDataSet.xsc">
+      <DependentUpon>TowzinDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="TowzinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TowzinDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TowzinDataSet.xss">
+      <DependentUpon>TowzinDataSet.xsd</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Picture\" />
-    <Folder Include="Views\Reports\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -633,15 +682,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Report\ReportStatus.resx">
-      <DependentUpon>ReportStatus.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ReportLibraryTowzin\ReportLibraryTowzin\ReportLibraryTowzin.csproj">
-      <Project>{842a88dc-4e81-43b5-8ad5-aa5b566b5b8e}</Project>
-      <Name>ReportLibraryTowzin</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Report\Report1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
