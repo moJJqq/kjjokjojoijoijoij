@@ -234,6 +234,9 @@
     <EntitySetMapping Name="ProductiveDetails">
       <EntityTypeMapping TypeName="TowzinModel.ProductiveDetails">
         <MappingFragment StoreEntitySet="ProductiveDetails">
+          <ScalarProperty Name="Amount1" ColumnName="Amount1" />
+          <ScalarProperty Name="ToPartID" ColumnName="ToPartID" />
+          <ScalarProperty Name="FromPartID" ColumnName="FromPartID" />
           <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
@@ -569,6 +572,11 @@
     <EntitySetMapping Name="VW_ProductiveDetails_Index">
       <EntityTypeMapping TypeName="TowzinModel.VW_ProductiveDetails_Index">
         <MappingFragment StoreEntitySet="VW_ProductiveDetails_Index">
+          <ScalarProperty Name="Amount1" ColumnName="Amount1" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+          <ScalarProperty Name="AddDateShamsi" ColumnName="AddDateShamsi" />
+          <ScalarProperty Name="WasteType" ColumnName="WasteType" />
           <ScalarProperty Name="LesionsName" ColumnName="LesionsName" />
           <ScalarProperty Name="IOo" ColumnName="IOo" />
           <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
@@ -663,6 +671,29 @@
           <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
           <ScalarProperty Name="StatusTitle" ColumnName="StatusTitle" />
           <ScalarProperty Name="OrderCode" ColumnName="OrderCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Container">
+      <EntityTypeMapping TypeName="TowzinModel.Container">
+        <MappingFragment StoreEntitySet="Container">
+          <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+          <ScalarProperty Name="ContainerCode" ColumnName="ContainerCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Devices">
+      <EntityTypeMapping TypeName="TowzinModel.Devices">
+        <MappingFragment StoreEntitySet="Devices">
+          <ScalarProperty Name="SendDestinationOrder" ColumnName="SendDestinationOrder" />
+          <ScalarProperty Name="SendGari" ColumnName="SendGari" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="SendOrderCode" ColumnName="SendOrderCode" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

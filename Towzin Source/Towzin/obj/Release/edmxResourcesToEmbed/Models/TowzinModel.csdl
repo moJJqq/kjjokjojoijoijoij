@@ -287,6 +287,9 @@
     <NavigationProperty Name="Order" Relationship="TowzinModel.FK_ProductiveDetails_Order" FromRole="ProductiveDetails" ToRole="Order" />
     <NavigationProperty Name="Order1" Relationship="TowzinModel.FK_ProductiveDetails_Order1" FromRole="ProductiveDetails" ToRole="Order" />
     <NavigationProperty Name="Order2" Relationship="TowzinModel.FK_ProductiveDetails_Order2" FromRole="ProductiveDetails" ToRole="Order" />
+    <Property Name="FromPartID" Type="Int64" />
+    <Property Name="ToPartID" Type="Int64" />
+    <Property Name="Amount1" Type="Double" />
   </EntityType>
   <EntityType Name="ProductiveStoppages">
     <Key>
@@ -295,7 +298,7 @@
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="StoppagesID" Type="Int64" Nullable="false" />
     <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
-    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StartTime" Type="DateTime" Precision="3" />
     <Property Name="EndTime" Type="DateTime" Precision="3" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="State" Type="Boolean" Nullable="false" />
@@ -803,6 +806,8 @@
       <End Role="Unit" EntitySet="Unit" />
       <End Role="PartPackage" EntitySet="PartPackage" />
     </AssociationSet>
+    <EntitySet Name="Container" EntityType="TowzinModel.Container" />
+    <EntitySet Name="Devices" EntityType="TowzinModel.Devices" />
   </EntityContainer>
   <EntityType Name="Operator">
     <Key>
@@ -1137,6 +1142,9 @@
       <PropertyRef Name="PartID" />
       <PropertyRef Name="OperatorID" />
       <PropertyRef Name="IOo" />
+      <PropertyRef Name="WasteType" />
+      <PropertyRef Name="ProductionLineName" />
+      <PropertyRef Name="Expr2" />
     </Key>
     <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
     <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -1160,6 +1168,11 @@
     <Property Name="OperatorID" Type="Int64" Nullable="false" />
     <Property Name="IOo" Type="Boolean" Nullable="false" />
     <Property Name="LesionsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WasteType" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="AddDateShamsi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProductionLineName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr2" Type="Int64" Nullable="false" />
+    <Property Name="Amount1" Type="Double" />
   </EntityType>
   <Association Name="FK_ProductiveDetails_ProductiveState">
     <End Type="TowzinModel.ProductiveState" Role="ProductiveState" Multiplicity="1" />
@@ -1394,4 +1407,25 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="Container">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContainerCode" Type="Int32" Nullable="false" />
+    <Property Name="NetWeight" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Devices">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IP" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductionLineID" Type="Int64" />
+    <Property Name="SendOrderCode" Type="Boolean" />
+    <Property Name="Region" Type="Int32" />
+    <Property Name="SendGari" Type="Boolean" />
+    <Property Name="SendDestinationOrder" Type="Boolean" />
+  </EntityType>
 </Schema>

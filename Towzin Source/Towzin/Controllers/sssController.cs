@@ -41,14 +41,37 @@ namespace Towzin.Controllers
             List<VW_ProductiveDetails_Index> cm = new List<VW_ProductiveDetails_Index>();
             using (TowzinEntities1 dc = new TowzinEntities1())
             {
+                cm = dc.VW_ProductiveDetails_Index.ToList();
                 var SearchString = TempData["SearchString"];
-                if (SearchString != null)
+                if (SearchString.ToString() != "")
                 {
+                    ////gooogle Search Algoritm
+                    string[] Words;
+                    Words = new string[20];
+                    uint x = 0;
                     string searchString = SearchString.ToString();
-                    cm = dc.VW_ProductiveDetails_Index.Where(s => s.OrderCodeID.ToString().Contains(SearchString.ToString())|| s.ProductionLineName.Contains(SearchString.ToString()) || s.PartCode.Contains(searchString)).ToList();
+                    for (int i = 0; i < searchString.Count(); i++)
+                    {
+                        string w = searchString.Substring(i, 1);
+
+                        if (w != "+")
+                        {
+                            Words[x] = Words[x] + w;
+                        }
+                        else
+                        {
+                            x = x + 1;
+                        }
+                    }
+                    for (int i = 0; i <= x; i++)
+                    {
+                        cm = cm.Where(s => s.OrderCodeID.ToString().Contains(Words[i].Trim()) || s.ProductionLineName.Contains(Words[i].Trim()) || s.PartCode.Contains(Words[i].Trim()) || s.AddDateShamsi.Contains(Words[i].Trim()) || s.WasteType.ToString().Contains(Words[i].Trim()) || s.IO.Contains(Words[i].Trim()) || s.Name.Contains(Words[i].Trim())).ToList();
+                    }
+                    //cm = dc.VW_ProductiveDetails_Index.Where(s => s.OrderCodeID.ToString().Contains(SearchString.ToString())|| s.ProductionLineName.Contains(SearchString.ToString()) || s.PartCode.Contains(searchString) || s.AddDateShamsi.Contains(searchString)).ToList();
                 }
                 else
                 {
+                    
                     cm = dc.VW_ProductiveDetails_Index.ToList();
                 }
             }
@@ -58,19 +81,19 @@ namespace Towzin.Controllers
             string mimeType;
             string encoding;
             string fileNameExtension;
-
+            
 
 
             string deviceInfo =
 
             "<DeviceInfo>" +
             "  <OutputFormat>" + id + "</OutputFormat>" +
-            "  <PageWidth>8.5in</PageWidth>" +
-            "  <PageHeight>11in</PageHeight>" +
-            "  <MarginTop>0.5in</MarginTop>" +
-            "  <MarginLeft>1in</MarginLeft>" +
-            "  <MarginRight>1in</MarginRight>" +
-            "  <MarginBottom>0.5in</MarginBottom>" +
+            "  <PageWidth>29.7cm</PageWidth>" +
+            "  <PageHeight>21cm</PageHeight>" +
+            "  <MarginTop>0.5cm</MarginTop>" +
+            "  <MarginLeft>1cm</MarginLeft>" +
+            "  <MarginRight>1cm</MarginRight>" +
+            "  <MarginBottom>0.5cm</MarginBottom>" +
             "</DeviceInfo>";
 
             Warning[] warnings;
@@ -85,6 +108,7 @@ namespace Towzin.Controllers
                 out fileNameExtension,
                 out streams,
                 out warnings);
+            
             return File(renderedBytes, mimeType);
         }
 

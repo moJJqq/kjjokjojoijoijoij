@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="TowzinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Container">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContainerCode" Type="int" Nullable="false" />
+    <Property Name="NetWeight" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Devices">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductionLineID" Type="bigint" />
+    <Property Name="SendOrderCode" Type="bit" />
+    <Property Name="Region" Type="int" />
+    <Property Name="SendGari" Type="bit" />
+    <Property Name="SendDestinationOrder" Type="bit" />
+  </EntityType>
   <EntityType Name="Frame">
     <Key>
       <PropertyRef Name="ID" />
@@ -291,12 +312,15 @@
     <Property Name="OperatorID" Type="bigint" Nullable="false" />
     <Property Name="IO" Type="bit" Nullable="false" />
     <Property Name="FromOrderCodeID" Type="bigint" />
+    <Property Name="FromPartID" Type="bigint" />
     <Property Name="ToOrderCodeID" Type="bigint" />
+    <Property Name="ToPartID" Type="bigint" />
     <Property Name="BatchNumber" Type="nvarchar(max)" />
     <Property Name="FormoulaNumber" Type="nvarchar(max)" />
     <Property Name="Waste" Type="bit" Nullable="false" />
     <Property Name="LesionID" Type="bigint" />
     <Property Name="Amount" Type="float" Nullable="false" />
+    <Property Name="Amount1" Type="float" />
     <Property Name="ProductiveRowDetails" Type="bigint" />
     <Property Name="State" Type="bit" Nullable="false" />
     <Property Name="Creator" Type="nvarchar" MaxLength="128" Nullable="false" />
@@ -321,7 +345,7 @@
     <Property Name="StoppagesID" Type="bigint" Nullable="false" />
     <Property Name="OrderCodeID" Type="bigint" Nullable="false" />
     <Property Name="OperatorID" Type="bigint" Nullable="false" />
-    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
     <Property Name="EndTime" Type="datetime" />
     <Property Name="Description" Type="nvarchar(max)" />
     <Property Name="State" Type="bit" Nullable="false" />
@@ -712,6 +736,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_Productive_Stoppages_Index' does not
 warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="VW_ProductiveDetails_Index">
     <Key>
+      <PropertyRef Name="WasteType" />
       <PropertyRef Name="OrderCodeID" />
       <PropertyRef Name="Waste" />
       <PropertyRef Name="Amount" />
@@ -724,7 +749,10 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
       <PropertyRef Name="PartID" />
       <PropertyRef Name="OperatorID" />
       <PropertyRef Name="IOo" />
+      <PropertyRef Name="ProductionLineName" />
+      <PropertyRef Name="Expr2" />
     </Key>
+    <Property Name="WasteType" Type="nvarchar" MaxLength="6" Nullable="false" />
     <Property Name="OrderCodeID" Type="bigint" Nullable="false" />
     <Property Name="PartCode" Type="nvarchar(max)" />
     <Property Name="Name" Type="nvarchar(max)" />
@@ -739,6 +767,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     <Property Name="Amount" Type="float" Nullable="false" />
     <Property Name="State" Type="bit" Nullable="false" />
     <Property Name="Creator" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="AddDateShamsi" Type="varchar" MaxLength="10" />
     <Property Name="AddDate" Type="datetime" Nullable="false" />
     <Property Name="LastModifier" Type="nvarchar" MaxLength="128" Nullable="false" />
     <Property Name="LastModificationDate" Type="datetime" Nullable="false" />
@@ -747,6 +776,9 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     <Property Name="OperatorID" Type="bigint" Nullable="false" />
     <Property Name="IOo" Type="bit" Nullable="false" />
     <Property Name="LesionsName" Type="nvarchar(max)" />
+    <Property Name="ProductionLineName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Expr2" Type="bigint" Nullable="false" />
+    <Property Name="Amount1" Type="float" />
   </EntityType>
   <Association Name="FK_Order_Frame">
     <End Role="Frame" Type="Self.Frame" Multiplicity="1" />
@@ -1169,6 +1201,8 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="TowzinModelStoreContainer">
+    <EntitySet Name="Container" EntityType="Self.Container" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Devices" EntityType="Self.Devices" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Frame" EntityType="Self.Frame" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Lesion" EntityType="Self.Lesion" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Nature" EntityType="Self.Nature" Schema="dbo" store:Type="Tables" />
@@ -1392,6 +1426,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     </EntitySet>
     <EntitySet Name="VW_ProductiveDetails_Index" EntityType="Self.VW_ProductiveDetails_Index" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
+    [VW_ProductiveDetails_Index].[WasteType] AS [WasteType], 
     [VW_ProductiveDetails_Index].[OrderCodeID] AS [OrderCodeID], 
     [VW_ProductiveDetails_Index].[PartCode] AS [PartCode], 
     [VW_ProductiveDetails_Index].[Name] AS [Name], 
@@ -1406,6 +1441,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     [VW_ProductiveDetails_Index].[Amount] AS [Amount], 
     [VW_ProductiveDetails_Index].[State] AS [State], 
     [VW_ProductiveDetails_Index].[Creator] AS [Creator], 
+    [VW_ProductiveDetails_Index].[AddDateShamsi] AS [AddDateShamsi], 
     [VW_ProductiveDetails_Index].[AddDate] AS [AddDate], 
     [VW_ProductiveDetails_Index].[LastModifier] AS [LastModifier], 
     [VW_ProductiveDetails_Index].[LastModificationDate] AS [LastModificationDate], 
@@ -1413,7 +1449,10 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     [VW_ProductiveDetails_Index].[PartID] AS [PartID], 
     [VW_ProductiveDetails_Index].[OperatorID] AS [OperatorID], 
     [VW_ProductiveDetails_Index].[IOo] AS [IOo], 
-    [VW_ProductiveDetails_Index].[LesionsName] AS [LesionsName]
+    [VW_ProductiveDetails_Index].[LesionsName] AS [LesionsName], 
+    [VW_ProductiveDetails_Index].[ProductionLineName] AS [ProductionLineName], 
+    [VW_ProductiveDetails_Index].[Expr2] AS [Expr2], 
+    [VW_ProductiveDetails_Index].[Amount1] AS [Amount1]
     FROM [dbo].[VW_ProductiveDetails_Index] AS [VW_ProductiveDetails_Index]</DefiningQuery>
     </EntitySet>
     <AssociationSet Name="FK_Order_Frame" Association="Self.FK_Order_Frame">

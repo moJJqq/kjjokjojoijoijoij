@@ -3,7 +3,20 @@
 @{
     ViewBag.Title = "Simple";
 }
-
+<head>
+    <script type="text/javascript" src="Scripts/PersianDatePicker.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="Content/PersianDatePicker.min.css" />
+</head>
+<div>
+    <form name="myform" method="POST">
+        <div align="center">
+            <br><br>
+            <input type="text" name="OrderCode" size="25" placeholder="شماره سفارش">
+           
+            <input type="submit" value="جستجو"><br>
+        </div>
+    </form>
+</div>
 <div>
 
     @Html.Stimulsoft().RenderMvcViewerScripts()
