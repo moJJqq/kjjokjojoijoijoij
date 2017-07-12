@@ -17,7 +17,7 @@ namespace Towzin.Models
         public long ID { get; set; }
         public long StoppagesID { get; set; }
         public long OrderCodeID { get; set; }
-        public System.DateTime StartTime { get; set; }
+        public Nullable<System.DateTime> StartTime { get; set; }
         public Nullable<System.DateTime> EndTime { get; set; }
         public string Description { get; set; }
         public bool State { get; set; }

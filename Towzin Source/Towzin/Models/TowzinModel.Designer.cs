@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\admin\documents\visual studio 2015\Projects\Towzin\Towzin\Models\TowzinModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Towzin V2\Towzin V1 Git Hub\kjjokjojoijoijoij\Towzin Source\Towzin\Models\TowzinModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

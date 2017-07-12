@@ -10,6 +10,8 @@ using System.Web.Mvc;
 using Towzin.Models;
 using Microsoft.AspNet.Identity;
 using PagedList;
+using Microsoft.Reporting.WebForms;
+using System.IO;
 
 namespace Towzin.Controllers
 {
@@ -18,7 +20,7 @@ namespace Towzin.Controllers
         private TowzinEntities1 db = new TowzinEntities1();
 
         // GET: ProductiveDetails
-     
+        
         [Authorize(Roles = "ProductiveDetail_Index , admin")]
         public async Task<ActionResult> Index(string sortOrder, string currentFilter, string searchString, int? page)
         {

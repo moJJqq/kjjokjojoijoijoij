@@ -202,7 +202,19 @@ namespace Towzin.Controllers
             order.LastModifier = User.Identity.GetUserId();
             if (ModelState.IsValid)
             {
+
+                //var device = from s in db.Devices
+                  //           select s;
+
+                //device = device.Where(s => s.ProductionLineID.ToString().Contains(order.ProductionLineID.ToString()));
+                //Devices d = (Devices)device;
+            
+              //  device.Select()
+                //d.SendOrderCode = true;
                 
+                //db.Entry(d).State = EntityState.Modified;
+//                await db.SaveChangesAsync();
+
                 db.Entry(order).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

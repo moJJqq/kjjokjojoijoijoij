@@ -36,5 +36,10 @@ namespace Towzin.Models
         public long OperatorID { get; set; }
         public bool IOo { get; set; }
         public string LesionsName { get; set; }
+        public string WasteType { get; set; }
+        public string AddDateShamsi { get; set; }
+        public string ProductionLineName { get; set; }
+        public long Expr2 { get; set; }
+        public Nullable<double> Amount1 { get; set; }
     }
 }

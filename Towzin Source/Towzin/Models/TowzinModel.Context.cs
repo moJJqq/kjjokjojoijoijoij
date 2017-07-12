@@ -61,5 +61,7 @@ namespace Towzin.Models
         public virtual DbSet<OrderStatus> OrderStatus { get; set; }
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<VW_Order_Index> VW_Order_Index { get; set; }
+        public virtual DbSet<Container> Container { get; set; }
+        public virtual DbSet<Devices> Devices { get; set; }
     }
 }

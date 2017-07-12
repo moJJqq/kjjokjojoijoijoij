@@ -1,0 +1,20 @@
+﻿ 
+<h2>OrderSummery</h2>
+<form name="myform" method="POST">
+    <div align="center">
+        <br><br>
+        <input type="text" name="SearchString" size="25" placeholder="شماره سفارش،نام خط تولید،کد کالا">        
+        
+
+        <input type="submit" value="جستجو"><br>
+    </div>
+</form>
+
+<div style="padding:10px; border:1px solid black">
+    <div><a href="@Url.Action("Report",new {id= "PDF"})"> Get Report PDF</a></div>
+    <div><a href="@Url.Action("Report",new {id= "Excel"})"> Get Report Excel</a></div>
+    <div><a href="@Url.Action("Report",new {id= "Word"})"> Get Report Word</a></div>
+    <div><a href="@Url.Action("Report",new {id= "Image"})"> Get Report Image</a></div>
+</div>
+
+
