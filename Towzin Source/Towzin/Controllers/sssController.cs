@@ -41,8 +41,8 @@ namespace Towzin.Controllers
             List<VW_ProductiveDetails_Index> cm = new List<VW_ProductiveDetails_Index>();
             using (TowzinEntities1 dc = new TowzinEntities1())
             {
-                
-                var SearchString = TempData["SearchString"];
+                cm = dc.VW_ProductiveDetails_Index.ToList();
+                var SearchString  = TempData["SearchString"];
                 if (SearchString.ToString() != "")
                 {
                     ////gooogle Search Algoritm
@@ -65,14 +65,8 @@ namespace Towzin.Controllers
                     }
                     for (int i = 0; i <= x; i++)
                     {
-                        if (i == 0)
-                        {
-                            cm = dc.VW_ProductiveDetails_Index.Where(s => s.OrderCodeID.ToString().Contains(Words[i].Trim()) || s.ProductionLineName.Contains(Words[i].Trim()) || s.PartCode.Contains(Words[i].Trim()) || s.AddDateShamsi.Contains(Words[i].Trim()) || s.WasteType.ToString().Contains(Words[i].Trim()) || s.IO.Contains(Words[i].Trim()) || s.Name.Contains(Words[i].Trim())).ToList();
-                        }
-                        else
-                        {
-                            cm = cm.Where(s => s.OrderCodeID.ToString().Contains(Words[i].Trim()) || s.ProductionLineName.Contains(Words[i].Trim()) || s.PartCode.Contains(Words[i].Trim()) || s.AddDateShamsi.Contains(Words[i].Trim()) || s.WasteType.ToString().Contains(Words[i].Trim()) || s.IO.Contains(Words[i].Trim()) || s.Name.Contains(Words[i].Trim())).ToList();
-                        }
+
+                        cm = cm.Where(s => s.OrderCodeID.ToString().ToLower().Contains(Words[i].Trim().ToLower()) || s.ProductionLineName.ToLower().Contains(Words[i].Trim().ToLower()) || s.PartCode.ToLower().Contains(Words[i].Trim().ToLower()) || s.AddDateShamsi.ToLower().Contains(Words[i].Trim().ToLower()) || s.WasteType.ToString().ToLower().Contains(Words[i].Trim().ToLower()) || s.IO.ToLower().Contains(Words[i].Trim().ToLower()) || s.Name.ToLower().Contains(Words[i].Trim().ToLower())).ToList();
                     }
                     //cm = dc.VW_ProductiveDetails_Index.Where(s => s.OrderCodeID.ToString().Contains(SearchString.ToString())|| s.ProductionLineName.Contains(SearchString.ToString()) || s.PartCode.Contains(searchString) || s.AddDateShamsi.Contains(searchString)).ToList();
                 }
