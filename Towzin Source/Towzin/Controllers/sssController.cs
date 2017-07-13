@@ -41,7 +41,7 @@ namespace Towzin.Controllers
             List<VW_ProductiveDetails_Index> cm = new List<VW_ProductiveDetails_Index>();
             using (TowzinEntities1 dc = new TowzinEntities1())
             {
-                cm = dc.VW_ProductiveDetails_Index.ToList();
+                
                 var SearchString = TempData["SearchString"];
                 if (SearchString.ToString() != "")
                 {
@@ -65,7 +65,14 @@ namespace Towzin.Controllers
                     }
                     for (int i = 0; i <= x; i++)
                     {
-                        cm = cm.Where(s => s.OrderCodeID.ToString().Contains(Words[i].Trim()) || s.ProductionLineName.Contains(Words[i].Trim()) || s.PartCode.Contains(Words[i].Trim()) || s.AddDateShamsi.Contains(Words[i].Trim()) || s.WasteType.ToString().Contains(Words[i].Trim()) || s.IO.Contains(Words[i].Trim()) || s.Name.Contains(Words[i].Trim())).ToList();
+                        if (i == 0)
+                        {
+                            cm = dc.VW_ProductiveDetails_Index.Where(s => s.OrderCodeID.ToString().Contains(Words[i].Trim()) || s.ProductionLineName.Contains(Words[i].Trim()) || s.PartCode.Contains(Words[i].Trim()) || s.AddDateShamsi.Contains(Words[i].Trim()) || s.WasteType.ToString().Contains(Words[i].Trim()) || s.IO.Contains(Words[i].Trim()) || s.Name.Contains(Words[i].Trim())).ToList();
+                        }
+                        else
+                        {
+                            cm = cm.Where(s => s.OrderCodeID.ToString().Contains(Words[i].Trim()) || s.ProductionLineName.Contains(Words[i].Trim()) || s.PartCode.Contains(Words[i].Trim()) || s.AddDateShamsi.Contains(Words[i].Trim()) || s.WasteType.ToString().Contains(Words[i].Trim()) || s.IO.Contains(Words[i].Trim()) || s.Name.Contains(Words[i].Trim())).ToList();
+                        }
                     }
                     //cm = dc.VW_ProductiveDetails_Index.Where(s => s.OrderCodeID.ToString().Contains(SearchString.ToString())|| s.ProductionLineName.Contains(SearchString.ToString()) || s.PartCode.Contains(searchString) || s.AddDateShamsi.Contains(searchString)).ToList();
                 }
