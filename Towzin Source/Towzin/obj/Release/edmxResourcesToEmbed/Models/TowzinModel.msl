@@ -234,6 +234,7 @@
     <EntitySetMapping Name="ProductiveDetails">
       <EntityTypeMapping TypeName="TowzinModel.ProductiveDetails">
         <MappingFragment StoreEntitySet="ProductiveDetails">
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
           <ScalarProperty Name="Amount1" ColumnName="Amount1" />
           <ScalarProperty Name="ToPartID" ColumnName="ToPartID" />
           <ScalarProperty Name="FromPartID" ColumnName="FromPartID" />
@@ -297,6 +298,7 @@
     <EntitySetMapping Name="Stoppages">
       <EntityTypeMapping TypeName="TowzinModel.Stoppages">
         <MappingFragment StoreEntitySet="Stoppages">
+          <ScalarProperty Name="HMICode" ColumnName="HMICode" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StoppagesLatinName" ColumnName="StoppagesLatinName" />
           <ScalarProperty Name="StoppagesName" ColumnName="StoppagesName" />
@@ -572,6 +574,7 @@
     <EntitySetMapping Name="VW_ProductiveDetails_Index">
       <EntityTypeMapping TypeName="TowzinModel.VW_ProductiveDetails_Index">
         <MappingFragment StoreEntitySet="VW_ProductiveDetails_Index">
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
           <ScalarProperty Name="Amount1" ColumnName="Amount1" />
           <ScalarProperty Name="Expr2" ColumnName="Expr2" />
           <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
@@ -694,6 +697,33 @@
           <ScalarProperty Name="IP" ColumnName="IP" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_ReportExportCompand">
+      <EntityTypeMapping TypeName="TowzinModel.VW_ReportExportCompand">
+        <MappingFragment StoreEntitySet="VW_ReportExportCompand">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="ToOrderCodeID" ColumnName="ToOrderCodeID" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="FormoulaNumber" ColumnName="FormoulaNumber" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_OrderSummery">
+      <EntityTypeMapping TypeName="TowzinModel.VW_OrderSummery">
+        <MappingFragment StoreEntitySet="VW_OrderSummery">
+          <ScalarProperty Name="StatusTitle" ColumnName="StatusTitle" />
+          <ScalarProperty Name="RemainingAmount1" ColumnName="RemainingAmount1" />
+          <ScalarProperty Name="RemainingAmount" ColumnName="RemainingAmount" />
+          <ScalarProperty Name="Amount1" ColumnName="Amount1" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AmountWaste" ColumnName="AmountWaste" />
+          <ScalarProperty Name="AmountOfProductive1" ColumnName="AmountOfProductive1" />
+          <ScalarProperty Name="AmountOfProductive" ColumnName="AmountOfProductive" />
+          <ScalarProperty Name="OrderCode" ColumnName="OrderCode" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

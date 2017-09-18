@@ -36,6 +36,7 @@ namespace Towzin.Models
         public Nullable<long> FromPartID { get; set; }
         public Nullable<long> ToPartID { get; set; }
         public Nullable<double> Amount1 { get; set; }
+        public Nullable<long> ProductionLineID { get; set; }
     
         public virtual Lesion Lesion { get; set; }
         public virtual Part Part { get; set; }

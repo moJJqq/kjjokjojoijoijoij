@@ -30,6 +30,7 @@ namespace Towzin.Models
         public string LastModifier { get; set; }
         public System.DateTime LastModificationDate { get; set; }
         public byte[] Version { get; set; }
+        public Nullable<int> HMICode { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductiveStoppages> ProductiveStoppages { get; set; }

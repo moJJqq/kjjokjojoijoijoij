@@ -308,6 +308,7 @@
     </Key>
     <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="OrderCodeID" Type="bigint" Nullable="false" />
+    <Property Name="ProductionLineID" Type="bigint" />
     <Property Name="PartID" Type="bigint" Nullable="false" />
     <Property Name="OperatorID" Type="bigint" Nullable="false" />
     <Property Name="IO" Type="bit" Nullable="false" />
@@ -377,6 +378,7 @@
     <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="StoppagesLatinName" Type="nvarchar(max)" Nullable="false" />
     <Property Name="StoppagesName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HMICode" Type="int" />
     <Property Name="Description" Type="nvarchar(max)" />
     <Property Name="State" Type="bit" Nullable="false" />
     <Property Name="Creator" Type="nvarchar" MaxLength="128" Nullable="false" />
@@ -489,6 +491,22 @@ warning 6002: The table/view 'Towzin.dbo.VW_OrderPart_Index' does not have a pri
     <Property Name="AddDate" Type="datetime" Nullable="false" />
     <Property Name="LastModifier" Type="nvarchar" MaxLength="128" Nullable="false" />
     <Property Name="LastModificationDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Towzin.dbo.VW_OrderSummery' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VW_OrderSummery">
+    <Key>
+      <PropertyRef Name="OrderCode" />
+    </Key>
+    <Property Name="OrderCode" Type="bigint" Nullable="false" />
+    <Property Name="AmountOfProductive" Type="float" />
+    <Property Name="AmountOfProductive1" Type="bigint" />
+    <Property Name="AmountWaste" Type="float" />
+    <Property Name="Amount" Type="float" />
+    <Property Name="Amount1" Type="float" />
+    <Property Name="RemainingAmount" Type="float" />
+    <Property Name="RemainingAmount1" Type="float" />
+    <Property Name="StatusTitle" Type="nvarchar(max)" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'Towzin.dbo.VW_Part_Index' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -749,6 +767,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
       <PropertyRef Name="PartID" />
       <PropertyRef Name="OperatorID" />
       <PropertyRef Name="IOo" />
+      <PropertyRef Name="OrderStatusID" />
       <PropertyRef Name="ProductionLineName" />
       <PropertyRef Name="Expr2" />
     </Key>
@@ -776,9 +795,24 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     <Property Name="OperatorID" Type="bigint" Nullable="false" />
     <Property Name="IOo" Type="bit" Nullable="false" />
     <Property Name="LesionsName" Type="nvarchar(max)" />
-    <Property Name="ProductionLineName" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Expr2" Type="bigint" Nullable="false" />
     <Property Name="Amount1" Type="float" />
+    <Property Name="ProductionLineName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderStatusID" Type="bigint" Nullable="false" />
+    <Property Name="Expr2" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VW_ReportExportCompand">
+    <Key>
+      <PropertyRef Name="OrderCodeID" />
+      <PropertyRef Name="Amount" />
+    </Key>
+    <Property Name="OrderCodeID" Type="bigint" Nullable="false" />
+    <Property Name="FormoulaNumber" Type="nvarchar(max)" />
+    <Property Name="PartCode" Type="nvarchar(max)" />
+    <Property Name="ToOrderCodeID" Type="bigint" />
+    <Property Name="Expr1" Type="nvarchar(max)" />
+    <Property Name="Amount" Type="float" Nullable="false" />
   </EntityType>
   <Association Name="FK_Order_Frame">
     <End Role="Frame" Type="Self.Frame" Multiplicity="1" />
@@ -1272,6 +1306,19 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     [VW_OrderPart_Index].[LastModificationDate] AS [LastModificationDate]
     FROM [dbo].[VW_OrderPart_Index] AS [VW_OrderPart_Index]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="VW_OrderSummery" EntityType="Self.VW_OrderSummery" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VW_OrderSummery].[OrderCode] AS [OrderCode], 
+    [VW_OrderSummery].[AmountOfProductive] AS [AmountOfProductive], 
+    [VW_OrderSummery].[AmountOfProductive1] AS [AmountOfProductive1], 
+    [VW_OrderSummery].[AmountWaste] AS [AmountWaste], 
+    [VW_OrderSummery].[Amount] AS [Amount], 
+    [VW_OrderSummery].[Amount1] AS [Amount1], 
+    [VW_OrderSummery].[RemainingAmount] AS [RemainingAmount], 
+    [VW_OrderSummery].[RemainingAmount1] AS [RemainingAmount1], 
+    [VW_OrderSummery].[StatusTitle] AS [StatusTitle]
+    FROM [dbo].[VW_OrderSummery] AS [VW_OrderSummery]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="VW_Part_Index" EntityType="Self.VW_Part_Index" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [VW_Part_Index].[Name] AS [Name], 
@@ -1450,10 +1497,21 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     [VW_ProductiveDetails_Index].[OperatorID] AS [OperatorID], 
     [VW_ProductiveDetails_Index].[IOo] AS [IOo], 
     [VW_ProductiveDetails_Index].[LesionsName] AS [LesionsName], 
+    [VW_ProductiveDetails_Index].[Amount1] AS [Amount1], 
     [VW_ProductiveDetails_Index].[ProductionLineName] AS [ProductionLineName], 
-    [VW_ProductiveDetails_Index].[Expr2] AS [Expr2], 
-    [VW_ProductiveDetails_Index].[Amount1] AS [Amount1]
+    [VW_ProductiveDetails_Index].[OrderStatusID] AS [OrderStatusID], 
+    [VW_ProductiveDetails_Index].[Expr2] AS [Expr2]
     FROM [dbo].[VW_ProductiveDetails_Index] AS [VW_ProductiveDetails_Index]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_ReportExportCompand" EntityType="Self.VW_ReportExportCompand" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VW_ReportExportCompand].[OrderCodeID] AS [OrderCodeID], 
+    [VW_ReportExportCompand].[FormoulaNumber] AS [FormoulaNumber], 
+    [VW_ReportExportCompand].[PartCode] AS [PartCode], 
+    [VW_ReportExportCompand].[ToOrderCodeID] AS [ToOrderCodeID], 
+    [VW_ReportExportCompand].[Expr1] AS [Expr1], 
+    [VW_ReportExportCompand].[Amount] AS [Amount]
+    FROM [dbo].[VW_ReportExportCompand] AS [VW_ReportExportCompand]</DefiningQuery>
     </EntitySet>
     <AssociationSet Name="FK_Order_Frame" Association="Self.FK_Order_Frame">
       <End Role="Frame" EntitySet="Frame" />

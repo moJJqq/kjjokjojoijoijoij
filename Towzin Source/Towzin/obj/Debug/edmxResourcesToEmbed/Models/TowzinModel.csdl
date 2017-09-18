@@ -290,6 +290,7 @@
     <Property Name="FromPartID" Type="Int64" />
     <Property Name="ToPartID" Type="Int64" />
     <Property Name="Amount1" Type="Double" />
+    <Property Name="ProductionLineID" Type="Int64" />
   </EntityType>
   <EntityType Name="ProductiveStoppages">
     <Key>
@@ -343,6 +344,7 @@
     <Property Name="LastModificationDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="ProductiveStoppages" Relationship="Self.FK_ProductiveStoppages_Stoppages1" FromRole="Stoppages" ToRole="ProductiveStoppages" />
+    <Property Name="HMICode" Type="Int32" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -808,6 +810,8 @@
     </AssociationSet>
     <EntitySet Name="Container" EntityType="TowzinModel.Container" />
     <EntitySet Name="Devices" EntityType="TowzinModel.Devices" />
+    <EntitySet Name="VW_ReportExportCompand" EntityType="TowzinModel.VW_ReportExportCompand" />
+    <EntitySet Name="VW_OrderSummery" EntityType="TowzinModel.VW_OrderSummery" />
   </EntityContainer>
   <EntityType Name="Operator">
     <Key>
@@ -1145,6 +1149,7 @@
       <PropertyRef Name="WasteType" />
       <PropertyRef Name="ProductionLineName" />
       <PropertyRef Name="Expr2" />
+      <PropertyRef Name="OrderStatusID" />
     </Key>
     <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
     <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -1173,6 +1178,7 @@
     <Property Name="ProductionLineName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Expr2" Type="Int64" Nullable="false" />
     <Property Name="Amount1" Type="Double" />
+    <Property Name="OrderStatusID" Type="Int64" Nullable="false" />
   </EntityType>
   <Association Name="FK_ProductiveDetails_ProductiveState">
     <End Type="TowzinModel.ProductiveState" Role="ProductiveState" Multiplicity="1" />
@@ -1427,5 +1433,31 @@
     <Property Name="Region" Type="Int32" />
     <Property Name="SendGari" Type="Boolean" />
     <Property Name="SendDestinationOrder" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="VW_ReportExportCompand">
+    <Key>
+      <PropertyRef Name="OrderCodeID" />
+      <PropertyRef Name="Amount" />
+    </Key>
+    <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
+    <Property Name="FormoulaNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ToOrderCodeID" Type="Int64" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VW_OrderSummery">
+    <Key>
+      <PropertyRef Name="OrderCode" />
+    </Key>
+    <Property Name="OrderCode" Type="Int64" Nullable="false" />
+    <Property Name="AmountOfProductive" Type="Double" />
+    <Property Name="AmountOfProductive1" Type="Int64" />
+    <Property Name="AmountWaste" Type="Double" />
+    <Property Name="Amount" Type="Double" />
+    <Property Name="Amount1" Type="Double" />
+    <Property Name="RemainingAmount" Type="Double" />
+    <Property Name="RemainingAmount1" Type="Double" />
+    <Property Name="StatusTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

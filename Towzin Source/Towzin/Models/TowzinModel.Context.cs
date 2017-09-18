@@ -63,5 +63,7 @@ namespace Towzin.Models
         public virtual DbSet<VW_Order_Index> VW_Order_Index { get; set; }
         public virtual DbSet<Container> Container { get; set; }
         public virtual DbSet<Devices> Devices { get; set; }
+        public virtual DbSet<VW_ReportExportCompand> VW_ReportExportCompand { get; set; }
+        public virtual DbSet<VW_OrderSummery> VW_OrderSummery { get; set; }
     }
 }

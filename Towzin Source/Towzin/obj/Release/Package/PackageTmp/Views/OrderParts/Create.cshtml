@@ -7,10 +7,10 @@
 <h2>جدید</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>محصولات سفارش</h4>
         <hr />
@@ -26,8 +26,8 @@
         <div class="form-group">
             <span class="control-label col-md-2">کد کالا</span>
             <div class="col-md-2">
-                @Html.DropDownList("PartID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.PartID, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.PartID, new { htmlAttributes = new { @class = "form-control" } })
             </div>
         </div>
 
@@ -58,8 +58,9 @@
         <div class="form-group">
             <span class="control-label col-md-2">نام مشتری</span>
             <div class="col-md-4">
-                @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+                
+                @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @id = "IDD" } })
+                <div id="message">jj</div>
             </div>
         </div>
 
@@ -91,8 +92,41 @@
 
 <div>
     @Html.ActionLink("بازگشت به لیست", "Index")
+    
 </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("div#message").html("!"),
+        $("#CustomerName").change({
+            
+            source: function (request, response) {
+                $("div#message").html("Error on sending or receiving data!"),
+                $.ajax({
+                    url: "/OrderParts/Index",
+                    type: "POST",
+                    dataType: "json",
+                    data: { Prefix: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+
+                            $("div#message").html("Error on sending or receiving data!");
+
+                            return { label: item.Name, value: item.Name };
+                        }))
+                    },
+                    error: function (response) {
+                        $("div#message").html("Error on sending or receiving data!");
+                    }
+                })
+            },
+            messages: {
+                noResults: "", results: ""
+            }
+        });
+    })
+</script>

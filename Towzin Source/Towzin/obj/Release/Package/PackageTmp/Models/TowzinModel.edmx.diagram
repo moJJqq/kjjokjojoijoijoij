@@ -78,6 +78,8 @@
         <AssociationConnector Association="TowzinModel.FK_PartPackage_Unit" />
         <EntityTypeShape EntityType="TowzinModel.Container" Width="1.5" PointX="10.75" PointY="5.75" />
         <EntityTypeShape EntityType="TowzinModel.Devices" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="TowzinModel.VW_ReportExportCompand" Width="1.5" PointX="16.375" PointY="6.75" />
+        <EntityTypeShape EntityType="TowzinModel.VW_OrderSummery" Width="1.5" PointX="18.375" PointY="16.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -41,5 +41,6 @@ namespace Towzin.Models
         public string ProductionLineName { get; set; }
         public long Expr2 { get; set; }
         public Nullable<double> Amount1 { get; set; }
+        public long OrderStatusID { get; set; }
     }
 }

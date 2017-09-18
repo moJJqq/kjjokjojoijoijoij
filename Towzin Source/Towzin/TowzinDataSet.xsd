@@ -49,6 +49,53 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_ReportExportCompandTableAdapter" GeneratorDataComponentClassName="VW_ReportExportCompandTableAdapter" Name="VW_ReportExportCompand" UserDataComponentName="VW_ReportExportCompandTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DefaultConnection (Web.config)" DbObjectName="Towzin.dbo.VW_ReportExportCompand" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     *   
+FROM            VW_ReportExportCompand</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderCodeID" DataSetColumn="OrderCodeID" />
+              <Mapping SourceColumn="FormoulaNumber" DataSetColumn="fNumber" />
+              <Mapping SourceColumn="PartCode" DataSetColumn="PartCode" />
+              <Mapping SourceColumn="ToOrderCodeID" DataSetColumn="ToOrderCodeID" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_OrderSummeryTableAdapter" GeneratorDataComponentClassName="VW_OrderSummeryTableAdapter" Name="VW_OrderSummery" UserDataComponentName="VW_OrderSummeryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DefaultConnection (Web.config)" DbObjectName="Towzin.dbo.VW_OrderSummery" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        VW_OrderSummery.*
+FROM            VW_OrderSummery</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderCode" DataSetColumn="OrderCode" />
+              <Mapping SourceColumn="AmountOfProductive" DataSetColumn="AmountOfProductive" />
+              <Mapping SourceColumn="AmountOfProductive1" DataSetColumn="AmountOfProductive1" />
+              <Mapping SourceColumn="AmountWaste" DataSetColumn="AmountWaste" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Amount1" DataSetColumn="Amount1" />
+              <Mapping SourceColumn="RemainingAmount" DataSetColumn="RemainingAmount" />
+              <Mapping SourceColumn="RemainingAmount1" DataSetColumn="RemainingAmount1" />
+              <Mapping SourceColumn="StatusTitle" DataSetColumn="StatusTitle" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -57,7 +104,7 @@
   <xs:element name="TowzinDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TowzinDataSet" msprop:Generator_UserDSName="TowzinDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="VW_ProductiveDetails_Index" msprop:Generator_TableClassName="VW_ProductiveDetails_IndexDataTable" msprop:Generator_TableVarName="tableVW_ProductiveDetails_Index" msprop:Generator_TablePropName="VW_ProductiveDetails_Index" msprop:Generator_RowDeletingName="VW_ProductiveDetails_IndexRowDeleting" msprop:Generator_RowChangingName="VW_ProductiveDetails_IndexRowChanging" msprop:Generator_RowEvHandlerName="VW_ProductiveDetails_IndexRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_ProductiveDetails_IndexRowDeleted" msprop:Generator_UserTableName="VW_ProductiveDetails_Index" msprop:Generator_RowChangedName="VW_ProductiveDetails_IndexRowChanged" msprop:Generator_RowEvArgName="VW_ProductiveDetails_IndexRowChangeEvent" msprop:Generator_RowClassName="VW_ProductiveDetails_IndexRow">
+        <xs:element name="VW_ProductiveDetails_Index" msprop:Generator_TableClassName="VW_ProductiveDetails_IndexDataTable" msprop:Generator_TableVarName="tableVW_ProductiveDetails_Index" msprop:Generator_RowChangedName="VW_ProductiveDetails_IndexRowChanged" msprop:Generator_TablePropName="VW_ProductiveDetails_Index" msprop:Generator_RowDeletingName="VW_ProductiveDetails_IndexRowDeleting" msprop:Generator_RowChangingName="VW_ProductiveDetails_IndexRowChanging" msprop:Generator_RowEvHandlerName="VW_ProductiveDetails_IndexRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_ProductiveDetails_IndexRowDeleted" msprop:Generator_RowClassName="VW_ProductiveDetails_IndexRow" msprop:Generator_UserTableName="VW_ProductiveDetails_Index" msprop:Generator_RowEvArgName="VW_ProductiveDetails_IndexRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="WasteType" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWasteType" msprop:Generator_ColumnPropNameInRow="WasteType" msprop:Generator_ColumnPropNameInTable="WasteTypeColumn" msprop:Generator_UserColumnName="WasteType" minOccurs="0">
@@ -162,7 +209,62 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="VW_ReportExportCompand" msprop:Generator_TableClassName="VW_ReportExportCompandDataTable" msprop:Generator_TableVarName="tableVW_ReportExportCompand" msprop:Generator_TablePropName="VW_ReportExportCompand" msprop:Generator_RowDeletingName="VW_ReportExportCompandRowDeleting" msprop:Generator_RowChangingName="VW_ReportExportCompandRowChanging" msprop:Generator_RowEvHandlerName="VW_ReportExportCompandRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_ReportExportCompandRowDeleted" msprop:Generator_UserTableName="VW_ReportExportCompand" msprop:Generator_RowChangedName="VW_ReportExportCompandRowChanged" msprop:Generator_RowEvArgName="VW_ReportExportCompandRowChangeEvent" msprop:Generator_RowClassName="VW_ReportExportCompandRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderCodeID" msprop:Generator_ColumnVarNameInTable="columnOrderCodeID" msprop:Generator_ColumnPropNameInRow="OrderCodeID" msprop:Generator_ColumnPropNameInTable="OrderCodeIDColumn" msprop:Generator_UserColumnName="OrderCodeID" type="xs:long" />
+              <xs:element name="fNumber" msprop:Generator_ColumnVarNameInTable="columnfNumber" msprop:Generator_ColumnPropNameInRow="fNumber" msprop:Generator_ColumnPropNameInTable="fNumberColumn" msprop:Generator_UserColumnName="fNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PartCode" msprop:Generator_ColumnVarNameInTable="columnPartCode" msprop:Generator_ColumnPropNameInRow="PartCode" msprop:Generator_ColumnPropNameInTable="PartCodeColumn" msprop:Generator_UserColumnName="PartCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToOrderCodeID" msprop:Generator_ColumnVarNameInTable="columnToOrderCodeID" msprop:Generator_ColumnPropNameInRow="ToOrderCodeID" msprop:Generator_ColumnPropNameInTable="ToOrderCodeIDColumn" msprop:Generator_UserColumnName="ToOrderCodeID" type="xs:long" minOccurs="0" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VW_OrderSummery" msprop:Generator_TableClassName="VW_OrderSummeryDataTable" msprop:Generator_TableVarName="tableVW_OrderSummery" msprop:Generator_TablePropName="VW_OrderSummery" msprop:Generator_RowDeletingName="VW_OrderSummeryRowDeleting" msprop:Generator_RowChangingName="VW_OrderSummeryRowChanging" msprop:Generator_RowEvHandlerName="VW_OrderSummeryRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_OrderSummeryRowDeleted" msprop:Generator_UserTableName="VW_OrderSummery" msprop:Generator_RowChangedName="VW_OrderSummeryRowChanged" msprop:Generator_RowEvArgName="VW_OrderSummeryRowChangeEvent" msprop:Generator_RowClassName="VW_OrderSummeryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderCode" msprop:Generator_ColumnVarNameInTable="columnOrderCode" msprop:Generator_ColumnPropNameInRow="OrderCode" msprop:Generator_ColumnPropNameInTable="OrderCodeColumn" msprop:Generator_UserColumnName="OrderCode" type="xs:long" />
+              <xs:element name="AmountOfProductive" msprop:Generator_ColumnVarNameInTable="columnAmountOfProductive" msprop:Generator_ColumnPropNameInRow="AmountOfProductive" msprop:Generator_ColumnPropNameInTable="AmountOfProductiveColumn" msprop:Generator_UserColumnName="AmountOfProductive" type="xs:double" minOccurs="0" />
+              <xs:element name="AmountOfProductive1" msprop:Generator_ColumnVarNameInTable="columnAmountOfProductive1" msprop:Generator_ColumnPropNameInRow="AmountOfProductive1" msprop:Generator_ColumnPropNameInTable="AmountOfProductive1Column" msprop:Generator_UserColumnName="AmountOfProductive1" type="xs:long" minOccurs="0" />
+              <xs:element name="AmountWaste" msprop:Generator_ColumnVarNameInTable="columnAmountWaste" msprop:Generator_ColumnPropNameInRow="AmountWaste" msprop:Generator_ColumnPropNameInTable="AmountWasteColumn" msprop:Generator_UserColumnName="AmountWaste" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount1" msprop:Generator_ColumnVarNameInTable="columnAmount1" msprop:Generator_ColumnPropNameInRow="Amount1" msprop:Generator_ColumnPropNameInTable="Amount1Column" msprop:Generator_UserColumnName="Amount1" type="xs:double" minOccurs="0" />
+              <xs:element name="RemainingAmount" msprop:Generator_ColumnVarNameInTable="columnRemainingAmount" msprop:Generator_ColumnPropNameInRow="RemainingAmount" msprop:Generator_ColumnPropNameInTable="RemainingAmountColumn" msprop:Generator_UserColumnName="RemainingAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="RemainingAmount1" msprop:Generator_ColumnVarNameInTable="columnRemainingAmount1" msprop:Generator_ColumnPropNameInRow="RemainingAmount1" msprop:Generator_ColumnPropNameInTable="RemainingAmount1Column" msprop:Generator_UserColumnName="RemainingAmount1" type="xs:double" minOccurs="0" />
+              <xs:element name="StatusTitle" msprop:Generator_ColumnVarNameInTable="columnStatusTitle" msprop:Generator_ColumnPropNameInRow="StatusTitle" msprop:Generator_ColumnPropNameInTable="StatusTitleColumn" msprop:Generator_UserColumnName="StatusTitle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_OrderSummery" />
+      <xs:field xpath="mstns:OrderCode" />
+    </xs:unique>
   </xs:element>
 </xs:schema>
