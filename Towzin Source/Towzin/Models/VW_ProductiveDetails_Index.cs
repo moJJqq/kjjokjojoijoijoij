@@ -11,7 +11,8 @@ namespace Towzin.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class VW_ProductiveDetails_Index
     {
         public long OrderCodeID { get; set; }
@@ -28,6 +29,7 @@ namespace Towzin.Models
         public double Amount { get; set; }
         public bool State { get; set; }
         public string Creator { get; set; }
+        
         public System.DateTime AddDate { get; set; }
         public string LastModifier { get; set; }
         public System.DateTime LastModificationDate { get; set; }

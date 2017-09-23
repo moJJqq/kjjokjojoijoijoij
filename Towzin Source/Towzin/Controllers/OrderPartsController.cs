@@ -18,7 +18,24 @@ namespace Towzin.Controllers
         private TowzinEntities1 db = new TowzinEntities1();
 
         // GET: OrderParts
-        
+        [HttpPost]
+        public JsonResult Parttt(string Prefix)
+        {
+
+            //Note : you can bind same list from database
+
+            //Searching records from list using LINQ query
+            List<Part> ObjList = new List<Part>();
+
+            var Part = from s in db.Part
+                       select s;
+            if (!String.IsNullOrEmpty(Prefix))
+            {
+                Part = Part.Where(s => s.Name.Contains(Prefix));
+            }
+            return Json(Part, JsonRequestBehavior.AllowGet);
+
+        }
         [Authorize(Roles = "OrderPart_Index , admin")]
         public async Task<ActionResult> Index(string sortOrder, string currentFilter, string searchString, int? page)
         {

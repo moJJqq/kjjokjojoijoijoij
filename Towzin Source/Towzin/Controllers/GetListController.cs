@@ -23,7 +23,7 @@ namespace Towzin.Views.GetList
             return View();
         }
         [HttpPost]
-        public ActionResult Part(string Prefix)
+        public JsonResult Part(string Prefix)
         {
             
             //Note : you can bind same list from database
@@ -34,7 +34,7 @@ namespace Towzin.Views.GetList
             var Part = from s in db.Part
                                 select s;
             if (!String.IsNullOrEmpty(Prefix))
-            {
+            { 
                 Part = Part.Where(s => s.Name.Contains(Prefix));
             }
             return Json(Part, JsonRequestBehavior.AllowGet);

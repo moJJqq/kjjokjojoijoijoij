@@ -50,7 +50,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>OrderCode</rd:DefaultName>
@@ -59,6 +61,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>DimGray</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -80,7 +83,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>StatusTitle</rd:DefaultName>
@@ -110,7 +115,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>AmountOfProductive</rd:DefaultName>
@@ -140,7 +147,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>AmountOfProductive1</rd:DefaultName>
@@ -170,7 +179,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Amount</rd:DefaultName>
@@ -200,7 +211,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Amount1</rd:DefaultName>
@@ -230,7 +243,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>AmountWaste1</rd:DefaultName>
@@ -260,7 +275,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>RemainingAmount</rd:DefaultName>
@@ -290,7 +307,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>RemainingAmount1</rd:DefaultName>
@@ -395,7 +414,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>مقدار مانده تعداد</Value>
+                  <Value>مقدار مانده/تعداد</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -430,7 +449,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>مقدار مانده کیلوگرم</Value>
+                  <Value>مقدار مانده/کیلوگرم</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -500,7 +519,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>مقدار تولیدی تعداد</Value>
+                  <Value>مقدار تولیدی/تعداد</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -535,7 +554,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>مقدار تولیدی کیلوگرم</Value>
+                  <Value>مقدار تولیدی/کیلوگرم</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -570,7 +589,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>مقدار سفارش تعداد</Value>
+                  <Value>مقدار سفارش/تعداد</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -605,7 +624,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>مقدار سفارش کیلوگرم</Value>
+                  <Value>مقدار سفارش/کیلوگرم</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>

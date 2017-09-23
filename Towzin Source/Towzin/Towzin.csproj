@@ -692,6 +692,7 @@
     <Content Include="Views\FilterExportRayfanCompond\Index.cshtml" />
     <Content Include="Views\FilterExportRayfanCompond\OrderSummery.cshtml" />
     <Content Include="Views\sss\TotalOrders.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\PersianDatePicker.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
