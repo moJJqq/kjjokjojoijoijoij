@@ -155,7 +155,6 @@ namespace Towzin.Controllers
 
             if (ModelState.IsValid)
             {
-                ChangeSendOrderCode(order.ProductionLineID);
                 db.Order.Add(order);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -203,8 +202,18 @@ namespace Towzin.Controllers
             order.LastModifier = User.Identity.GetUserId();
             if (ModelState.IsValid)
             {
-                ChangeSendOrderCode(order.ProductionLineID);
+
+                //var device = from s in db.Devices
+                  //           select s;
+
+                //device = device.Where(s => s.ProductionLineID.ToString().Contains(order.ProductionLineID.ToString()));
+                //Devices d = (Devices)device;
+            
+              //  device.Select()
+                //d.SendOrderCode = true;
                 
+                //db.Entry(d).State = EntityState.Modified;
+//                await db.SaveChangesAsync();
 
                 db.Entry(order).State = EntityState.Modified;
                 await db.SaveChangesAsync();
@@ -221,7 +230,6 @@ namespace Towzin.Controllers
         [Authorize(Roles = "Order_Delete , admin")]
         public async Task<ActionResult> Delete(long? id)
         {
-            
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -241,28 +249,10 @@ namespace Towzin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(long id)
         {
-            
             Order order = await db.Order.FindAsync(id);
-            ChangeSendOrderCode(order.ProductionLineID);
             db.Order.Remove(order);
-
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
-        }
-
-        ///تابع مربوط به ارسال کدهای سفارش در صورت تغییر
-        public bool ChangeSendOrderCode(long? id)
-        {
-            Devices c = (from x in db.Devices
-                         where x.ProductionLineID == id
-                         select x).First();
-
-            
-            c.SendOrderCode = true;
-            
-            var msf = db.SaveChanges();
-
-            return true;
         }
 
         protected override void Dispose(bool disposing)
