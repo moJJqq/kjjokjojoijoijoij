@@ -323,6 +323,7 @@
     <Property Name="Amount" Type="float" Nullable="false" />
     <Property Name="Amount1" Type="float" />
     <Property Name="ProductiveRowDetails" Type="bigint" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
     <Property Name="State" Type="bit" Nullable="false" />
     <Property Name="Creator" Type="nvarchar" MaxLength="128" Nullable="false" />
     <Property Name="AddDate" Type="datetime" Nullable="false" />
@@ -507,6 +508,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_OrderSummery' does not have a primar
     <Property Name="RemainingAmount" Type="float" />
     <Property Name="RemainingAmount1" Type="float" />
     <Property Name="StatusTitle" Type="nvarchar(max)" />
+    <Property Name="PercentWaste" Type="float" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'Towzin.dbo.VW_Part_Index' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -768,8 +770,6 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
       <PropertyRef Name="OperatorID" />
       <PropertyRef Name="IOo" />
       <PropertyRef Name="OrderStatusID" />
-      <PropertyRef Name="ProductionLineName" />
-      <PropertyRef Name="Expr2" />
     </Key>
     <Property Name="WasteType" Type="nvarchar" MaxLength="6" Nullable="false" />
     <Property Name="OrderCodeID" Type="bigint" Nullable="false" />
@@ -796,9 +796,9 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
     <Property Name="IOo" Type="bit" Nullable="false" />
     <Property Name="LesionsName" Type="nvarchar(max)" />
     <Property Name="Amount1" Type="float" />
-    <Property Name="ProductionLineName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductionLineName" Type="nvarchar(max)" />
     <Property Name="OrderStatusID" Type="bigint" Nullable="false" />
-    <Property Name="Expr2" Type="bigint" Nullable="false" />
+    <Property Name="Expr2" Type="bigint" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -1316,7 +1316,8 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
     [VW_OrderSummery].[Amount1] AS [Amount1], 
     [VW_OrderSummery].[RemainingAmount] AS [RemainingAmount], 
     [VW_OrderSummery].[RemainingAmount1] AS [RemainingAmount1], 
-    [VW_OrderSummery].[StatusTitle] AS [StatusTitle]
+    [VW_OrderSummery].[StatusTitle] AS [StatusTitle], 
+    [VW_OrderSummery].[PercentWaste] AS [PercentWaste]
     FROM [dbo].[VW_OrderSummery] AS [VW_OrderSummery]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="VW_Part_Index" EntityType="Self.VW_Part_Index" store:Type="Views" store:Schema="dbo">

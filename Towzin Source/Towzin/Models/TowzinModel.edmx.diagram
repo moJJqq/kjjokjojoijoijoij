@@ -49,7 +49,7 @@
         <AssociationConnector Association="TowzinModel.FK_ProductionLineTechnicalProblem_Operator" />
         <AssociationConnector Association="TowzinModel.FK_ProductiveDetails_Operator" />
         <AssociationConnector Association="TowzinModel.FK_ProductiveStoppages_Operator" />
-        <EntityTypeShape EntityType="TowzinModel.VW_OrderPart_Index" Width="1.5" PointX="4.375" PointY="3.75" />
+        <EntityTypeShape EntityType="TowzinModel.VW_OrderPart_Index" Width="1.5" PointX="5" PointY="3" />
         <EntityTypeShape EntityType="TowzinModel.ProductiveState" Width="1.5" PointX="6.375" PointY="0.875" />
         <EntityTypeShape EntityType="TowzinModel.VW_Part_Index" Width="1.5" PointX="8.375" PointY="0.75" />
         <EntityTypeShape EntityType="TowzinModel.VW_PartFrame_Index" Width="1.5" PointX="10.375" PointY="0.75" />
@@ -59,7 +59,6 @@
         <EntityTypeShape EntityType="TowzinModel.VW_PartSpecification_Index" Width="1.5" PointX="14.375" PointY="5.75" />
         <EntityTypeShape EntityType="TowzinModel.VW_ProductionLineTechnicalProblem_Index" Width="1.5" PointX="15.375" PointY="10.75" />
         <EntityTypeShape EntityType="TowzinModel.VW_Productive_Stoppages_Index" Width="1.5" PointX="16.375" PointY="0.75" />
-        <EntityTypeShape EntityType="TowzinModel.VW_ProductiveDetails_Index" Width="1.5" PointX="16.375" PointY="16.75" />
         <AssociationConnector Association="TowzinModel.FK_ProductiveDetails_ProductiveState" />
         <EntityTypeShape EntityType="TowzinModel.PartPackage" Width="1.5" PointX="8.25" PointY="14.375" />
         <AssociationConnector Association="TowzinModel.FK_PartPackage_Package" />
@@ -80,6 +79,7 @@
         <EntityTypeShape EntityType="TowzinModel.Devices" Width="1.5" PointX="0.75" PointY="12.75" />
         <EntityTypeShape EntityType="TowzinModel.VW_ReportExportCompand" Width="1.5" PointX="16.375" PointY="6.75" />
         <EntityTypeShape EntityType="TowzinModel.VW_OrderSummery" Width="1.5" PointX="18.375" PointY="16.75" />
+        <EntityTypeShape EntityType="TowzinModel.VW_ProductiveDetails_Index" Width="1.5" PointX="20.5" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

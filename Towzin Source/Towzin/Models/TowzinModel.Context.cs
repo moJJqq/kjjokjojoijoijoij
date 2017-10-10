@@ -56,7 +56,6 @@ namespace Towzin.Models
         public virtual DbSet<VW_PartSpecification_Index> VW_PartSpecification_Index { get; set; }
         public virtual DbSet<VW_ProductionLineTechnicalProblem_Index> VW_ProductionLineTechnicalProblem_Index { get; set; }
         public virtual DbSet<VW_Productive_Stoppages_Index> VW_Productive_Stoppages_Index { get; set; }
-        public virtual DbSet<VW_ProductiveDetails_Index> VW_ProductiveDetails_Index { get; set; }
         public virtual DbSet<PartPackage> PartPackage { get; set; }
         public virtual DbSet<OrderStatus> OrderStatus { get; set; }
         public virtual DbSet<Order> Order { get; set; }
@@ -65,5 +64,6 @@ namespace Towzin.Models
         public virtual DbSet<Devices> Devices { get; set; }
         public virtual DbSet<VW_ReportExportCompand> VW_ReportExportCompand { get; set; }
         public virtual DbSet<VW_OrderSummery> VW_OrderSummery { get; set; }
+        public virtual DbSet<VW_ProductiveDetails_Index> VW_ProductiveDetails_Index { get; set; }
     }
 }

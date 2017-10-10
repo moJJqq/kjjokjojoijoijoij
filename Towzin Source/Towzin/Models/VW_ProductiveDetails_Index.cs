@@ -11,10 +11,10 @@ namespace Towzin.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class VW_ProductiveDetails_Index
     {
+        public string WasteType { get; set; }
         public long OrderCodeID { get; set; }
         public string PartCode { get; set; }
         public string Name { get; set; }
@@ -29,7 +29,7 @@ namespace Towzin.Models
         public double Amount { get; set; }
         public bool State { get; set; }
         public string Creator { get; set; }
-        
+        public string AddDateShamsi { get; set; }
         public System.DateTime AddDate { get; set; }
         public string LastModifier { get; set; }
         public System.DateTime LastModificationDate { get; set; }
@@ -38,11 +38,9 @@ namespace Towzin.Models
         public long OperatorID { get; set; }
         public bool IOo { get; set; }
         public string LesionsName { get; set; }
-        public string WasteType { get; set; }
-        public string AddDateShamsi { get; set; }
-        public string ProductionLineName { get; set; }
-        public long Expr2 { get; set; }
         public Nullable<double> Amount1 { get; set; }
+        public string ProductionLineName { get; set; }
         public long OrderStatusID { get; set; }
+        public Nullable<long> Expr2 { get; set; }
     }
 }

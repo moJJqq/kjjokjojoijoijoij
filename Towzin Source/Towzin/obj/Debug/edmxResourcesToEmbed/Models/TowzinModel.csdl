@@ -291,6 +291,7 @@
     <Property Name="ToPartID" Type="Int64" />
     <Property Name="Amount1" Type="Double" />
     <Property Name="ProductionLineID" Type="Int64" />
+    <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="ProductiveStoppages">
     <Key>
@@ -755,7 +756,6 @@
     <EntitySet Name="VW_PartSpecification_Index" EntityType="TowzinModel.VW_PartSpecification_Index" />
     <EntitySet Name="VW_ProductionLineTechnicalProblem_Index" EntityType="TowzinModel.VW_ProductionLineTechnicalProblem_Index" />
     <EntitySet Name="VW_Productive_Stoppages_Index" EntityType="TowzinModel.VW_Productive_Stoppages_Index" />
-    <EntitySet Name="VW_ProductiveDetails_Index" EntityType="TowzinModel.VW_ProductiveDetails_Index" />
     <AssociationSet Name="FK_ProductiveDetails_ProductiveState" Association="TowzinModel.FK_ProductiveDetails_ProductiveState">
       <End Role="ProductiveState" EntitySet="ProductiveState" />
       <End Role="ProductiveDetails" EntitySet="ProductiveDetails" />
@@ -812,6 +812,7 @@
     <EntitySet Name="Devices" EntityType="TowzinModel.Devices" />
     <EntitySet Name="VW_ReportExportCompand" EntityType="TowzinModel.VW_ReportExportCompand" />
     <EntitySet Name="VW_OrderSummery" EntityType="TowzinModel.VW_OrderSummery" />
+    <EntitySet Name="VW_ProductiveDetails_Index" EntityType="TowzinModel.VW_ProductiveDetails_Index" />
   </EntityContainer>
   <EntityType Name="Operator">
     <Key>
@@ -1132,54 +1133,6 @@
     <Property Name="StoppagesID" Type="Int64" Nullable="false" />
     <Property Name="OperatorID" Type="Int64" Nullable="false" />
   </EntityType>
-  <EntityType Name="VW_ProductiveDetails_Index">
-    <Key>
-      <PropertyRef Name="OrderCodeID" />
-      <PropertyRef Name="Waste" />
-      <PropertyRef Name="Amount" />
-      <PropertyRef Name="State" />
-      <PropertyRef Name="Creator" />
-      <PropertyRef Name="AddDate" />
-      <PropertyRef Name="LastModifier" />
-      <PropertyRef Name="LastModificationDate" />
-      <PropertyRef Name="ID" />
-      <PropertyRef Name="PartID" />
-      <PropertyRef Name="OperatorID" />
-      <PropertyRef Name="IOo" />
-      <PropertyRef Name="WasteType" />
-      <PropertyRef Name="ProductionLineName" />
-      <PropertyRef Name="Expr2" />
-      <PropertyRef Name="OrderStatusID" />
-    </Key>
-    <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
-    <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="OperatorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="IO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="FromOrderCodeID" Type="Int64" />
-    <Property Name="ToOrderCodeID" Type="Int64" />
-    <Property Name="BatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="FormoulaNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Waste" Type="Boolean" Nullable="false" />
-    <Property Name="LesionID" Type="Int64" />
-    <Property Name="Amount" Type="Double" Nullable="false" />
-    <Property Name="State" Type="Boolean" Nullable="false" />
-    <Property Name="Creator" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-    <Property Name="AddDate" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="LastModifier" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-    <Property Name="LastModificationDate" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="ID" Type="Int64" Nullable="false" />
-    <Property Name="PartID" Type="Int64" Nullable="false" />
-    <Property Name="OperatorID" Type="Int64" Nullable="false" />
-    <Property Name="IOo" Type="Boolean" Nullable="false" />
-    <Property Name="LesionsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="WasteType" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
-    <Property Name="AddDateShamsi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="ProductionLineName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Expr2" Type="Int64" Nullable="false" />
-    <Property Name="Amount1" Type="Double" />
-    <Property Name="OrderStatusID" Type="Int64" Nullable="false" />
-  </EntityType>
   <Association Name="FK_ProductiveDetails_ProductiveState">
     <End Type="TowzinModel.ProductiveState" Role="ProductiveState" Multiplicity="1" />
     <End Type="TowzinModel.ProductiveDetails" Role="ProductiveDetails" Multiplicity="*" />
@@ -1459,5 +1412,52 @@
     <Property Name="RemainingAmount" Type="Double" />
     <Property Name="RemainingAmount1" Type="Double" />
     <Property Name="StatusTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PercentWaste" Type="Double" />
+  </EntityType>
+  <EntityType Name="VW_ProductiveDetails_Index">
+    <Key>
+      <PropertyRef Name="WasteType" />
+      <PropertyRef Name="OrderCodeID" />
+      <PropertyRef Name="Waste" />
+      <PropertyRef Name="Amount" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="Creator" />
+      <PropertyRef Name="AddDate" />
+      <PropertyRef Name="LastModifier" />
+      <PropertyRef Name="LastModificationDate" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="PartID" />
+      <PropertyRef Name="OperatorID" />
+      <PropertyRef Name="IOo" />
+      <PropertyRef Name="OrderStatusID" />
+    </Key>
+    <Property Name="WasteType" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
+    <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OperatorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FromOrderCodeID" Type="Int64" />
+    <Property Name="ToOrderCodeID" Type="Int64" />
+    <Property Name="BatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FormoulaNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Waste" Type="Boolean" Nullable="false" />
+    <Property Name="LesionID" Type="Int64" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+    <Property Name="State" Type="Boolean" Nullable="false" />
+    <Property Name="Creator" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="AddDateShamsi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="AddDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifier" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LastModificationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="PartID" Type="Int64" Nullable="false" />
+    <Property Name="OperatorID" Type="Int64" Nullable="false" />
+    <Property Name="IOo" Type="Boolean" Nullable="false" />
+    <Property Name="LesionsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Amount1" Type="Double" />
+    <Property Name="ProductionLineName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OrderStatusID" Type="Int64" Nullable="false" />
+    <Property Name="Expr2" Type="Int64" />
   </EntityType>
 </Schema>

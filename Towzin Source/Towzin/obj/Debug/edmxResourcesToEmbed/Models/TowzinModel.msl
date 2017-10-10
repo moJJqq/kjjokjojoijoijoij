@@ -234,6 +234,7 @@
     <EntitySetMapping Name="ProductiveDetails">
       <EntityTypeMapping TypeName="TowzinModel.ProductiveDetails">
         <MappingFragment StoreEntitySet="ProductiveDetails">
+          <ScalarProperty Name="IP" ColumnName="IP" />
           <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
           <ScalarProperty Name="Amount1" ColumnName="Amount1" />
           <ScalarProperty Name="ToPartID" ColumnName="ToPartID" />
@@ -571,40 +572,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="VW_ProductiveDetails_Index">
-      <EntityTypeMapping TypeName="TowzinModel.VW_ProductiveDetails_Index">
-        <MappingFragment StoreEntitySet="VW_ProductiveDetails_Index">
-          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
-          <ScalarProperty Name="Amount1" ColumnName="Amount1" />
-          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
-          <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
-          <ScalarProperty Name="AddDateShamsi" ColumnName="AddDateShamsi" />
-          <ScalarProperty Name="WasteType" ColumnName="WasteType" />
-          <ScalarProperty Name="LesionsName" ColumnName="LesionsName" />
-          <ScalarProperty Name="IOo" ColumnName="IOo" />
-          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
-          <ScalarProperty Name="PartID" ColumnName="PartID" />
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
-          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
-          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
-          <ScalarProperty Name="Creator" ColumnName="Creator" />
-          <ScalarProperty Name="State" ColumnName="State" />
-          <ScalarProperty Name="Amount" ColumnName="Amount" />
-          <ScalarProperty Name="LesionID" ColumnName="LesionID" />
-          <ScalarProperty Name="Waste" ColumnName="Waste" />
-          <ScalarProperty Name="FormoulaNumber" ColumnName="FormoulaNumber" />
-          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
-          <ScalarProperty Name="ToOrderCodeID" ColumnName="ToOrderCodeID" />
-          <ScalarProperty Name="FromOrderCodeID" ColumnName="FromOrderCodeID" />
-          <ScalarProperty Name="IO" ColumnName="IO" />
-          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
-          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="PartPackage">
       <EntityTypeMapping TypeName="TowzinModel.PartPackage">
         <MappingFragment StoreEntitySet="PartPackage">
@@ -715,6 +682,7 @@
     <EntitySetMapping Name="VW_OrderSummery">
       <EntityTypeMapping TypeName="TowzinModel.VW_OrderSummery">
         <MappingFragment StoreEntitySet="VW_OrderSummery">
+          <ScalarProperty Name="PercentWaste" ColumnName="PercentWaste" />
           <ScalarProperty Name="StatusTitle" ColumnName="StatusTitle" />
           <ScalarProperty Name="RemainingAmount1" ColumnName="RemainingAmount1" />
           <ScalarProperty Name="RemainingAmount" ColumnName="RemainingAmount" />
@@ -724,6 +692,40 @@
           <ScalarProperty Name="AmountOfProductive1" ColumnName="AmountOfProductive1" />
           <ScalarProperty Name="AmountOfProductive" ColumnName="AmountOfProductive" />
           <ScalarProperty Name="OrderCode" ColumnName="OrderCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_ProductiveDetails_Index">
+      <EntityTypeMapping TypeName="TowzinModel.VW_ProductiveDetails_Index">
+        <MappingFragment StoreEntitySet="VW_ProductiveDetails_Index">
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+          <ScalarProperty Name="Amount1" ColumnName="Amount1" />
+          <ScalarProperty Name="LesionsName" ColumnName="LesionsName" />
+          <ScalarProperty Name="IOo" ColumnName="IOo" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="AddDateShamsi" ColumnName="AddDateShamsi" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="LesionID" ColumnName="LesionID" />
+          <ScalarProperty Name="Waste" ColumnName="Waste" />
+          <ScalarProperty Name="FormoulaNumber" ColumnName="FormoulaNumber" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ToOrderCodeID" ColumnName="ToOrderCodeID" />
+          <ScalarProperty Name="FromOrderCodeID" ColumnName="FromOrderCodeID" />
+          <ScalarProperty Name="IO" ColumnName="IO" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+          <ScalarProperty Name="WasteType" ColumnName="WasteType" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

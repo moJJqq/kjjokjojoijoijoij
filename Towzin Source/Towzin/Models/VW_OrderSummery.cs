@@ -23,5 +23,6 @@ namespace Towzin.Models
         public Nullable<double> RemainingAmount { get; set; }
         public Nullable<double> RemainingAmount1 { get; set; }
         public string StatusTitle { get; set; }
+        public Nullable<double> PercentWaste { get; set; }
     }
 }

@@ -328,6 +328,7 @@
           <Property Name="Amount" Type="float" Nullable="false" />
           <Property Name="Amount1" Type="float" />
           <Property Name="ProductiveRowDetails" Type="bigint" />
+          <Property Name="IP" Type="nvarchar" MaxLength="50" />
           <Property Name="State" Type="bit" Nullable="false" />
           <Property Name="Creator" Type="nvarchar" MaxLength="128" Nullable="false" />
           <Property Name="AddDate" Type="datetime" Nullable="false" />
@@ -512,6 +513,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_OrderSummery' does not have a primar
           <Property Name="RemainingAmount" Type="float" />
           <Property Name="RemainingAmount1" Type="float" />
           <Property Name="StatusTitle" Type="nvarchar(max)" />
+          <Property Name="PercentWaste" Type="float" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'Towzin.dbo.VW_Part_Index' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -773,8 +775,6 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
             <PropertyRef Name="OperatorID" />
             <PropertyRef Name="IOo" />
             <PropertyRef Name="OrderStatusID" />
-            <PropertyRef Name="ProductionLineName" />
-            <PropertyRef Name="Expr2" />
           </Key>
           <Property Name="WasteType" Type="nvarchar" MaxLength="6" Nullable="false" />
           <Property Name="OrderCodeID" Type="bigint" Nullable="false" />
@@ -801,9 +801,9 @@ warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not ha
           <Property Name="IOo" Type="bit" Nullable="false" />
           <Property Name="LesionsName" Type="nvarchar(max)" />
           <Property Name="Amount1" Type="float" />
-          <Property Name="ProductionLineName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ProductionLineName" Type="nvarchar(max)" />
           <Property Name="OrderStatusID" Type="bigint" Nullable="false" />
-          <Property Name="Expr2" Type="bigint" Nullable="false" />
+          <Property Name="Expr2" Type="bigint" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -1321,7 +1321,8 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
     [VW_OrderSummery].[Amount1] AS [Amount1], 
     [VW_OrderSummery].[RemainingAmount] AS [RemainingAmount], 
     [VW_OrderSummery].[RemainingAmount1] AS [RemainingAmount1], 
-    [VW_OrderSummery].[StatusTitle] AS [StatusTitle]
+    [VW_OrderSummery].[StatusTitle] AS [StatusTitle], 
+    [VW_OrderSummery].[PercentWaste] AS [PercentWaste]
     FROM [dbo].[VW_OrderSummery] AS [VW_OrderSummery]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="VW_Part_Index" EntityType="Self.VW_Part_Index" store:Type="Views" store:Schema="dbo">
@@ -1954,6 +1955,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <Property Name="ToPartID" Type="Int64" />
           <Property Name="Amount1" Type="Double" />
           <Property Name="ProductionLineID" Type="Int64" />
+          <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="ProductiveStoppages">
           <Key>
@@ -2418,7 +2420,6 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <EntitySet Name="VW_PartSpecification_Index" EntityType="TowzinModel.VW_PartSpecification_Index" />
           <EntitySet Name="VW_ProductionLineTechnicalProblem_Index" EntityType="TowzinModel.VW_ProductionLineTechnicalProblem_Index" />
           <EntitySet Name="VW_Productive_Stoppages_Index" EntityType="TowzinModel.VW_Productive_Stoppages_Index" />
-          <EntitySet Name="VW_ProductiveDetails_Index" EntityType="TowzinModel.VW_ProductiveDetails_Index" />
           <AssociationSet Name="FK_ProductiveDetails_ProductiveState" Association="TowzinModel.FK_ProductiveDetails_ProductiveState">
             <End Role="ProductiveState" EntitySet="ProductiveState" />
             <End Role="ProductiveDetails" EntitySet="ProductiveDetails" />
@@ -2475,6 +2476,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <EntitySet Name="Devices" EntityType="TowzinModel.Devices" />
           <EntitySet Name="VW_ReportExportCompand" EntityType="TowzinModel.VW_ReportExportCompand" />
           <EntitySet Name="VW_OrderSummery" EntityType="TowzinModel.VW_OrderSummery" />
+          <EntitySet Name="VW_ProductiveDetails_Index" EntityType="TowzinModel.VW_ProductiveDetails_Index" />
         </EntityContainer>
         <EntityType Name="Operator">
           <Key>
@@ -2795,54 +2797,6 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <Property Name="StoppagesID" Type="Int64" Nullable="false" />
           <Property Name="OperatorID" Type="Int64" Nullable="false" />
         </EntityType>
-        <EntityType Name="VW_ProductiveDetails_Index">
-          <Key>
-            <PropertyRef Name="OrderCodeID" />
-            <PropertyRef Name="Waste" />
-            <PropertyRef Name="Amount" />
-            <PropertyRef Name="State" />
-            <PropertyRef Name="Creator" />
-            <PropertyRef Name="AddDate" />
-            <PropertyRef Name="LastModifier" />
-            <PropertyRef Name="LastModificationDate" />
-            <PropertyRef Name="ID" />
-            <PropertyRef Name="PartID" />
-            <PropertyRef Name="OperatorID" />
-            <PropertyRef Name="IOo" />
-            <PropertyRef Name="WasteType" />
-            <PropertyRef Name="ProductionLineName" />
-            <PropertyRef Name="Expr2" />
-            <PropertyRef Name="OrderStatusID" />
-          </Key>
-          <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
-          <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OperatorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="IO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="FromOrderCodeID" Type="Int64" />
-          <Property Name="ToOrderCodeID" Type="Int64" />
-          <Property Name="BatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="FormoulaNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Waste" Type="Boolean" Nullable="false" />
-          <Property Name="LesionID" Type="Int64" />
-          <Property Name="Amount" Type="Double" Nullable="false" />
-          <Property Name="State" Type="Boolean" Nullable="false" />
-          <Property Name="Creator" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-          <Property Name="AddDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="LastModifier" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-          <Property Name="LastModificationDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="ID" Type="Int64" Nullable="false" />
-          <Property Name="PartID" Type="Int64" Nullable="false" />
-          <Property Name="OperatorID" Type="Int64" Nullable="false" />
-          <Property Name="IOo" Type="Boolean" Nullable="false" />
-          <Property Name="LesionsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="WasteType" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
-          <Property Name="AddDateShamsi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="ProductionLineName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Expr2" Type="Int64" Nullable="false" />
-          <Property Name="Amount1" Type="Double" />
-          <Property Name="OrderStatusID" Type="Int64" Nullable="false" />
-        </EntityType>
         <Association Name="FK_ProductiveDetails_ProductiveState">
           <End Type="TowzinModel.ProductiveState" Role="ProductiveState" Multiplicity="1" />
           <End Type="TowzinModel.ProductiveDetails" Role="ProductiveDetails" Multiplicity="*" />
@@ -3122,6 +3076,53 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <Property Name="RemainingAmount" Type="Double" />
           <Property Name="RemainingAmount1" Type="Double" />
           <Property Name="StatusTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PercentWaste" Type="Double" />
+        </EntityType>
+        <EntityType Name="VW_ProductiveDetails_Index">
+          <Key>
+            <PropertyRef Name="WasteType" />
+            <PropertyRef Name="OrderCodeID" />
+            <PropertyRef Name="Waste" />
+            <PropertyRef Name="Amount" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="Creator" />
+            <PropertyRef Name="AddDate" />
+            <PropertyRef Name="LastModifier" />
+            <PropertyRef Name="LastModificationDate" />
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="PartID" />
+            <PropertyRef Name="OperatorID" />
+            <PropertyRef Name="IOo" />
+            <PropertyRef Name="OrderStatusID" />
+          </Key>
+          <Property Name="WasteType" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="OrderCodeID" Type="Int64" Nullable="false" />
+          <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OperatorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FromOrderCodeID" Type="Int64" />
+          <Property Name="ToOrderCodeID" Type="Int64" />
+          <Property Name="BatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FormoulaNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Waste" Type="Boolean" Nullable="false" />
+          <Property Name="LesionID" Type="Int64" />
+          <Property Name="Amount" Type="Double" Nullable="false" />
+          <Property Name="State" Type="Boolean" Nullable="false" />
+          <Property Name="Creator" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="AddDateShamsi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="AddDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModifier" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="LastModificationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="PartID" Type="Int64" Nullable="false" />
+          <Property Name="OperatorID" Type="Int64" Nullable="false" />
+          <Property Name="IOo" Type="Boolean" Nullable="false" />
+          <Property Name="LesionsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Amount1" Type="Double" />
+          <Property Name="ProductionLineName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OrderStatusID" Type="Int64" Nullable="false" />
+          <Property Name="Expr2" Type="Int64" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -3362,6 +3363,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <EntitySetMapping Name="ProductiveDetails">
             <EntityTypeMapping TypeName="TowzinModel.ProductiveDetails">
               <MappingFragment StoreEntitySet="ProductiveDetails">
+                <ScalarProperty Name="IP" ColumnName="IP" />
                 <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
                 <ScalarProperty Name="Amount1" ColumnName="Amount1" />
                 <ScalarProperty Name="ToPartID" ColumnName="ToPartID" />
@@ -3699,40 +3701,6 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="VW_ProductiveDetails_Index">
-            <EntityTypeMapping TypeName="TowzinModel.VW_ProductiveDetails_Index">
-              <MappingFragment StoreEntitySet="VW_ProductiveDetails_Index">
-                <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
-                <ScalarProperty Name="Amount1" ColumnName="Amount1" />
-                <ScalarProperty Name="Expr2" ColumnName="Expr2" />
-                <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
-                <ScalarProperty Name="AddDateShamsi" ColumnName="AddDateShamsi" />
-                <ScalarProperty Name="WasteType" ColumnName="WasteType" />
-                <ScalarProperty Name="LesionsName" ColumnName="LesionsName" />
-                <ScalarProperty Name="IOo" ColumnName="IOo" />
-                <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
-                <ScalarProperty Name="PartID" ColumnName="PartID" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
-                <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
-                <ScalarProperty Name="AddDate" ColumnName="AddDate" />
-                <ScalarProperty Name="Creator" ColumnName="Creator" />
-                <ScalarProperty Name="State" ColumnName="State" />
-                <ScalarProperty Name="Amount" ColumnName="Amount" />
-                <ScalarProperty Name="LesionID" ColumnName="LesionID" />
-                <ScalarProperty Name="Waste" ColumnName="Waste" />
-                <ScalarProperty Name="FormoulaNumber" ColumnName="FormoulaNumber" />
-                <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
-                <ScalarProperty Name="ToOrderCodeID" ColumnName="ToOrderCodeID" />
-                <ScalarProperty Name="FromOrderCodeID" ColumnName="FromOrderCodeID" />
-                <ScalarProperty Name="IO" ColumnName="IO" />
-                <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="PartCode" ColumnName="PartCode" />
-                <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="PartPackage">
             <EntityTypeMapping TypeName="TowzinModel.PartPackage">
               <MappingFragment StoreEntitySet="PartPackage">
@@ -3843,6 +3811,7 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <EntitySetMapping Name="VW_OrderSummery">
             <EntityTypeMapping TypeName="TowzinModel.VW_OrderSummery">
               <MappingFragment StoreEntitySet="VW_OrderSummery">
+                <ScalarProperty Name="PercentWaste" ColumnName="PercentWaste" />
                 <ScalarProperty Name="StatusTitle" ColumnName="StatusTitle" />
                 <ScalarProperty Name="RemainingAmount1" ColumnName="RemainingAmount1" />
                 <ScalarProperty Name="RemainingAmount" ColumnName="RemainingAmount" />
@@ -3852,6 +3821,40 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
                 <ScalarProperty Name="AmountOfProductive1" ColumnName="AmountOfProductive1" />
                 <ScalarProperty Name="AmountOfProductive" ColumnName="AmountOfProductive" />
                 <ScalarProperty Name="OrderCode" ColumnName="OrderCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_ProductiveDetails_Index">
+            <EntityTypeMapping TypeName="TowzinModel.VW_ProductiveDetails_Index">
+              <MappingFragment StoreEntitySet="VW_ProductiveDetails_Index">
+                <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+                <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+                <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+                <ScalarProperty Name="Amount1" ColumnName="Amount1" />
+                <ScalarProperty Name="LesionsName" ColumnName="LesionsName" />
+                <ScalarProperty Name="IOo" ColumnName="IOo" />
+                <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+                <ScalarProperty Name="LastModifier" ColumnName="LastModifier" />
+                <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+                <ScalarProperty Name="AddDateShamsi" ColumnName="AddDateShamsi" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="LesionID" ColumnName="LesionID" />
+                <ScalarProperty Name="Waste" ColumnName="Waste" />
+                <ScalarProperty Name="FormoulaNumber" ColumnName="FormoulaNumber" />
+                <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+                <ScalarProperty Name="ToOrderCodeID" ColumnName="ToOrderCodeID" />
+                <ScalarProperty Name="FromOrderCodeID" ColumnName="FromOrderCodeID" />
+                <ScalarProperty Name="IO" ColumnName="IO" />
+                <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+                <ScalarProperty Name="OrderCodeID" ColumnName="OrderCodeID" />
+                <ScalarProperty Name="WasteType" ColumnName="WasteType" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
