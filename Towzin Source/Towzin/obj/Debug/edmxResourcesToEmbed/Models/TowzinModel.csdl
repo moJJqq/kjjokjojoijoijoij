@@ -313,6 +313,8 @@
     <Property Name="OperatorID" Type="Int64" Nullable="false" />
     <NavigationProperty Name="Operator" Relationship="TowzinModel.FK_ProductiveStoppages_Operator" FromRole="ProductiveStoppages" ToRole="Operator" />
     <NavigationProperty Name="Order" Relationship="TowzinModel.FK_ProductiveStoppages_Order" FromRole="ProductiveStoppages" ToRole="Order" />
+    <Property Name="ProductionLineID" Type="Int64" />
+    <Property Name="PartID" Type="Int64" />
   </EntityType>
   <EntityType Name="Specification">
     <Key>
@@ -1132,6 +1134,13 @@
     <Property Name="ID" Type="Int64" Nullable="false" />
     <Property Name="StoppagesID" Type="Int64" Nullable="false" />
     <Property Name="OperatorID" Type="Int64" Nullable="false" />
+    <Property Name="ProductionLineID" Type="Int64" />
+    <Property Name="PartID" Type="Int64" />
+    <Property Name="ProductionLineName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Hour" Type="Int32" />
+    <Property Name="Minutes" Type="Int32" />
   </EntityType>
   <Association Name="FK_ProductiveDetails_ProductiveState">
     <End Type="TowzinModel.ProductiveState" Role="ProductiveState" Multiplicity="1" />

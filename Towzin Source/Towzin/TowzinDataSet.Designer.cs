@@ -30,6 +30,8 @@ namespace Towzin {
         
         private VW_OrderSummeryDataTable tableVW_OrderSummery;
         
+        private VW_Productive_Stoppages_IndexDataTable tableVW_Productive_Stoppages_Index;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -66,6 +68,9 @@ namespace Towzin {
                 }
                 if ((ds.Tables["VW_OrderSummery"] != null)) {
                     base.Tables.Add(new VW_OrderSummeryDataTable(ds.Tables["VW_OrderSummery"]));
+                }
+                if ((ds.Tables["VW_Productive_Stoppages_Index"] != null)) {
+                    base.Tables.Add(new VW_Productive_Stoppages_IndexDataTable(ds.Tables["VW_Productive_Stoppages_Index"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -112,6 +117,16 @@ namespace Towzin {
         public VW_OrderSummeryDataTable VW_OrderSummery {
             get {
                 return this.tableVW_OrderSummery;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public VW_Productive_Stoppages_IndexDataTable VW_Productive_Stoppages_Index {
+            get {
+                return this.tableVW_Productive_Stoppages_Index;
             }
         }
         
@@ -191,6 +206,9 @@ namespace Towzin {
                 if ((ds.Tables["VW_OrderSummery"] != null)) {
                     base.Tables.Add(new VW_OrderSummeryDataTable(ds.Tables["VW_OrderSummery"]));
                 }
+                if ((ds.Tables["VW_Productive_Stoppages_Index"] != null)) {
+                    base.Tables.Add(new VW_Productive_Stoppages_IndexDataTable(ds.Tables["VW_Productive_Stoppages_Index"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -242,6 +260,12 @@ namespace Towzin {
                     this.tableVW_OrderSummery.InitVars();
                 }
             }
+            this.tableVW_Productive_Stoppages_Index = ((VW_Productive_Stoppages_IndexDataTable)(base.Tables["VW_Productive_Stoppages_Index"]));
+            if ((initTable == true)) {
+                if ((this.tableVW_Productive_Stoppages_Index != null)) {
+                    this.tableVW_Productive_Stoppages_Index.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -258,6 +282,8 @@ namespace Towzin {
             base.Tables.Add(this.tableVW_ReportExportCompand);
             this.tableVW_OrderSummery = new VW_OrderSummeryDataTable();
             base.Tables.Add(this.tableVW_OrderSummery);
+            this.tableVW_Productive_Stoppages_Index = new VW_Productive_Stoppages_IndexDataTable();
+            base.Tables.Add(this.tableVW_Productive_Stoppages_Index);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -275,6 +301,12 @@ namespace Towzin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeVW_OrderSummery() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeVW_Productive_Stoppages_Index() {
             return false;
         }
         
@@ -341,6 +373,9 @@ namespace Towzin {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void VW_OrderSummeryRowChangeEventHandler(object sender, VW_OrderSummeryRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void VW_Productive_Stoppages_IndexRowChangeEventHandler(object sender, VW_Productive_Stoppages_IndexRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1702,6 +1737,587 @@ namespace Towzin {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class VW_Productive_Stoppages_IndexDataTable : global::System.Data.TypedTableBase<VW_Productive_Stoppages_IndexRow> {
+            
+            private global::System.Data.DataColumn columnOrderCodeID;
+            
+            private global::System.Data.DataColumn columnStoppagesName;
+            
+            private global::System.Data.DataColumn columnOperatorName;
+            
+            private global::System.Data.DataColumn columnStartTime;
+            
+            private global::System.Data.DataColumn columnEndTime;
+            
+            private global::System.Data.DataColumn columnDescription;
+            
+            private global::System.Data.DataColumn columnState;
+            
+            private global::System.Data.DataColumn columnCreator;
+            
+            private global::System.Data.DataColumn columnAddDate;
+            
+            private global::System.Data.DataColumn columnLastModifier;
+            
+            private global::System.Data.DataColumn columnLastModificationDate;
+            
+            private global::System.Data.DataColumn columnID;
+            
+            private global::System.Data.DataColumn columnStoppagesID;
+            
+            private global::System.Data.DataColumn columnOperatorID;
+            
+            private global::System.Data.DataColumn columnProductionLineID;
+            
+            private global::System.Data.DataColumn columnPartID;
+            
+            private global::System.Data.DataColumn columnProductionLineName;
+            
+            private global::System.Data.DataColumn columnName;
+            
+            private global::System.Data.DataColumn columnPartCode;
+            
+            private global::System.Data.DataColumn columnHour;
+            
+            private global::System.Data.DataColumn columnMinutes;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VW_Productive_Stoppages_IndexDataTable() {
+                this.TableName = "VW_Productive_Stoppages_Index";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal VW_Productive_Stoppages_IndexDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected VW_Productive_Stoppages_IndexDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OrderCodeIDColumn {
+                get {
+                    return this.columnOrderCodeID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn StoppagesNameColumn {
+                get {
+                    return this.columnStoppagesName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OperatorNameColumn {
+                get {
+                    return this.columnOperatorName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn StartTimeColumn {
+                get {
+                    return this.columnStartTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EndTimeColumn {
+                get {
+                    return this.columnEndTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DescriptionColumn {
+                get {
+                    return this.columnDescription;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn StateColumn {
+                get {
+                    return this.columnState;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CreatorColumn {
+                get {
+                    return this.columnCreator;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AddDateColumn {
+                get {
+                    return this.columnAddDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LastModifierColumn {
+                get {
+                    return this.columnLastModifier;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LastModificationDateColumn {
+                get {
+                    return this.columnLastModificationDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn StoppagesIDColumn {
+                get {
+                    return this.columnStoppagesID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OperatorIDColumn {
+                get {
+                    return this.columnOperatorID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ProductionLineIDColumn {
+                get {
+                    return this.columnProductionLineID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PartIDColumn {
+                get {
+                    return this.columnPartID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ProductionLineNameColumn {
+                get {
+                    return this.columnProductionLineName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NameColumn {
+                get {
+                    return this.columnName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PartCodeColumn {
+                get {
+                    return this.columnPartCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HourColumn {
+                get {
+                    return this.columnHour;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MinutesColumn {
+                get {
+                    return this.columnMinutes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VW_Productive_Stoppages_IndexRow this[int index] {
+                get {
+                    return ((VW_Productive_Stoppages_IndexRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event VW_Productive_Stoppages_IndexRowChangeEventHandler VW_Productive_Stoppages_IndexRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event VW_Productive_Stoppages_IndexRowChangeEventHandler VW_Productive_Stoppages_IndexRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event VW_Productive_Stoppages_IndexRowChangeEventHandler VW_Productive_Stoppages_IndexRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event VW_Productive_Stoppages_IndexRowChangeEventHandler VW_Productive_Stoppages_IndexRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddVW_Productive_Stoppages_IndexRow(VW_Productive_Stoppages_IndexRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VW_Productive_Stoppages_IndexRow AddVW_Productive_Stoppages_IndexRow(
+                        long OrderCodeID, 
+                        string StoppagesName, 
+                        string OperatorName, 
+                        string StartTime, 
+                        string EndTime, 
+                        string Description, 
+                        bool State, 
+                        string Creator, 
+                        System.DateTime AddDate, 
+                        string LastModifier, 
+                        System.DateTime LastModificationDate, 
+                        long ID, 
+                        long StoppagesID, 
+                        long OperatorID, 
+                        long ProductionLineID, 
+                        long PartID, 
+                        string ProductionLineName, 
+                        string Name, 
+                        string PartCode, 
+                        int Hour, 
+                        int Minutes) {
+                VW_Productive_Stoppages_IndexRow rowVW_Productive_Stoppages_IndexRow = ((VW_Productive_Stoppages_IndexRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        OrderCodeID,
+                        StoppagesName,
+                        OperatorName,
+                        StartTime,
+                        EndTime,
+                        Description,
+                        State,
+                        Creator,
+                        AddDate,
+                        LastModifier,
+                        LastModificationDate,
+                        ID,
+                        StoppagesID,
+                        OperatorID,
+                        ProductionLineID,
+                        PartID,
+                        ProductionLineName,
+                        Name,
+                        PartCode,
+                        Hour,
+                        Minutes};
+                rowVW_Productive_Stoppages_IndexRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowVW_Productive_Stoppages_IndexRow);
+                return rowVW_Productive_Stoppages_IndexRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VW_Productive_Stoppages_IndexRow FindByID(long ID) {
+                return ((VW_Productive_Stoppages_IndexRow)(this.Rows.Find(new object[] {
+                            ID})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                VW_Productive_Stoppages_IndexDataTable cln = ((VW_Productive_Stoppages_IndexDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new VW_Productive_Stoppages_IndexDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnOrderCodeID = base.Columns["OrderCodeID"];
+                this.columnStoppagesName = base.Columns["StoppagesName"];
+                this.columnOperatorName = base.Columns["OperatorName"];
+                this.columnStartTime = base.Columns["StartTime"];
+                this.columnEndTime = base.Columns["EndTime"];
+                this.columnDescription = base.Columns["Description"];
+                this.columnState = base.Columns["State"];
+                this.columnCreator = base.Columns["Creator"];
+                this.columnAddDate = base.Columns["AddDate"];
+                this.columnLastModifier = base.Columns["LastModifier"];
+                this.columnLastModificationDate = base.Columns["LastModificationDate"];
+                this.columnID = base.Columns["ID"];
+                this.columnStoppagesID = base.Columns["StoppagesID"];
+                this.columnOperatorID = base.Columns["OperatorID"];
+                this.columnProductionLineID = base.Columns["ProductionLineID"];
+                this.columnPartID = base.Columns["PartID"];
+                this.columnProductionLineName = base.Columns["ProductionLineName"];
+                this.columnName = base.Columns["Name"];
+                this.columnPartCode = base.Columns["PartCode"];
+                this.columnHour = base.Columns["Hour"];
+                this.columnMinutes = base.Columns["Minutes"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnOrderCodeID = new global::System.Data.DataColumn("OrderCodeID", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOrderCodeID);
+                this.columnStoppagesName = new global::System.Data.DataColumn("StoppagesName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStoppagesName);
+                this.columnOperatorName = new global::System.Data.DataColumn("OperatorName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOperatorName);
+                this.columnStartTime = new global::System.Data.DataColumn("StartTime", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStartTime);
+                this.columnEndTime = new global::System.Data.DataColumn("EndTime", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEndTime);
+                this.columnDescription = new global::System.Data.DataColumn("Description", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescription);
+                this.columnState = new global::System.Data.DataColumn("State", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnState);
+                this.columnCreator = new global::System.Data.DataColumn("Creator", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreator);
+                this.columnAddDate = new global::System.Data.DataColumn("AddDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAddDate);
+                this.columnLastModifier = new global::System.Data.DataColumn("LastModifier", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastModifier);
+                this.columnLastModificationDate = new global::System.Data.DataColumn("LastModificationDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastModificationDate);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
+                this.columnStoppagesID = new global::System.Data.DataColumn("StoppagesID", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStoppagesID);
+                this.columnOperatorID = new global::System.Data.DataColumn("OperatorID", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOperatorID);
+                this.columnProductionLineID = new global::System.Data.DataColumn("ProductionLineID", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProductionLineID);
+                this.columnPartID = new global::System.Data.DataColumn("PartID", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPartID);
+                this.columnProductionLineName = new global::System.Data.DataColumn("ProductionLineName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProductionLineName);
+                this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnName);
+                this.columnPartCode = new global::System.Data.DataColumn("PartCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPartCode);
+                this.columnHour = new global::System.Data.DataColumn("Hour", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHour);
+                this.columnMinutes = new global::System.Data.DataColumn("Minutes", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMinutes);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID}, true));
+                this.columnOrderCodeID.AllowDBNull = false;
+                this.columnStoppagesName.MaxLength = 2147483647;
+                this.columnOperatorName.MaxLength = 2147483647;
+                this.columnStartTime.ReadOnly = true;
+                this.columnStartTime.MaxLength = 10;
+                this.columnEndTime.ReadOnly = true;
+                this.columnEndTime.MaxLength = 10;
+                this.columnDescription.MaxLength = 2147483647;
+                this.columnState.AllowDBNull = false;
+                this.columnCreator.AllowDBNull = false;
+                this.columnCreator.MaxLength = 128;
+                this.columnAddDate.AllowDBNull = false;
+                this.columnLastModifier.AllowDBNull = false;
+                this.columnLastModifier.MaxLength = 128;
+                this.columnLastModificationDate.AllowDBNull = false;
+                this.columnID.AllowDBNull = false;
+                this.columnID.Unique = true;
+                this.columnStoppagesID.AllowDBNull = false;
+                this.columnOperatorID.AllowDBNull = false;
+                this.columnProductionLineName.MaxLength = 2147483647;
+                this.columnName.MaxLength = 2147483647;
+                this.columnPartCode.MaxLength = 2147483647;
+                this.columnHour.ReadOnly = true;
+                this.columnMinutes.ReadOnly = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VW_Productive_Stoppages_IndexRow NewVW_Productive_Stoppages_IndexRow() {
+                return ((VW_Productive_Stoppages_IndexRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new VW_Productive_Stoppages_IndexRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(VW_Productive_Stoppages_IndexRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.VW_Productive_Stoppages_IndexRowChanged != null)) {
+                    this.VW_Productive_Stoppages_IndexRowChanged(this, new VW_Productive_Stoppages_IndexRowChangeEvent(((VW_Productive_Stoppages_IndexRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.VW_Productive_Stoppages_IndexRowChanging != null)) {
+                    this.VW_Productive_Stoppages_IndexRowChanging(this, new VW_Productive_Stoppages_IndexRowChangeEvent(((VW_Productive_Stoppages_IndexRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.VW_Productive_Stoppages_IndexRowDeleted != null)) {
+                    this.VW_Productive_Stoppages_IndexRowDeleted(this, new VW_Productive_Stoppages_IndexRowChangeEvent(((VW_Productive_Stoppages_IndexRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.VW_Productive_Stoppages_IndexRowDeleting != null)) {
+                    this.VW_Productive_Stoppages_IndexRowDeleting(this, new VW_Productive_Stoppages_IndexRowChangeEvent(((VW_Productive_Stoppages_IndexRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveVW_Productive_Stoppages_IndexRow(VW_Productive_Stoppages_IndexRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                TowzinDataSet ds = new TowzinDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "VW_Productive_Stoppages_IndexDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class VW_ProductiveDetails_IndexRow : global::System.Data.DataRow {
@@ -2643,6 +3259,466 @@ namespace Towzin {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class VW_Productive_Stoppages_IndexRow : global::System.Data.DataRow {
+            
+            private VW_Productive_Stoppages_IndexDataTable tableVW_Productive_Stoppages_Index;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal VW_Productive_Stoppages_IndexRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableVW_Productive_Stoppages_Index = ((VW_Productive_Stoppages_IndexDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long OrderCodeID {
+                get {
+                    return ((long)(this[this.tableVW_Productive_Stoppages_Index.OrderCodeIDColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.OrderCodeIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string StoppagesName {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.StoppagesNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StoppagesName\' in table \'VW_Productive_Stoppages_Index\' is " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.StoppagesNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string OperatorName {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.OperatorNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OperatorName\' in table \'VW_Productive_Stoppages_Index\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.OperatorNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string StartTime {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.StartTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StartTime\' in table \'VW_Productive_Stoppages_Index\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.StartTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string EndTime {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.EndTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EndTime\' in table \'VW_Productive_Stoppages_Index\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.EndTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Description {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.DescriptionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Description\' in table \'VW_Productive_Stoppages_Index\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.DescriptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool State {
+                get {
+                    return ((bool)(this[this.tableVW_Productive_Stoppages_Index.StateColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.StateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Creator {
+                get {
+                    return ((string)(this[this.tableVW_Productive_Stoppages_Index.CreatorColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.CreatorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime AddDate {
+                get {
+                    return ((global::System.DateTime)(this[this.tableVW_Productive_Stoppages_Index.AddDateColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.AddDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string LastModifier {
+                get {
+                    return ((string)(this[this.tableVW_Productive_Stoppages_Index.LastModifierColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.LastModifierColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime LastModificationDate {
+                get {
+                    return ((global::System.DateTime)(this[this.tableVW_Productive_Stoppages_Index.LastModificationDateColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.LastModificationDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long ID {
+                get {
+                    return ((long)(this[this.tableVW_Productive_Stoppages_Index.IDColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long StoppagesID {
+                get {
+                    return ((long)(this[this.tableVW_Productive_Stoppages_Index.StoppagesIDColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.StoppagesIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long OperatorID {
+                get {
+                    return ((long)(this[this.tableVW_Productive_Stoppages_Index.OperatorIDColumn]));
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.OperatorIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long ProductionLineID {
+                get {
+                    try {
+                        return ((long)(this[this.tableVW_Productive_Stoppages_Index.ProductionLineIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ProductionLineID\' in table \'VW_Productive_Stoppages_Index\' " +
+                                "is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.ProductionLineIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long PartID {
+                get {
+                    try {
+                        return ((long)(this[this.tableVW_Productive_Stoppages_Index.PartIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PartID\' in table \'VW_Productive_Stoppages_Index\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.PartIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ProductionLineName {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.ProductionLineNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ProductionLineName\' in table \'VW_Productive_Stoppages_Index" +
+                                "\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.ProductionLineNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Name {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.NameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Name\' in table \'VW_Productive_Stoppages_Index\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.NameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PartCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableVW_Productive_Stoppages_Index.PartCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PartCode\' in table \'VW_Productive_Stoppages_Index\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.PartCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Hour {
+                get {
+                    try {
+                        return ((int)(this[this.tableVW_Productive_Stoppages_Index.HourColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Hour\' in table \'VW_Productive_Stoppages_Index\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.HourColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Minutes {
+                get {
+                    try {
+                        return ((int)(this[this.tableVW_Productive_Stoppages_Index.MinutesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Minutes\' in table \'VW_Productive_Stoppages_Index\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableVW_Productive_Stoppages_Index.MinutesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsStoppagesNameNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.StoppagesNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetStoppagesNameNull() {
+                this[this.tableVW_Productive_Stoppages_Index.StoppagesNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsOperatorNameNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.OperatorNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetOperatorNameNull() {
+                this[this.tableVW_Productive_Stoppages_Index.OperatorNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsStartTimeNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.StartTimeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetStartTimeNull() {
+                this[this.tableVW_Productive_Stoppages_Index.StartTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEndTimeNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.EndTimeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEndTimeNull() {
+                this[this.tableVW_Productive_Stoppages_Index.EndTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDescriptionNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.DescriptionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDescriptionNull() {
+                this[this.tableVW_Productive_Stoppages_Index.DescriptionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProductionLineIDNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.ProductionLineIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProductionLineIDNull() {
+                this[this.tableVW_Productive_Stoppages_Index.ProductionLineIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPartIDNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.PartIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPartIDNull() {
+                this[this.tableVW_Productive_Stoppages_Index.PartIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProductionLineNameNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.ProductionLineNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProductionLineNameNull() {
+                this[this.tableVW_Productive_Stoppages_Index.ProductionLineNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNameNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.NameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNameNull() {
+                this[this.tableVW_Productive_Stoppages_Index.NameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPartCodeNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.PartCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPartCodeNull() {
+                this[this.tableVW_Productive_Stoppages_Index.PartCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsHourNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.HourColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetHourNull() {
+                this[this.tableVW_Productive_Stoppages_Index.HourColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMinutesNull() {
+                return this.IsNull(this.tableVW_Productive_Stoppages_Index.MinutesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMinutesNull() {
+                this[this.tableVW_Productive_Stoppages_Index.MinutesColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -2730,6 +3806,40 @@ namespace Towzin {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public VW_OrderSummeryRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class VW_Productive_Stoppages_IndexRowChangeEvent : global::System.EventArgs {
+            
+            private VW_Productive_Stoppages_IndexRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VW_Productive_Stoppages_IndexRowChangeEvent(VW_Productive_Stoppages_IndexRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VW_Productive_Stoppages_IndexRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3283,6 +4393,194 @@ namespace Towzin.TowzinDataSetTableAdapters {
         public virtual TowzinDataSet.VW_OrderSummeryDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             TowzinDataSet.VW_OrderSummeryDataTable dataTable = new TowzinDataSet.VW_OrderSummeryDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class VW_Productive_Stoppages_IndexTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public VW_Productive_Stoppages_IndexTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "VW_Productive_Stoppages_Index";
+            tableMapping.ColumnMappings.Add("OrderCodeID", "OrderCodeID");
+            tableMapping.ColumnMappings.Add("StoppagesName", "StoppagesName");
+            tableMapping.ColumnMappings.Add("OperatorName", "OperatorName");
+            tableMapping.ColumnMappings.Add("StartTime", "StartTime");
+            tableMapping.ColumnMappings.Add("EndTime", "EndTime");
+            tableMapping.ColumnMappings.Add("Description", "Description");
+            tableMapping.ColumnMappings.Add("State", "State");
+            tableMapping.ColumnMappings.Add("Creator", "Creator");
+            tableMapping.ColumnMappings.Add("AddDate", "AddDate");
+            tableMapping.ColumnMappings.Add("LastModifier", "LastModifier");
+            tableMapping.ColumnMappings.Add("LastModificationDate", "LastModificationDate");
+            tableMapping.ColumnMappings.Add("ID", "ID");
+            tableMapping.ColumnMappings.Add("StoppagesID", "StoppagesID");
+            tableMapping.ColumnMappings.Add("OperatorID", "OperatorID");
+            tableMapping.ColumnMappings.Add("ProductionLineID", "ProductionLineID");
+            tableMapping.ColumnMappings.Add("PartID", "PartID");
+            tableMapping.ColumnMappings.Add("ProductionLineName", "ProductionLineName");
+            tableMapping.ColumnMappings.Add("Name", "Name");
+            tableMapping.ColumnMappings.Add("PartCode", "PartCode");
+            tableMapping.ColumnMappings.Add("Hour", "Hour");
+            tableMapping.ColumnMappings.Add("Minutes", "Minutes");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        VW_Productive_Stoppages_Index.*\r\nFROM            VW_Productive_Stop" +
+                "pages_Index";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(TowzinDataSet.VW_Productive_Stoppages_IndexDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual TowzinDataSet.VW_Productive_Stoppages_IndexDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            TowzinDataSet.VW_Productive_Stoppages_IndexDataTable dataTable = new TowzinDataSet.VW_Productive_Stoppages_IndexDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

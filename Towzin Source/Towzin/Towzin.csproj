@@ -693,6 +693,7 @@
     <Content Include="Views\FilterExportRayfanCompond\OrderSummery.cshtml" />
     <Content Include="Views\sss\TotalOrders.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\PersianDatePicker.cshtml" />
+    <Content Include="Views\sss\ProductiveStoppages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -714,6 +715,7 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Report\ExportRayfan.rdlc" />
     <EmbeddedResource Include="Report\OrderSummery.rdlc" />
+    <EmbeddedResource Include="Report\ProductiveStoppages.rdlc" />
     <EmbeddedResource Include="Report\TotalOrders.rdlc" />
   </ItemGroup>
   <PropertyGroup>

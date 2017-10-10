@@ -28,5 +28,12 @@ namespace Towzin.Models
         public long ID { get; set; }
         public long StoppagesID { get; set; }
         public long OperatorID { get; set; }
+        public Nullable<long> ProductionLineID { get; set; }
+        public Nullable<long> PartID { get; set; }
+        public string ProductionLineName { get; set; }
+        public string Name { get; set; }
+        public string PartCode { get; set; }
+        public Nullable<int> Hour { get; set; }
+        public Nullable<int> Minutes { get; set; }
     }
 }

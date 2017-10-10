@@ -264,6 +264,8 @@
     <EntitySetMapping Name="ProductiveStoppages">
       <EntityTypeMapping TypeName="TowzinModel.ProductiveStoppages">
         <MappingFragment StoreEntitySet="ProductiveStoppages">
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
           <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StoppagesID" ColumnName="StoppagesID" />
@@ -555,6 +557,13 @@
     <EntitySetMapping Name="VW_Productive_Stoppages_Index">
       <EntityTypeMapping TypeName="TowzinModel.VW_Productive_Stoppages_Index">
         <MappingFragment StoreEntitySet="VW_Productive_Stoppages_Index">
+          <ScalarProperty Name="Minutes" ColumnName="Minutes" />
+          <ScalarProperty Name="Hour" ColumnName="Hour" />
+          <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+          <ScalarProperty Name="PartID" ColumnName="PartID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
           <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
           <ScalarProperty Name="StoppagesID" ColumnName="StoppagesID" />
           <ScalarProperty Name="ID" ColumnName="ID" />

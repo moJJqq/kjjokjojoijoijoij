@@ -361,6 +361,8 @@
           <Property Name="LastModifier" Type="nvarchar" MaxLength="128" Nullable="false" />
           <Property Name="LastModificationDate" Type="datetime" Nullable="false" />
           <Property Name="Version" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="ProductionLineID" Type="bigint" />
+          <Property Name="PartID" Type="bigint" />
         </EntityType>
         <EntityType Name="Specification">
           <Key>
@@ -756,6 +758,13 @@ warning 6002: The table/view 'Towzin.dbo.VW_Productive_Stoppages_Index' does not
           <Property Name="ID" Type="bigint" Nullable="false" />
           <Property Name="StoppagesID" Type="bigint" Nullable="false" />
           <Property Name="OperatorID" Type="bigint" Nullable="false" />
+          <Property Name="ProductionLineID" Type="bigint" />
+          <Property Name="PartID" Type="bigint" />
+          <Property Name="ProductionLineName" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="PartCode" Type="nvarchar(max)" />
+          <Property Name="Hour" Type="int" />
+          <Property Name="Minutes" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'Towzin.dbo.VW_ProductiveDetails_Index' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -1474,7 +1483,14 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
     [VW_Productive_Stoppages_Index].[LastModificationDate] AS [LastModificationDate], 
     [VW_Productive_Stoppages_Index].[ID] AS [ID], 
     [VW_Productive_Stoppages_Index].[StoppagesID] AS [StoppagesID], 
-    [VW_Productive_Stoppages_Index].[OperatorID] AS [OperatorID]
+    [VW_Productive_Stoppages_Index].[OperatorID] AS [OperatorID], 
+    [VW_Productive_Stoppages_Index].[ProductionLineID] AS [ProductionLineID], 
+    [VW_Productive_Stoppages_Index].[PartID] AS [PartID], 
+    [VW_Productive_Stoppages_Index].[ProductionLineName] AS [ProductionLineName], 
+    [VW_Productive_Stoppages_Index].[Name] AS [Name], 
+    [VW_Productive_Stoppages_Index].[PartCode] AS [PartCode], 
+    [VW_Productive_Stoppages_Index].[Hour] AS [Hour], 
+    [VW_Productive_Stoppages_Index].[Minutes] AS [Minutes]
     FROM [dbo].[VW_Productive_Stoppages_Index] AS [VW_Productive_Stoppages_Index]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="VW_ProductiveDetails_Index" EntityType="Self.VW_ProductiveDetails_Index" store:Type="Views" store:Schema="dbo">
@@ -1977,6 +1993,8 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <Property Name="OperatorID" Type="Int64" Nullable="false" />
           <NavigationProperty Name="Operator" Relationship="TowzinModel.FK_ProductiveStoppages_Operator" FromRole="ProductiveStoppages" ToRole="Operator" />
           <NavigationProperty Name="Order" Relationship="TowzinModel.FK_ProductiveStoppages_Order" FromRole="ProductiveStoppages" ToRole="Order" />
+          <Property Name="ProductionLineID" Type="Int64" />
+          <Property Name="PartID" Type="Int64" />
         </EntityType>
         <EntityType Name="Specification">
           <Key>
@@ -2796,6 +2814,13 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <Property Name="ID" Type="Int64" Nullable="false" />
           <Property Name="StoppagesID" Type="Int64" Nullable="false" />
           <Property Name="OperatorID" Type="Int64" Nullable="false" />
+          <Property Name="ProductionLineID" Type="Int64" />
+          <Property Name="PartID" Type="Int64" />
+          <Property Name="ProductionLineName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PartCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Hour" Type="Int32" />
+          <Property Name="Minutes" Type="Int32" />
         </EntityType>
         <Association Name="FK_ProductiveDetails_ProductiveState">
           <End Type="TowzinModel.ProductiveState" Role="ProductiveState" Multiplicity="1" />
@@ -3393,6 +3418,8 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <EntitySetMapping Name="ProductiveStoppages">
             <EntityTypeMapping TypeName="TowzinModel.ProductiveStoppages">
               <MappingFragment StoreEntitySet="ProductiveStoppages">
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
                 <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="StoppagesID" ColumnName="StoppagesID" />
@@ -3684,6 +3711,13 @@ warning 6002: The table/view 'Towzin.dbo.VW_ReportExportCompand' does not have a
           <EntitySetMapping Name="VW_Productive_Stoppages_Index">
             <EntityTypeMapping TypeName="TowzinModel.VW_Productive_Stoppages_Index">
               <MappingFragment StoreEntitySet="VW_Productive_Stoppages_Index">
+                <ScalarProperty Name="Minutes" ColumnName="Minutes" />
+                <ScalarProperty Name="Hour" ColumnName="Hour" />
+                <ScalarProperty Name="PartCode" ColumnName="PartCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ProductionLineName" ColumnName="ProductionLineName" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
                 <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
                 <ScalarProperty Name="StoppagesID" ColumnName="StoppagesID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />

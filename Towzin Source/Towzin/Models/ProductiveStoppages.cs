@@ -27,6 +27,8 @@ namespace Towzin.Models
         public System.DateTime LastModificationDate { get; set; }
         public byte[] Version { get; set; }
         public long OperatorID { get; set; }
+        public Nullable<long> ProductionLineID { get; set; }
+        public Nullable<long> PartID { get; set; }
     
         public virtual Stoppages Stoppages { get; set; }
         public virtual Operator Operator { get; set; }
